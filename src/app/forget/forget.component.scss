@@ -1,25 +1,23 @@
-.signin {
+.forget {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
     height: 100%;
 
     > div:first-child {
         background: black;
         display: grid;
     }
-    > div:last-child {
-        display: grid;
-        background: var(--purple) url('/assets/right-bg.png') no-repeat;
-    }
 
 }
 
 .form {
-    width: 340px;
     margin: auto;
     
+    form {
+        margin: auto;
+        width: 340px;
+    }
     h1 {
-        font-size: 46px;
+        font-size: 36px;
         color: white;
         font-weight: normal;
         line-height: 44px;
@@ -77,58 +75,12 @@
             color: var(--grey-white);
         }
     }
-    span {
-        display: block;
-        color: var(--grey-light);
-        font-size: 12px;
-        line-height: 44px;
-        text-align: center;
-        text-transform: uppercase;
-        position: relative;
-    }
-    span::before,
-    span::after {
-        content: "";
-        background: var(--grey-light);
-        height: 1px;
-        top: 50%;
-        position: absolute;
-    }
-    span::before {
-        left: 0;
-        width: 40%;
-    }
-    span::after {
-        right: 0;
-        width: 40%;
-    }
 
-    &__google {
-        font-size: 16px;
-        border-radius: 4px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        border: 1px solid white;
-        display: block;
-        line-height: 50px;
-        background: url('/assets/logo_googleg_48dp.svg') 24px center no-repeat;
-    }
-}
-
-.text {
-    width: 440px;
-    margin: auto;
-    
-    h1 {
-        color: white;
-        font-size: 56px;
-        font-weight: normal;
-    }
-    p {
+    &__text {
         font-size: 20px;
-        margin-top: 20px;
+        margin: 20px 0;
         color: white;
         opacity: .8;
+        text-align: center;
     }
 }
