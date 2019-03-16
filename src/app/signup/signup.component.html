@@ -2,14 +2,14 @@
     <div>
       <section class="form">
         <h1>Sign in</h1>
-        <form action="">
+        <form (ngSubmit)="onSubmit()" #signupForm="ngSignup">
           <label for="name">Name</label>
-          <input type="text" placeholder="Troy Stewart">
+          <input id="name" type="text" placeholder="Troy Stewart" [(ngModel)]="data.name">
           <label for="email">Youre e-mail</label>
-          <input type="text" placeholder="orrin.prohaska@hotmail.com">
+          <input id="email" type="text" placeholder="orrin.prohaska@hotmail.com" [(ngModel)]="data.email">
           <label for="password">Password</label>
-          <input type="password" value="password">
-          <input type="submit" value="Sign in">
+          <input type="password" value="password" [(ngModel)]="data.password">
+          <input id="password" type="submit" value="Sign in">
         </form>
         <p class="form__info"><a routerLink="/forget-password" href="/forget-password">Forgot Password</a> or <a href="#">Username?</a></p>
         <span>Or</span>
