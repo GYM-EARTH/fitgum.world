@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PassportService } from '../passport.service';
 import { CookieService } from '../cookie.service';
 import { Router } from '@angular/router';
-import { User } from '../user';
 
 @Component({
   selector: 'app-signin',
