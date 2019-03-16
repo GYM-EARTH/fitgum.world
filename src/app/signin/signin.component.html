@@ -2,11 +2,11 @@
     <div>
       <section class="form">
         <h1>Sign in</h1>
-        <form action="">
+        <form (ngSubmit)="onSubmit()" #heroForm="ngSignin">
           <label for="email">Youre e-mail</label>
-          <input type="text" placeholder="orrin.prohaska@hotmail.com">
+          <input id="email" type="text" placeholder="orrin.prohaska@hotmail.com" [(ngModel)]="data.email">
           <label for="password">Password</label>
-          <input type="password" value="password">
+          <input id="password" type="password" value="password" [(ngModel)]="data.password">
           <input type="submit" value="Sign in">
         </form>
         <p class="form__info"><a routerLink="/forget-password" href="/forget-password">Forgot Password</a> or <a href="#">Username?</a></p>
