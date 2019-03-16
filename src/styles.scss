@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::after, ::before {
+    box-sizing: border-box;
+}
+:root {
+    --pink: #bd10e0;
+    --purple: #9013fe;
+    --grey-light: #eff0f4;
+    --grey-dark: #4f5362;
+    --grei-white: #efefef;
+}
+body {
+    width: 1440px;
+    // font-family: Arial,Helvetica,sans-serif;
+    font-family: acumin-pro, sans-serif;
+}
+// Acumin Pro Bold
+
+// font-family: acumin-pro, sans-serif;
+
+// font-weight: 700;
+
+// font-style: normal;
+
+
+// Acumin Pro Bold Italic
+
+// font-family: acumin-pro, sans-serif;
+
+// font-weight: 700;
+
+// font-style: italic;
+
+
+// Acumin Pro Italic
+
+// font-family: acumin-pro, sans-serif;
+
+// font-weight: 400;
+
+// font-style: italic;
+
+
+// Acumin Pro Regular
+
+// font-family: acumin-pro, sans-serif;
+
+// font-weight: 400;
+
+// font-style: normal;
