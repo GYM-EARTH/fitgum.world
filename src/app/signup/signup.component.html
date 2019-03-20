@@ -1,7 +1,7 @@
 <main class="signup">
     <div>
       <section class="form">
-        <h1>Sign in</h1>
+        <h1>Sign up</h1>
         <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
           <label for="name">Name</label>
           <input id="name" type="text" placeholder="Troy Stewart" [(ngModel)]="data.name" name="name">
@@ -14,7 +14,7 @@
         <p class="form__info"><a routerLink="/forget-password" href="/forget-password">Forgot Password</a> or <a href="#">Username?</a></p>
         <span>Or</span>
         <a class="form__google" href="#">Sign in with Google</a>
-        <p class="form__info">Don’t have account? <a routerLink="/signin" href="/signin">Signin</a></p>
+        <p class="form__info">Don’t have account? <a routerLink="/signin" href="/signin">Sign in</a></p>
       </section>
     </div>
     <div>
