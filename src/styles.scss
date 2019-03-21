@@ -12,12 +12,15 @@
     --purple: #9013fe;
     --grey-light: #eff0f4;
     --grey-dark: #4f5362;
-    --grei-white: #efefef;
+    --grey-white: #efefef;
+    --grey-text: #757a7d;
+    --dark-black: 0e1519;
 }
 html, body {
     height: 100%;
 }
 body {
     width: 1440px;
+    margin: auto;
     font-family: acumin-pro, sans-serif;
 }
