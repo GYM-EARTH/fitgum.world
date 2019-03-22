@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="09-Home-page" transform="translate(-447.000000, -1404.000000)" stroke="#F8F5F5" stroke-width="2">
+            <g id="Group-7" transform="translate(135.000000, 880.000000)">
+                <g id="Group-5" transform="translate(0.000000, 203.000000)">
+                    <g id="Group-3" transform="translate(298.000000, 307.000000)">
+                        <path d="M33,27 C33,28.1045695 32.1045695,29 31,29 L19,29 L15,33 L15,17 C15,15.8954305 15.8954305,15 17,15 L31,15 C32.1045695,15 33,15.8954305 33,17 L33,27 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

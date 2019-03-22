@@ -19,6 +19,7 @@ import { ClubComponent } from './club/club.component';
 import { HeaderWhiteComponent } from './header/header-white/header-white.component';
 import { HeaderBlackComponent } from './header/header-black/header-black.component';
 import { HeaderLogoComponent } from './header/header-logo/header-logo.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HeaderLogoComponent } from './header/header-logo/header-logo.component'
     ClubComponent,
     HeaderWhiteComponent,
     HeaderBlackComponent,
-    HeaderLogoComponent
+    HeaderLogoComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

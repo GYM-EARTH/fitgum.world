@@ -1,7 +1,11 @@
+:host {
+    position: relative;
+    display: block;
+}
 :host > div {
     position: relative;
 }
-figure {
+.preview {
     height: 760px;
     overflow: hidden;
     background: black;
@@ -56,3 +60,4 @@ figure {
         justify-self: baseline;
     }
 }
+

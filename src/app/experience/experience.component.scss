@@ -1,0 +1,77 @@
+.experienced {
+    margin: 25px 0 25px 135px;
+    
+    h1 {
+        font-size: 48px;
+        color: rgba(14, 21, 25, .9);
+        font-weight: normal;
+    }
+    > p {
+        font-size: 18px;
+        margin: 25px 0 50px;
+        color: rgba(14, 21, 25, .6);
+    }
+    
+    div {
+        overflow: hidden;
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        
+        &::-webkit-scrollbar { width: 0 !important }
+        
+        article {
+            border-radius: 6px;
+            overflow: hidden;
+            width: 370px;
+            border: 1px solid rgba(190, 190, 190, .3);
+            
+            &:first-child {
+                box-shadow: 0 30px 84px -4px rgba(62, 41,29, .13);
+                border: none;
+            }
+
+            figure {
+                height: 280px;
+                background: black;
+                overflow: hidden;
+                
+                img {
+                    max-height: 100%;
+                }
+            }
+            header {
+                position: relative;
+                display: grid;
+                align-content: center;
+                height: 100px;
+                padding: 0 25px;
+                
+                h1 {
+                    font-size: 24px;
+                    color: rgba(14, 21, 25, .9);
+                    font-weight: normal;
+                }
+                p {
+                    font-size: 16px;
+                    color: rgba(14, 21, 25, .6);
+                }
+            }
+        }
+    }
+
+    .see {
+        display: inline-block;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        background: var(--purple-light) url('/assets/write.svg') 50% 50% no-repeat;
+        right: 25px;
+        top: 50%;
+        margin-top: -24px;
+    }
+}
