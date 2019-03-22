@@ -21,6 +21,7 @@ import { HeaderBlackComponent } from './header/header-black/header-black.compone
 import { HeaderLogoComponent } from './header/header-logo/header-logo.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProductsComponent } from './products/products.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProductsComponent } from './products/products.component';
     HeaderBlackComponent,
     HeaderLogoComponent,
     ExperienceComponent,
-    ProductsComponent
+    ProductsComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
