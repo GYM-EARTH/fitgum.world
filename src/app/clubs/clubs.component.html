@@ -1,28 +1,10 @@
 <app-header-black></app-header-black>
 <section>
-  <article>
-    <figure><img src="" alt=""></figure>
-    <header><h1>World class</h1></header>
-    <p>Text</p>
-    <footer>Moscow</footer>
-  </article>
-  <article>
-    <figure><img src="" alt=""></figure>
-    <header><h1>World class</h1></header>
-    <p>Text</p>
-    <footer></footer>
-  </article>
-  <article>
-    <figure><img src="" alt=""></figure>
-    <header><h1>World class</h1></header>
-    <p>Text</p>
-    <footer></footer>
-  </article>
-  <article>
-    <figure><img src="" alt=""></figure>
-    <header><h1>World class</h1></header>
-    <p>World Class fitness clubs in Moscow is an opportunity to work with experi..</p>
-    <footer></footer>
+  <article *ngFor="let club of clubs">
+    <figure [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club.logo}}" alt=""></figure>
+    <header><h1>{{club.title}}</h1></header>
+    <p>{{club.description}}</p>
+    <footer>Москва</footer>
   </article>
 </section>
 <app-footer></app-footer>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>zen_icon_2018</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="84.0066757%" y1="-143.469661%" x2="3.14755497%" y2="157.724256%" id="linearGradient-1">
+            <stop stop-color="#FF0000" offset="0%"></stop>
+            <stop stop-color="#B00000" offset="21.6226212%"></stop>
+            <stop stop-color="#C90000" offset="46.9295134%"></stop>
+            <stop stop-color="#C20000" offset="69.2702004%"></stop>
+            <stop stop-color="#990000" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="146.604712 193.476847 311.402263 198.20573 307.881995 251.577867 143.230723 247.588521"></polygon>
+    </defs>
+    <g id="zen_icon_2018" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(29.000000, 29.000000)">
+            <circle id="Mask" fill="#FF0000" cx="227" cy="227" r="227"></circle>
+            <g id="Rectangle" opacity="0.69752038" transform="translate(227.316493, 222.527357) rotate(-41.000000) translate(-227.316493, -222.527357) ">
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <use fill="#FFFFFF" xlink:href="#path-2"></use>
+            </g>
+            <path d="M209.923498,453.367352 C186.925269,451.656897 164.881228,446.51979 144.300186,438.464843 L273.505656,326.91428 L307.179993,369.138363 L209.923498,453.367352 Z" id="Combined-Shape" fill="#D00000"></path>
+            <path d="M241.804528,0.475037683 C266.165197,2.04327496 289.479717,7.45414469 311.148265,16.1078252 L180.933083,121.194642 L147.341743,76.0064392 L241.804528,0.475037683 Z" id="Combined-Shape" fill="#D00000"></path>
+            <polygon id="Rectangle" fill="#FFFFFF" points="147.341743 76.0137615 307.178899 138.490826 307.178899 191.59633 147.341743 129.639908"></polygon>
+            <path d="M147.341743,253.552752 C147.341743,253.552752 307.178899,315.695195 307.178899,316.029817 L307.178899,369.135321 L147.341743,307.178899 L147.341743,253.552752 Z" id="Rectangle" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

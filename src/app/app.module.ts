@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';
+import { ClubsService } from './clubs.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -58,7 +59,7 @@ import { ClubsComponent } from './clubs/clubs.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [PassportService, ProfileService],
+  providers: [PassportService, ProfileService, ClubsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

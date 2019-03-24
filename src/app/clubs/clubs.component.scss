@@ -17,6 +17,11 @@ article {
     figure {
         height: 140px;
         background: black;
+        display: flex;
+
+        img {
+            margin: auto;
+        }
     }
     header,
     p, footer {
