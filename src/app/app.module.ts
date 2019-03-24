@@ -22,6 +22,7 @@ import { HeaderLogoComponent } from './header/header-logo/header-logo.component'
 import { ExperienceComponent } from './experience/experience.component';
 import { ProductsComponent } from './products/products.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ExploreComponent } from './explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     HeaderLogoComponent,
     ExperienceComponent,
     ProductsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,

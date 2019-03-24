@@ -1,0 +1,34 @@
+.explore {
+    margin: 35px 0 25px 0;
+    
+    > h1 {
+        font-size: 48px;
+        color: rgba(14, 21, 25, .9);
+        font-weight: normal;
+        margin-left: 135px;
+        text-align: center;
+    }
+    > p {
+        text-align: center;
+        font-size: 18px;
+        margin: 25px 0 50px 135px;
+        color: rgba(14, 21, 25, .6);
+    }
+    div {
+        width: 100%;
+        text-align: center;
+    }
+    &__see {
+        text-align: center;
+        line-height: 58px;
+        border: 1px solid var(--purple-light);
+        border-radius: 47px;
+        font-size: 16px;
+        color: var(--purple-light);
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 45px;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
+}
