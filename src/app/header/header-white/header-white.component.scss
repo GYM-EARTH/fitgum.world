@@ -28,12 +28,19 @@
             line-height: 45px;
             display: inline-block;
             text-decoration: none;
+            transition: all .3s;
         }
         a:last-child {
             background: white;
             color: var(--purple);
             margin-left: 25px;
             border-radius: 4px;
+        }
+        a:hover {
+            color: var(--purple);
+        }
+        .active {
+            color: var(--purple);
         }
     }
 }

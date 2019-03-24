@@ -26,6 +26,7 @@ import { ExploreComponent } from './explore/explore.component';
 import { BoardComponent } from './board/board.component';
 import { BoardOneComponent } from './board/board-one/board-one.component';
 import { BoardRowComponent } from './board/board-row/board-row.component';
+import { ClubsComponent } from './clubs/clubs.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { BoardRowComponent } from './board/board-row/board-row.component';
     ExploreComponent,
     BoardComponent,
     BoardOneComponent,
-    BoardRowComponent
+    BoardRowComponent,
+    ClubsComponent
+    
   ],
   imports: [
     BrowserModule,
