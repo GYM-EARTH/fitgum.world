@@ -1,12 +1,10 @@
 :host {
     display: grid;
     grid-area: board;
-    grid-template-columns: repeat(6, 196px);
+    grid-template-columns: repeat(3, 196px);
     align-items: center;
     justify-items: center;
-    padding: 22px 0;
     justify-content: center;
-    margin-bottom: 60px;
 }
 img {
     width: 100%;

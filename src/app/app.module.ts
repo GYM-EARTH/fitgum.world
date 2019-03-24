@@ -24,6 +24,8 @@ import { ProductsComponent } from './products/products.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ExploreComponent } from './explore/explore.component';
 import { BoardComponent } from './board/board.component';
+import { BoardOneComponent } from './board/board-one/board-one.component';
+import { BoardRowComponent } from './board/board-row/board-row.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { BoardComponent } from './board/board.component';
     ProductsComponent,
     WelcomeComponent,
     ExploreComponent,
-    BoardComponent
+    BoardComponent,
+    BoardOneComponent,
+    BoardRowComponent
   ],
   imports: [
     BrowserModule,

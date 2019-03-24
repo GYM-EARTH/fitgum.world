@@ -122,10 +122,20 @@
         font-size: 56px;
         font-weight: normal;
     }
-    p {
+    > p {
         font-size: 20px;
         margin-top: 20px;
         color: white;
         opacity: .8;
+    }
+    footer {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 230px;
+
+        p {
+            margin-bottom: 22px;
+        }
     }
 }
