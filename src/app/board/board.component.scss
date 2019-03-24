@@ -1,0 +1,19 @@
+:host {
+    display: grid;
+    grid-area: board;
+    grid-template-columns: repeat(6, 196px);
+    align-items: center;
+    justify-items: center;
+    padding: 22px 0;
+    justify-content: center;
+}
+img {
+    width: 100%;
+    max-width: 60px;
+    opacity: .4;
+    transition: all .3s;
+
+    &:hover {
+        opacity: 1;
+    }
+}

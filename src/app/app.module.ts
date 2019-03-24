@@ -23,6 +23,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProductsComponent } from './products/products.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ExploreComponent } from './explore/explore.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ExploreComponent } from './explore/explore.component';
     ExperienceComponent,
     ProductsComponent,
     WelcomeComponent,
-    ExploreComponent
+    ExploreComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
