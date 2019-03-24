@@ -2,20 +2,20 @@
 <main class="signup">
     <div>
       <section class="form">
-        <h1>Sign up</h1>
+        <h1>Регистрация</h1>
         <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-          <label for="name">Name</label>
+          <label for="name">Имя</label>
           <input id="name" type="text" placeholder="Troy Stewart" [(ngModel)]="data.name" name="name">
-          <label for="email">Youre e-mail</label>
+          <label for="email">Электронная почта</label>
           <input id="email" type="text" placeholder="orrin.prohaska@hotmail.com" [(ngModel)]="data.email" name="email">
-          <label for="password">Password</label>
+          <label for="password">Пароль</label>
           <input type="password" value="password" [(ngModel)]="data.password" name="password">
-          <input id="password" type="submit" value="Sign in">
+          <input id="password" type="submit" value="Регистрация">
         </form>
-        <p class="form__info"><a routerLink="/forget-password" href="/forget-password">Forgot Password</a> or <a href="#">Username?</a></p>
+        <p class="form__info"><a routerLink="/forget-password" href="/forget-password">Забыли пароль</a> или <a href="#">Имя пользователя?</a></p>
         <span>Or</span>
-        <a class="form__google" href="#">Sign in with Google</a>
-        <p class="form__info">Don’t have account? <a routerLink="/signin" href="/signin">Sign in</a></p>
+        <a class="form__google" href="#">Войти через Google</a>
+        <p class="form__info">Уже есть аккаунт? <a routerLink="/signin" href="/signin">Войти</a></p>
       </section>
     </div>
     <div>

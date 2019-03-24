@@ -1,36 +1,12 @@
 <section class="experienced">
-    <h1>Fitness Experienced</h1>
-    <p>World-class certified personal trainers, energetic class<br> instructors, and innovative fitness programs.</p>
+    <h1>Фитнес Опыт</h1>
+    <p>Сертифицированные персональные тренеры мирового класса,<br> энергичные инструкторы и инновационные фитнес-программы.</p>
     <div>
-      <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/8/d7/maksim-gustarev-nastia-devushka-litso-ruki-vzgliad-steklo-po.jpg" alt=""></figure>
+      <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]">
+        <figure><img src="https://file.fitgum.ru/{{trainer?.photo}}" alt=""></figure>
         <header>
-          <h1>Willie Canon</h1>
-          <p>Owner this Team</p>
-          <a class="see" href=""></a>
-        </header>
-      </article>
-      <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/7/63/vzgliad-devushka-litso-poza-model-volosy-figura-alessandra-a.jpg" alt=""></figure>
-        <header>
-          <h1>Cory Allen</h1>
-          <p>Owner this Team</p>
-          <a class="see" href=""></a>
-        </header>
-      </article>
-      <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/3/11/myshtsy-shtanga-pose-trenirovka-atlet-workout-trenazhernyi-z.jpg" alt=""></figure>
-        <header>
-          <h1>Stephen Hopkins</h1>
-          <p>Owner this Team</p>
-          <a class="see" href=""></a>
-        </header>
-      </article>
-      <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/8/d7/maksim-gustarev-nastia-devushka-litso-ruki-vzgliad-steklo-po.jpg" alt=""></figure>
-        <header>
-          <h1>Willie Canon</h1>
-          <p>Owner this Team</p>
+          <h1>{{trainer?.name}}</h1>
+          <p>{{trainer?.description}}</p>
           <a class="see" href=""></a>
         </header>
       </article>
