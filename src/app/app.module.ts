@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';
 import { ClubsService } from './clubs.service';
+import { NewsService } from './news.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { BoardComponent } from './board/board.component';
 import { BoardOneComponent } from './board/board-one/board-one.component';
 import { BoardRowComponent } from './board/board-row/board-row.component';
 import { ClubsComponent } from './clubs/clubs.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { ClubsComponent } from './clubs/clubs.component';
     BoardComponent,
     BoardOneComponent,
     BoardRowComponent,
-    ClubsComponent
+    ClubsComponent,
+    NewsComponent
     
   ],
   imports: [
@@ -59,7 +62,7 @@ import { ClubsComponent } from './clubs/clubs.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [PassportService, ProfileService, ClubsService],
+  providers: [PassportService, ProfileService, ClubsService, NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

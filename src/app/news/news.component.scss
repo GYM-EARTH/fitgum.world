@@ -1,0 +1,94 @@
+.news {
+    margin: 25px 135px 25px 135px;
+
+    > h1 {
+        font-size: 48px;
+        color: rgba(14, 21, 25, .9);
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 50px;
+    } 
+
+    div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+
+        article {
+            width: 370px;
+            
+            figure {
+                height: 337px;
+                overflow: hidden;
+                img {
+                    max-height: 100%;
+                }
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+                opacity: .9;
+                color: var(--grey-text);
+            }
+            nav {
+                line-height: 44px;
+               
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:first-child {
+                        color: #50b8Bf
+                    }
+                    &:last-child {
+                        margin-left: 25px;
+                        color: #daaa53;
+                        &::before {
+                            content: "";
+                            line-height: 44px;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 50%;
+                            opacity: .6;
+                            display: inline-block;
+                            background: var(--grey-text);
+                            margin-right: 15px;
+                             vertical-align:  middle;
+                        }
+                    }
+                }
+            }
+            footer {
+                font-size: 14px;
+                line-height: 44px;
+
+                time {
+                    color: var(--grey-text);
+                    text-transform: uppercase;
+                    margin-right: 15px;
+                }
+                span {
+                    color: var(--grey-text);
+                    &::before {
+                        content: "";
+                        line-height: 44px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        opacity: .6;
+                        display: inline-block;
+                        background: var(--grey-text);
+                        margin-right: 15px;
+                        vertical-align:  middle;
+                    }
+                    a {
+                        color: var(--grey-text);
+                    }
+                }
+            }
+        }
+    }
+}
