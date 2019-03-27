@@ -6,6 +6,7 @@ import { ForgetComponent } from './forget/forget.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { ClubsComponent } from './clubs/clubs.component';
+import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgetComponent },
   { path: 'trainers/:id', component: ProfileComponent },
   { path: 'clubs', component: ClubsComponent },
+  { path: 'chat', component: ChatComponent }
 ];
 
 @NgModule({
