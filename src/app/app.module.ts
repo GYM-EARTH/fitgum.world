@@ -8,6 +8,8 @@ import { ProfileService } from './profile.service';
 import { ClubsService } from './clubs.service';
 import { NewsService } from './news.service';
 import { CookieService } from './cookie.service';
+import { SocketService } from './socket.service';
+import { EchoService } from './echo.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -71,7 +73,14 @@ import { ChatComponent } from './chat/chat.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [PassportService, ProfileService, ClubsService, NewsService, CookieService],
+  providers: [
+    PassportService,
+    ProfileService,
+    ClubsService,
+    NewsService,
+    CookieService,
+    SocketService,
+    EchoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,5 +7,9 @@ export const environment = {
   clubs: 'https://api.fitgum.ru/clubs',
   news: 'https://api.fitgum.ru/news',
   trainers: 'https://api.fitgum.ru/trainers',
-  vacancies: 'https://api.fitgum.ru/vacancies'
+  vacancies: 'https://api.fitgum.ru/vacancies',
+  chat: {
+    send: 'https://api.fitgum.ru/api/messages/send',
+    get: 'https://api.fitgum.ru/api/messages/get',
+  }
 };

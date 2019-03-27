@@ -19,13 +19,14 @@
   <label for="chatId">chatId</label>
   <br>
   <input id="chatId" [(ngModel)]="chatId">
+  
   <br>
   <label for="message">message</label>
   <br>
   <textarea id="message" >{{message}}</textarea>
   <br>
   <button (click)="sendMessage()">Send</button>
-  <button (click)="getMessages()">Send</button>
+  <button (click)="getMessage()">Get</button>
 
 
 

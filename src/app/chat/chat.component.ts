@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from '../cookie.service';
+import { ChatService } from '../chat.service';
+import { SocketService } from '../socket.service';
+import { EchoService } from '../echo.service';
+import Echo from "laravel-echo";
+
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
@@ -7,10 +12,12 @@ import { CookieService } from '../cookie.service';
 })
 export class ChatComponent implements OnInit {
 
+  private socket: SocketIOClient.Socket;
+
   public auth: Boolean = false;
   
   messages: [];
-  message: '';
+  public message: '';
   chatId: '';
   receivers: '';
   token;
@@ -18,25 +25,25 @@ export class ChatComponent implements OnInit {
 
 
 
-  // window.io = require('socket.io-client');
-
-  // window.Echo = new Echo({
-  //     broadcaster: 'socket.io',
-  //     host: window.location.hostname + ':3000',
-  //     auth: {
-  //         headers: {
-  //             'Authorization': "Bearer " + window.getCookie('token')
-  //         }
-  //     }
-  // });
-
-  constructor(private cookieService: CookieService) {
-    // window.Echo;
-
-    // .private('chat.' + window.getCookie('userId'))
-    //             .listen('Message', ({message}) => {
-    //                 this.messages.push(message.from + ' - ' +message.message);
-    //             });
+  constructor(
+    private cookieService: CookieService,
+    private socketService: SocketService,
+    private echoService: EchoService) {
+    
+    // this.Echo = new Echo({
+    //   broadcaster: 'socket.io',
+    //   host: 'http://api.fitgum.ru:3000',
+    //   auth: {
+    //       headers: {
+    //           'Authorization': "Bearer " + this.cookieService.getCookie('login')
+    //       }
+    //   }
+    // });
+    
+    // this.Echo.private('chat.' + this.cookieService.getCookie('userId'))
+    // .listen('Message', ({message}) => {
+    //     console.log('good');
+    // });
 
   }
 
@@ -44,8 +51,15 @@ export class ChatComponent implements OnInit {
     if (this.cookieService.getCookie('login')) {
       this.auth = true;
       this.token = this.cookieService.getCookie('login');
-      console.log(this.token);
+      this.cookieService.setCookie('userId',('1'), {});
     }
   }
+
+  sendMessage() {
+    this.socketService.sendMessage({'message': 'good', 'chatId': '1', 'receivers': '1'});
+    this.echoService.privateChanel('chat.', '1');
+  }
+
+  getMessage() {}
 
 }
