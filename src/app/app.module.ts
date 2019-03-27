@@ -7,6 +7,7 @@ import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';
 import { ClubsService } from './clubs.service';
 import { NewsService } from './news.service';
+import { CookieService } from './cookie.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { NewsComponent } from './news/news.component';
 import { SearchComponent } from './search/search.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import { ArticleComponent } from './article/article.component';
     NewsComponent,
     SearchComponent,
     BlogComponent,
-    ArticleComponent
+    ArticleComponent,
+    ChatComponent
     
   ],
   imports: [
@@ -68,7 +71,7 @@ import { ArticleComponent } from './article/article.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [PassportService, ProfileService, ClubsService, NewsService],
+  providers: [PassportService, ProfileService, ClubsService, NewsService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

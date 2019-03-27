@@ -7,7 +7,12 @@
     <a href="#">Тренеры</a>
     <a href="#">О нас</a>
     <a href="#">Контакты</a>
-    <a routerLink="/signin" href="/signin">Войти</a>
-    <a routerLink="/signup" href="/signup">Регистрация</a>
+    <ng-template [ngIf]="!auth">
+      <a routerLink="/signin" href="/signin">Войти</a>
+      <a routerLink="/signup" href="/signup">Регистрация</a>
+    </ng-template>
+    <ng-template [ngIf]="auth">
+      <a class="profile" href="#">Привет!</a>
+    </ng-template>
   </nav>
 </header>
