@@ -30,6 +30,9 @@ import { BoardOneComponent } from './board/board-one/board-one.component';
 import { BoardRowComponent } from './board/board-row/board-row.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { NewsComponent } from './news/news.component';
+import { SearchComponent } from './search/search.component';
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,10 @@ import { NewsComponent } from './news/news.component';
     BoardOneComponent,
     BoardRowComponent,
     ClubsComponent,
-    NewsComponent
+    NewsComponent,
+    SearchComponent,
+    BlogComponent,
+    ArticleComponent
     
   ],
   imports: [
