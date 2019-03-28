@@ -1,0 +1,12 @@
+<section class="blog">
+  <div>
+    <article *ngFor="let i of blog">
+      <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
+      <nav><a href="">Fitness</a><a href="">Gym</a></nav>
+      <header><h1>{{i?.title}}</h1></header>
+      <footer><time datetime="">{{i?.created_at}}</time><span>By <a href="">FitGum</a></span></footer>
+      <p>{{i?.description}}</p>
+    </article>
+  </div>
+</section>
+<aside class="blog__aside"></aside>

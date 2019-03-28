@@ -38,6 +38,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
 import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
+import { IntroComponent } from './blog/intro/intro.component';
+import { ListComponent } from './blog/list/list.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { TrainerComponent } from './trainer/trainer.component';
     BlogComponent,
     ArticleComponent,
     ChatComponent,
-    TrainerComponent
+    TrainerComponent,
+    IntroComponent,
+    ListComponent
     
   ],
   imports: [

@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },
-  { path: 'chat', component: ChatComponent }
+  { path: 'chat', component: ChatComponent },
+  { path: 'blog', component: BlogComponent }
 ];
 
 @NgModule({

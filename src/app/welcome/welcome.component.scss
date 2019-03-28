@@ -2,21 +2,9 @@
     position: relative;
 }
 .preview {
-    height: 760px;
+    height: 800px;
     overflow: hidden;
     background: black;
-    position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, black, transparent, black);
-        opacity: .8;
-    }
 
     img {
         max-width: 100%;
@@ -25,34 +13,19 @@
 }
 .intro {
     position: absolute;
-    top: 100px;
+    top: 0px;
     left: 90px;
+    right: 90px;
     bottom: 0;
     display: grid;
     align-content: center;
 
     h1 {
+        text-align: center;
         margin: auto;
-        font-size: 84px;
+        font-size: 74px;
         color: white;
-        font-weight: normal;
+        font-weight: 600;
         line-height: 84px;
-    }
-    p {
-        font-size: 18px;
-        color: white;
-        margin: 45px 0 45px;
-    }
-    a {
-        line-height: 78px;
-        padding: 0 50px;
-        display: inline-block;
-        background: white;
-        color: var(--purple);
-        border-radius: 8px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 18px;
-        justify-self: baseline;
     }
 }
