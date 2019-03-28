@@ -49,4 +49,10 @@ export class CookieService {
     document.cookie = updatedCookie;
   }
 
+  deleteCookie(name) {
+    this.setCookie(name, "", {
+      expires: -1
+    })
+  }
+
 }

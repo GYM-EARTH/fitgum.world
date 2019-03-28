@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from  '../environments/environment'
-import { CookieService } from './cookie.service';
 import { User } from './user';
 
 const httpOptions = {
@@ -17,12 +15,7 @@ const httpOptions = {
 })
 export class PassportService {
 
-  token;
-
-  constructor(private http: HttpClient,
-    private cookieService: CookieService) {
-      this.token = cookieService.getCookie('login');
-    }
+  constructor(private http: HttpClient) { }
 
   auth(data) {
     const body = { email: data.email, password: data.password };
@@ -34,13 +27,13 @@ export class PassportService {
     return this.http.post(environment.passport.register, body, httpOptions);
   }
 
-  getProfile() {
-   
-
-    return this.http.get<{data: User[]}>(environment.passport.profile, {     headers: new HttpHeaders({
-      'Content-Type':  'application/json',
-      'Accept': 'application/json',
-      'Authorization': "Bearer " + this.token
-    }) });
+  getProfile(token) {
+    return this.http.get<{data: User[]}>(environment.passport.profile, {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'Accept': 'application/json',
+        'Authorization': "Bearer " + token
+      })
+    });
   }
 }

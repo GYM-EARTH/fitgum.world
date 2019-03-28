@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PassportService } from '../passport.service';
+import { CookieService } from '../cookie.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,21 +10,19 @@ import { PassportService } from '../passport.service';
 export class ProfileComponent implements OnInit {
 
   public profile;
+  
+  private token;
 
   constructor(
-    private passportService: PassportService) { }
+    private passportService: PassportService,
+    private cookieService: CookieService) {
+      this.token = this.cookieService.getCookie('login');
+    }
 
   ngOnInit() {
-    // this.route.params.subscribe(params => {
-    //   this.profileService.getBy(params['id']).subscribe(trainers => {
-    //     this.profile = trainers;
-    //   });
-    // });
-
-    this.passportService.getProfile().subscribe(profile => {
+    this.passportService.getProfile(this.token).subscribe(profile => {
       this.profile = profile;
     });
-
   }
 
 }

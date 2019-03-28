@@ -12,7 +12,7 @@
       <a class="signup" routerLink="/signup" href="/signup">Регистрация</a>
     </ng-template>
     <ng-template [ngIf]="auth">
-      <a class="" href="#">Выход</a>
+        <a (click)="signOut()" class="" href="#">Выход</a>
       <a class="profile" routerLink="/profile" href="/profile"></a>
     </ng-template>
   </nav>
