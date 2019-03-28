@@ -37,6 +37,7 @@ import { SearchComponent } from './search/search.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
 import { ChatComponent } from './chat/chat.component';
+import { TrainerComponent } from './trainer/trainer.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ChatComponent } from './chat/chat.component';
     SearchComponent,
     BlogComponent,
     ArticleComponent,
-    ChatComponent
+    ChatComponent,
+    TrainerComponent
     
   ],
   imports: [

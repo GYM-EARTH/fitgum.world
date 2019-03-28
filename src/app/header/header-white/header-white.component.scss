@@ -21,6 +21,7 @@
         span:last-child { color: var(--purple); }
     }
     nav {
+        display: flex;
         a {
             font-size: 16px;
             color: white;
@@ -30,11 +31,18 @@
             text-decoration: none;
             transition: all .3s;
         }
-        a:last-child {
+        .signup {
             background: white;
             color: var(--purple);
             margin-left: 25px;
             border-radius: 4px;
+        }
+        .profile {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--purple);
+            margin-left: 25px;
         }
         a:hover {
             color: var(--purple);

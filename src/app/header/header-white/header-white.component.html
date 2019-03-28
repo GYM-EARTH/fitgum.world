@@ -9,10 +9,11 @@
     <a href="#">Контакты</a>
     <ng-template [ngIf]="!auth">
       <a routerLink="/signin" href="/signin">Войти</a>
-      <a routerLink="/signup" href="/signup">Регистрация</a>
+      <a class="signup" routerLink="/signup" href="/signup">Регистрация</a>
     </ng-template>
     <ng-template [ngIf]="auth">
-      <a class="profile" href="#">Привет!</a>
+      <a class="" href="#">Выход</a>
+      <a class="profile" routerLink="/profile" href="/profile"></a>
     </ng-template>
   </nav>
 </header>
