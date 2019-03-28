@@ -9,6 +9,7 @@ import { ClubsComponent } from './clubs/clubs.component';
 import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { BlogComponent } from './blog/blog.component';
+import { TrainersComponent } from './trainers/trainers.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'forget-password', component: ForgetComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'trainers', component: TrainersComponent },
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },
   { path: 'chat', component: ChatComponent },

@@ -1,5 +1,5 @@
 .news {
-    margin: 25px 135px 25px 135px;
+    margin: 0 135px 25px 135px;
 
     > h1 {
         font-size: 48px;
@@ -32,12 +32,13 @@
             h1 {
                 font-size: 22px;
                 padding: 0 25px;
+                color: var(--dark-black);
             }
             p {
                 padding: 0 25px;
                 font-size: 16px;
                 opacity: .9;
-                color: var(--grey-text);
+                color: var(--dark-black);
             }
             nav {
                 padding: 0 25px;

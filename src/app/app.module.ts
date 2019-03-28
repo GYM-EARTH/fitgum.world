@@ -40,6 +40,8 @@ import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { IntroComponent } from './blog/intro/intro.component';
 import { ListComponent } from './blog/list/list.component';
+import { TrainersComponent } from './trainers/trainers.component';
+import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { ListComponent } from './blog/list/list.component';
     ChatComponent,
     TrainerComponent,
     IntroComponent,
-    ListComponent
+    ListComponent,
+    TrainersComponent,
+    TrainersListComponent
     
   ],
   imports: [

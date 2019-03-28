@@ -1,29 +1,14 @@
 .experienced {
-    margin-top: 35px;
-    
-    > h1 {
-        font-size: 48px;
-        color: rgba(14, 21, 25, .9);
-        font-weight: normal;
-        margin-left: 135px;
-    }
-    > p {
-        font-size: 18px;
-        margin: 25px 0 50px 135px;
-        color: rgba(14, 21, 25, .6);
-    }
+    background: var(--bg-b-grey);
+    padding: 60px 0;
     
     div {
         overflow: hidden;
-        overflow-x: scroll;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 370px);
         grid-column-gap: 30px;
-        overflow: -moz-scrollbars-none;
-        -ms-overflow-style: none;
-        padding: 0 0 37px 135px;
-        
-        &::-webkit-scrollbar { width: 0 !important }
+        grid-row-gap: 30px;
+        justify-content: center;
         
         article {
             border-radius: 6px;
@@ -32,13 +17,14 @@
             position: relative;
             transition: all .3s;
             box-shadow: 0 18px 36px -4px rgba(0, 0, 0, .04);
+            background: white;
             
             &:hover {
                 cursor: pointer;
             }
 
             figure {
-                left: 0px;
+                left:0px;
                 top: 0px;
                 right: 0px;
                 position: absolute;
