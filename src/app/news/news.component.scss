@@ -17,7 +17,7 @@
 
         article {
 
-            &:nth-child(4n) {
+            &:nth-child(4n+1) {
                 display: none;
             }
 

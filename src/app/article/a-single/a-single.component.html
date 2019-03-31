@@ -13,7 +13,7 @@
       <section>
         <h1>Последние новости</h1>
         <div>
-          <article *ngFor="let i of posts">
+          <article *ngFor="let i of posts" [routerLink]="['/news', i.slug]">
               <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
               <nav><a href="">Fitness</a><a href="">Gym</a></nav>
               <header><h1>{{i?.title}}</h1></header>
