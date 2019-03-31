@@ -11,6 +11,7 @@ import { TrainerComponent } from './trainer/trainer.component';
 import { BlogComponent } from './blog/blog.component';
 import { TrainersComponent } from './trainers/trainers.component';
 import { SearchComponent } from './search/search.component';
+import { ArticleComponent } from './article/article.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'clubs', component: ClubsComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'news', component: BlogComponent },
+  { path: 'news/:id', component: ArticleComponent },
   { path: 'search', component: SearchComponent }
 ];
 

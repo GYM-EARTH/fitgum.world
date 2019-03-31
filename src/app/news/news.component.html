@@ -1,7 +1,7 @@
 <section class="news">
   <h1>Последние Новости</h1>
   <div>
-    <article *ngFor="let i of news">
+    <article *ngFor="let i of news" [routerLink]="['/news', i.slug]">
       <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
       <nav><a href="">Fitness</a><a href="">Gym</a></nav>
       <header><h1>{{i?.title}}</h1></header>

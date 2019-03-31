@@ -43,6 +43,7 @@ import { ListComponent } from './blog/list/list.component';
 import { TrainersComponent } from './trainers/trainers.component';
 import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
 import { SStartComponent } from './search/s-start/s-start.component';
+import { ASingleComponent } from './article/a-single/a-single.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { SStartComponent } from './search/s-start/s-start.component';
     ListComponent,
     TrainersComponent,
     TrainersListComponent,
-    SStartComponent
+    SStartComponent,
+    ASingleComponent
     
   ],
   imports: [
