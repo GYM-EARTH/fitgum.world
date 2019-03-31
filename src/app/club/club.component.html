@@ -1,3 +1,40 @@
-<p>
-  club works!
-</p>
+<app-header-black></app-header-black>
+<main>
+    <article>
+      <figure><img src="" alt=""></figure>
+      <aside>
+        <figure [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club?.logo}}" alt=""></figure>
+        <h1>{{club?.title}}</h1>
+        <span>Available</span>
+        <ul>
+          <li>
+            <span>Email</span>
+            <a href="">kuvalis.mandy@graham.biz</a>
+          </li>
+          <li>
+            <span>Телефон</span>
+            <a class="" href="">8801849839300</a>
+          </li>
+          <li>
+            <span>Город</span>
+            <a href="">Москва</a>
+          </li>
+        </ul>
+        <a href="">Сообщение</a>
+      </aside>
+      <section>
+        <h1>About</h1>
+        <p>{{profile?.description}}</p>
+      </section>
+      <section>
+        <h1>Услуги</h1>
+      </section>
+      <section>
+        <h1>Опыт</h1>
+      </section>
+      <section>
+        <h1>Образование</h1>
+      </section>
+    </article>
+  </main>
+<app-footer></app-footer>

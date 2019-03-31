@@ -1,0 +1,116 @@
+:host {
+    height: 100%;
+    display: block;
+}
+article {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "figure figure" "aside ." "aside ." "aside ." "aside .";
+
+    aside {
+        grid-area: aside;
+        width: 240px;
+        margin: 0 auto;
+
+        figure {
+            width: 160px;
+            height: 160px;
+            background: black;
+            border-radius: 50%;
+            position: relative;
+            margin-top: -80px;
+            border: 3px solid white;
+            overflow: hidden;
+            display: grid;
+
+            img {
+                margin: auto;
+                max-height: 100%;
+            }
+        }
+        h1 {
+            font-weight: normal;
+            font-size: 26px;
+            margin-top: 25px;
+            color: var(--dark-black);
+        }
+        > span:first-of-type {
+            font-size: 16px;
+            color: rgba(14, 21, 25, .74);
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background: #29b2a4;
+                border-radius: 50%;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+        ul {
+            list-style: none;
+            
+            li:first-child a {
+                color: var(--purple);
+            }
+            li:not(:first-child) a {
+                color: var(--dark-black);
+            }
+            li {
+                margin-bottom: 10px;
+                
+                span {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: var(--grey-text);
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+        > a:last-child {
+            line-height: 36px;
+            background: var(--purple);
+            padding: 0 25px;
+            display: inline-block;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+    }
+    > figure {
+        grid-area: figure;
+        height: 420px;
+        background: black;
+        overflow: hidden;
+        
+        img {
+            max-width: 100%;
+        }
+    }
+
+    section {
+        width: 870px;
+        
+        &:first-of-type {
+            margin-top: 25px;
+        }
+        h1 {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 77px;
+            color: var(--dark-black);
+        }
+        p {
+            font-size: 16px;
+            color: var(--grey-text);
+        }
+    }
+}
