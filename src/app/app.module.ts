@@ -42,6 +42,7 @@ import { IntroComponent } from './blog/intro/intro.component';
 import { ListComponent } from './blog/list/list.component';
 import { TrainersComponent } from './trainers/trainers.component';
 import { TrainersListComponent } from './trainers/trainers-list/trainers-list.component';
+import { SStartComponent } from './search/s-start/s-start.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { TrainersListComponent } from './trainers/trainers-list/trainers-list.co
     IntroComponent,
     ListComponent,
     TrainersComponent,
-    TrainersListComponent
+    TrainersListComponent,
+    SStartComponent
     
   ],
   imports: [

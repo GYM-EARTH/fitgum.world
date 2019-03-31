@@ -10,6 +10,7 @@ import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { BlogComponent } from './blog/blog.component';
 import { TrainersComponent } from './trainers/trainers.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },
   { path: 'chat', component: ChatComponent },
-  { path: 'blog', component: BlogComponent }
+  { path: 'news', component: BlogComponent },
+  { path: 'search', component: SearchComponent }
 ];
 
 @NgModule({

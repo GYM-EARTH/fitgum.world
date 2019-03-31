@@ -9,11 +9,20 @@ import { NewsService } from '../news.service';
 export class BlogComponent implements OnInit {
 
   public blog;
+  public firstArticle;
 
   constructor(private newsService: NewsService) { }
 
   ngOnInit() {
-    this.newsService.getAll().subscribe(blog => this.blog = blog.data);
+    this.newsService.getAll().subscribe(blog => {
+      let min = 0;
+      let max = blog.data.length - 1;
+
+      let random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+      this.blog = blog.data;
+      this.firstArticle = blog.data[random];
+    });
   }
 
 }
