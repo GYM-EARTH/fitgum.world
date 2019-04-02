@@ -12,16 +12,11 @@ export class HomeComponent implements OnInit {
 
   constructor() {
 
-    this.socket = io.connect('http://localhost:3000');
+    // this.socket = io.connect('http://localhost:3000');
   }
 
   ngOnInit() {
-
-
-    this.socket.on('event2', (data: any) => {
-      console.log(data.msk);
-  });
-
+  
   }
 
 }
