@@ -45,6 +45,7 @@ import { TrainersListComponent } from './trainers/trainers-list/trainers-list.co
 import { SStartComponent } from './search/s-start/s-start.component';
 import { ASingleComponent } from './article/a-single/a-single.component';
 import { ProfileEditComponent } from './profile/profile-edit/profile-edit.component';
+import { ProfileChatComponent } from './profile/profile-chat/profile-chat.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { ProfileEditComponent } from './profile/profile-edit/profile-edit.compon
     TrainersListComponent,
     SStartComponent,
     ASingleComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    ProfileChatComponent
     
   ],
   imports: [

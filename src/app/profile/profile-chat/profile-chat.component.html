@@ -1,0 +1,47 @@
+<app-header-black></app-header-black>
+<div class="dashboard">
+  <aside>
+    <nav>
+      <a routerLink="/profile/edit" href="/profile/edit" routerLinkActive="active">Настройки</a>
+      <a routerLink="/profile/chat" href="/profile/chat" routerLinkActive="active">Сообщение</a>
+      <a href="">News</a>
+    </nav>
+  </aside>
+  <section class="chat">
+    <div class="chanels">
+      <ul>
+        <li>
+          <section *ngFor="let chat of chats; index as i">
+              <figure></figure>
+              <h1>{{chat?.users[0].name}}</h1>
+              <p>The Basics Of Buying A Telescope</p>
+              <footer>{{chat.updated_at}}</footer>
+          </section>
+        </li>
+      </ul>
+    </div>
+    <section class="messages">
+      <header>
+        <div class="messages__answer">
+          <figure></figure>
+          <h1>Uzoma Buchi</h1>
+          <span>Available</span>
+        </div>
+      </header>
+      <ul>
+        <li>
+          <blockquote class="messages__me">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. </blockquote>
+        </li>
+        <li>
+            <blockquote class="messages__you">Until recently, the prevailing view assume. </blockquote>
+          </li>
+      </ul>
+      <footer>
+        <form action="">
+            <input type="tetx" placeholder="Type here…..">
+        </form>
+      </footer>
+    </section>
+  </section>
+</div>
+<app-footer></app-footer>

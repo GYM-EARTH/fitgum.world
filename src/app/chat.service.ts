@@ -15,23 +15,33 @@ export class ChatService {
     private cookieService: CookieService) { }
 
   sendMessage(data) {
-    console.log(this.cookieService.getCookie('login'));
-    const body = { message: 'hello', chatId: '', receivers: 1 };
-    return this.http.post(environment.chat.send, body, {
 
-      
+    const body = { message: 'hello', chatId: '', receivers: 1 };
+    return this.http.post(environment.messages.send, body, {
         headers: new HttpHeaders({
           'Content-Type':  'application/json',
           'Accept': 'application/json',
           'Authorization': "Bearer" + this.cookieService.getCookie('login')
         })
-      
-
     });
   }
-  GetMessage() {
-    return this.http.get<{data: Chat[]}>(environment.chat.get);
+  getMessages(token, chanel) {
+    return this.http.get<{data: Chat[]}>(`${environment.messages.get}/${chanel}`, {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'Accept': 'application/json',
+        'Authorization': "Bearer " + token
+      })
+    });
   }
-
+  getChats(token) {
+    return this.http.get<{data: Chat[]}>(environment.messages.chats, {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'Accept': 'application/json',
+        'Authorization': "Bearer " + token
+      })
+    });
+  }
 
 }

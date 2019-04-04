@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { ArticleComponent } from './article/article.component';
 import { ClubComponent } from './club/club.component';
 import { ProfileEditComponent } from './profile/profile-edit/profile-edit.component';
+import { ProfileChatComponent } from './profile/profile-chat/profile-chat.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'forget-password', component: ForgetComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'profile/edit', component: ProfileEditComponent },
+  { path: 'profile/chat', component: ProfileChatComponent },
   { path: 'trainers', component: TrainersComponent },
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },

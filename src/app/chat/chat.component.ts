@@ -17,7 +17,7 @@ export class ChatComponent implements OnInit {
   public auth: Boolean = false;
   
   messages: [];
-  public message: '';
+  public message: string;
   chatId: '';
   receivers: '';
   token;
@@ -53,11 +53,12 @@ export class ChatComponent implements OnInit {
       this.token = this.cookieService.getCookie('login');
       this.cookieService.setCookie('userId',('1'), {});
     }
+    this.echoService.privateChanel('chat.', '1');
   }
 
   sendMessage() {
-    this.socketService.sendMessage({'message': 'good', 'chatId': '1', 'receivers': '1'});
-    this.echoService.privateChanel('chat.', '1');
+    this.socketService.sendMessage(this.token).subscribe(posr => this.message = "Heelo worlds");
+    
   }
 
   getMessage() {}

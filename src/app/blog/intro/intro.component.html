@@ -1,10 +1,10 @@
 <div>
     <figure class="preview">
-      <img src="https://file.fitgum.ru/{{firstArticle?.preview}}" alt="">
+      <img *ngIf="firstArticle" src="https://file.fitgum.ru/{{firstArticle?.preview}}" alt="">
     </figure>
     <section class="intro">
-      <h1>{{firstArticle.title}}</h1>
+      <h1>{{firstArticle?.title}}</h1>
       <footer><time datetime="">{{firstArticle?.created_at}}</time><span>By <a href="">FitGum</a></span></footer>
-      <a [routerLink]="['/news', firstArticle.slug]">ЧИТАТЬ</a>
+      <a *ngIf="firstArticle" [routerLink]="['/news', firstArticle.slug]">ЧИТАТЬ</a>
     </section>
   </div>
