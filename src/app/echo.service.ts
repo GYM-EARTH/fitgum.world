@@ -30,11 +30,11 @@ export class EchoService implements OnInit {
 
   }
 
-  privateChanel(id){
+  privateChanel(id): Observable<object> {
 
-        this.echo.private('chat.1').listen('Message', data =>{
-        });
-   
+    return new Observable<any>(observer => {
+        this.echo.private('chat.1').listen('Message', data => observer.next('gfhgfh'));
+    });
   }
 
   

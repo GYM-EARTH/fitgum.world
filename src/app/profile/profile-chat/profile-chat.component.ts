@@ -38,7 +38,9 @@ export class ProfileChatComponent implements OnInit {
       console.log('message sended');
     });
    
-    this.echoService.privateChanel('1');
+    this.echoService.privateChanel('1').subscribe(msg => {
+      console.log( msg);
+    });
 
 
   }
