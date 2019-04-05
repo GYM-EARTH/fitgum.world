@@ -53,11 +53,11 @@ export class ChatComponent implements OnInit {
       this.token = this.cookieService.getCookie('login');
       this.cookieService.setCookie('userId',('1'), {});
     }
-    this.echoService.privateChanel('chat.', '1');
+    // this.echoService.privateChanel('chat.', '1');
   }
 
   sendMessage() {
-    this.socketService.sendMessage(this.token).subscribe(posr => this.message = "Heelo worlds");
+    // this.socketService.sendMessage(this.token).subscribe(posr => this.message = "Heelo worlds");
     
   }
 
