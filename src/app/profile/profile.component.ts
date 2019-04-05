@@ -11,6 +11,7 @@ export class ProfileComponent implements OnInit {
 
   public profile;
   
+  private userID;
   private token;
 
   constructor(
@@ -21,7 +22,12 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.passportService.getProfile(this.token).subscribe(profile => {
+      
       this.profile = profile;
+      this.userID = this.profile.id;
+      
+      this.cookieService.setCookie('userID', this.userID, {});
+      
     });
   }
 

@@ -1,10 +1,9 @@
 .dashboard {
     background: var(--bg-b-grey);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
     
     aside {
-        display: none;
         width: 250px;
         background: var(--purple);
         padding-top: 30px;
@@ -36,6 +35,8 @@
     border-bottom: 1px solid var(--border-grey);
 }
 .chanels {
+    overflow-y: scroll;
+    max-height: 700px;
     border-right: 1px solid var(--border-grey);
     
     ul {
@@ -74,8 +75,11 @@
     }
 }
 .messages {
+    overflow-y: scroll;
+    max-height: 700px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    
     header {
         border-bottom: 1px solid var(--border-grey);
         padding: 15px 30px;

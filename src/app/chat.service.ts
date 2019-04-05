@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { environment } from  '../environments/environment';
-import { CookieService } from './cookie.service';
 import { Observable } from 'rxjs';
 import { Chat } from './chat';
 
@@ -12,11 +11,14 @@ import { Chat } from './chat';
 export class ChatService {
 
   constructor(
-    private http: HttpClient,
-    private cookieService: CookieService) { }
+    private http: HttpClient) { }
 
-  sendMessage(token): Observable<any> {
-    const body = { "message": "poose", "chatId": "1", "receivers": "1" };
+  sendMessage(token, message, chatID, receivers): Observable<any> {
+    const body = {
+      "message": message.toString(),
+      "chatId": chatID.toString(),
+      "receivers": receivers.toString()
+    };
     
     return this.http.post(environment.messages.send, body, {
       headers: new HttpHeaders({

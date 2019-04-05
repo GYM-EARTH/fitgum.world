@@ -11,10 +11,15 @@ import { EchoService } from '../../echo.service';
 export class ProfileChatComponent implements OnInit {
 
   public chats;
-  public messages;
+  public chatID;
+  public messages = [];
   public message;
-  private token;
+  public receivers;
+  public newMessages = [];
+  public userID;
   
+  private token;
+
   constructor(
     private chatService: ChatService,
     private cookieService: CookieService,
@@ -22,27 +27,46 @@ export class ProfileChatComponent implements OnInit {
 
   ngOnInit() {
     this.token = this.cookieService.getCookie('login');
+    this.userID = this.cookieService.getCookie('userID');
     
     this.chatService.getChats(this.token).subscribe(chats => {
       this.chats = chats;
-      console.log(this.chats);
     });
 
-    this.chatService.getMessages(this.token, 1).subscribe(messages => {
-      this.messages = messages;
-      console.log(this.messages);
+    this.echoService.privateChanel(this.userID).subscribe(message => {
+      this.newMessages.push({"message": message['message'].message, "user_id": message['message'].from});
+    });
+  }
+
+  onSubmit() {
+    this.chatService.sendMessage(
+      this.token,
+      this.message,
+      this.chatID,
+      this.receivers[0].id
+      ).subscribe(posr => {
+        this.newMessages.push({"message":this.message, "user_id": this.userID});
+        this.message = '';
+    });
+  }
+
+  selectChat(chatID, receivers) {
+    this.chatID = chatID;
+    this.messages = [];
+    console.log(chatID);
+    
+    this.receivers = receivers.filter(user => {
+      return user.id != this.userID;
     });
 
+    this.chatService.getMessages(this.token, this.chatID).subscribe(messages => {
+    
+      for (let index in messages) {
+        let item = messages[index];
+        this.messages.push(item);
+      };
 
-    this.chatService.sendMessage(this.token).subscribe(posr => {
-      console.log('message sended');
     });
-   
-    this.echoService.privateChanel('1').subscribe(msg => {
-      console.log( msg);
-    });
-
-
   }
 
 }

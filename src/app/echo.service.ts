@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { CookieService } from './cookie.service';
-import { Observable, Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import Echo from "laravel-echo";
 import * as io from 'socket.io-client';
 
@@ -10,8 +10,7 @@ import * as io from 'socket.io-client';
 export class EchoService implements OnInit {
 
   private echo: Echo;
-  private socketEvents$ = new Subject();
-  
+
   constructor(private cookieService: CookieService) {
 
     window['io'] = io;
@@ -26,16 +25,12 @@ export class EchoService implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {}
 
-  }
-
-  privateChanel(id): Observable<object> {
-
+  privateChanel(userID): Observable<object> {
     return new Observable<any>(observer => {
-        this.echo.private('chat.1').listen('Message', data => observer.next('gfhgfh'));
+        this.echo.private(`chat.${userID}`).listen('Message', data => observer.next(data));
     });
   }
 
-  
 }

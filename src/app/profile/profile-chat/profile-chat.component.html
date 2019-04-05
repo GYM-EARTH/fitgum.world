@@ -11,7 +11,7 @@
     <div class="chanels">
       <ul>
         <li>
-          <section *ngFor="let chat of chats; index as i">
+          <section *ngFor="let chat of chats; index as i" (click)="selectChat(chat?.id, chat?.users)">
               <figure></figure>
               <h1>{{chat?.users[0].name}}</h1>
               <p>The Basics Of Buying A Telescope</p>
@@ -29,16 +29,22 @@
         </div>
       </header>
       <ul>
-        <li>
-          <blockquote class="messages__me">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. </blockquote>
+        <li *ngFor="let message of messages; index as i">
+          <blockquote [ngClass]="{
+            'messages__me': message.user_id == userID,
+            'messages__you': message.user_id != userID
+          }">{{message.message}}</blockquote>
         </li>
-        <li>
-            <blockquote class="messages__you">Until recently, the prevailing view assume. </blockquote>
-          </li>
+        <li *ngFor="let newMessage of newMessages; index as i">
+          <blockquote [ngClass]="{
+            'messages__me': newMessage.user_id == userID,
+            'messages__you': newMessage.user_id != userID
+          }">{{newMessage.message}}</blockquote>
+        </li>
       </ul>
       <footer>
-        <form action="">
-            <input type="tetx" placeholder="Type here…..">
+        <form (ngSubmit)="onSubmit()" #chatForm="ngForm">
+            <input type="text" [(ngModel)]="message" name="message" placeholder="Type here…..">
         </form>
       </footer>
     </section>
