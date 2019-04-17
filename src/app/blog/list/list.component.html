@@ -4,13 +4,13 @@
       <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
       <nav><a href="">Fitness</a><a href="">Gym</a></nav>
       <header><h1>{{i?.title}}</h1></header>
-      <footer><time datetime="">{{i?.created_at}}</time><span>By <a href="">FitGum</a></span></footer>
+      <footer><time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
       <p>{{i?.description}}</p>
     </article>
   </div>
 </section>
 <aside class="blog__aside">
-    <section>
+    <section class="blog__latest">
       <h1>Последние новости</h1>
       <div>
         <article *ngFor="let i of blog" [routerLink]="['/news', i.slug]">
@@ -21,4 +21,19 @@
           </article>
       </div>
     </section>
+
+    <section class="blog__tags">
+        <h1>Популярные теги</h1>
+        <ul>
+          <li><a href="#">Fitness</a></li>
+          <li><a href="#">Gym</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Foods</a></li>
+          <li><a href="#">Meditation</a></li>
+          <li><a href="#">Yoga</a></li>
+          <li><a href="#">Fitness club</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Nutrition</a></li>
+        </ul>
+      </section>
 </aside>
