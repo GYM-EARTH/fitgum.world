@@ -15,6 +15,8 @@ import { ArticleComponent } from './article/article.component';
 import { ClubComponent } from './club/club.component';
 import { ProfileEditComponent } from './profile/profile-edit/profile-edit.component';
 import { ProfileChatComponent } from './profile/profile-chat/profile-chat.component';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -31,7 +33,9 @@ const routes: Routes = [
   { path: 'chat', component: ChatComponent },
   { path: 'news', component: BlogComponent },
   { path: 'news/:id', component: ArticleComponent },
-  { path: 'search', component: SearchComponent }
+  { path: 'search', component: SearchComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contacts', component: ContactsComponent }
 ];
 
 @NgModule({

@@ -4,7 +4,7 @@
     </figure>
     <section class="intro">
       <h1>{{firstArticle?.title}}</h1>
-      <footer><time datetime="">{{firstArticle?.created_at}}</time><span>By <a href="">FitGum</a></span></footer>
+      <footer><time datetime="">{{firstArticle?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
       <a *ngIf="firstArticle" [routerLink]="['/news', firstArticle.slug]">ЧИТАТЬ</a>
     </section>
   </div>

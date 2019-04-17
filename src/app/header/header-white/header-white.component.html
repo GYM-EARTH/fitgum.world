@@ -6,8 +6,8 @@
     <a href="#">Сервис</a>
     <a routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a>
     <a href="#">Продукты</a>
-    <a href="#">О нас</a>
-    <a href="#">Контакты</a>
+    <a routerLink="/about" href="/about" routerLinkActive="active">О нас</a>
+    <a routerLink="/contacts" href="/contacts" routerLinkActive="active">Контакты</a>
     <ng-template [ngIf]="!auth">
       <a routerLink="/signin" href="/signin">Войти</a>
       <a class="signup" routerLink="/signup" href="/signup">Регистрация</a>

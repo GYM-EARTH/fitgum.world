@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';
 import { ClubsService } from './clubs.service';
@@ -46,8 +49,8 @@ import { SStartComponent } from './search/s-start/s-start.component';
 import { ASingleComponent } from './article/a-single/a-single.component';
 import { ProfileEditComponent } from './profile/profile-edit/profile-edit.component';
 import { ProfileChatComponent } from './profile/profile-chat/profile-chat.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +87,9 @@ import { environment } from '../environments/environment';
     SStartComponent,
     ASingleComponent,
     ProfileEditComponent,
-    ProfileChatComponent
+    ProfileChatComponent,
+    AboutComponent,
+    ContactsComponent
     
   ],
   imports: [
