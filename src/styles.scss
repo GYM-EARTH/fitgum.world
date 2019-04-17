@@ -21,6 +21,7 @@
     --border-grey: #D9DADD;
     --dark-time: #535875;
     --bg-tag: #BCBCBC;
+    --purple-btn: #9100FF;
 }
 html, body {
     height: 100%;
@@ -44,4 +45,9 @@ body {
         font-weight: 600;
         font-size: 36px;
     }
+}
+input,
+textarea {
+    -webkit-appearance:none;
+    outline: none;
 }

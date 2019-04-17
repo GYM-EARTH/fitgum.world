@@ -1,0 +1,116 @@
+.start {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+
+    h1 {
+        font-size: 74px;
+        color: var(--dark-black);
+        text-align: center;
+        margin-top: 100px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--grey-text);
+        line-height: 44px;
+    }
+}
+div {
+    margin: 0 auto 50px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+.address {
+    width: 250px;
+    margin: 0 auto;
+    
+    p {
+        color: var(--dark-black);
+        opacity: .6;
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 33px;
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 24px;
+        }
+    }
+    address {
+        color: var(--dark-black);
+        opacity: .6;
+        font-size: 18px;
+        font-style: normal;
+    }
+    h1 {
+        font-size: 36px;
+        opacity: .9;
+        color: var(--dark-black);
+        line-height: 77px;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        font-size: 12px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: var(--grey-text);
+    }
+}
+.message {
+    font-size: 0;
+    width: 570px;
+    h1 {
+        font-size: 36px;
+        opacity: .9;
+        color: var(--dark-black);
+        line-height: 77px;
+    }
+    label {
+        display: block;
+        font-size: 12px;
+        line-height: 44px;
+        text-transform: uppercase;
+        color: var(--grey-text);
+    }
+    input[type="text"],
+    textarea {
+        border: none;
+        background: var(--grey-light);
+        width: 100%;
+        border-radius: 4px;
+        resize: none;
+        font-size: 14px;
+        color: var(--dark-black);
+    }
+    input[type="text"] {
+        height: 48px;
+        padding: 0 24px;
+    }
+    textarea {
+        padding: 24px;
+        resize: none;
+    }
+    input[type="submit"] {
+        height: 50px;
+        background: var(--purple-btn);
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1.6px;
+        padding: 0 24px;
+        margin: 30px auto 0;
+        display: block;
+        cursor: pointer;
+        border: none;
+    }
+}
