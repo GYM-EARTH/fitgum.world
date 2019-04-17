@@ -46,6 +46,8 @@ import { SStartComponent } from './search/s-start/s-start.component';
 import { ASingleComponent } from './article/a-single/a-single.component';
 import { ProfileEditComponent } from './profile/profile-edit/profile-edit.component';
 import { ProfileChatComponent } from './profile/profile-chat/profile-chat.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,8 @@ import { ProfileChatComponent } from './profile/profile-chat/profile-chat.compon
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     PassportService,
