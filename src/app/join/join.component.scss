@@ -31,4 +31,39 @@
     margin-bottom: 30px;
   }
 
+
+  form {
+    div {
+      position: relative;
+      width: 355px;
+      margin: 0 auto;
+
+      input {
+        width: 100%;
+        border: none;
+        border-radius: 37px;
+        background-color: #fff;
+        padding: 20px 60px 20px 24px;
+      }
+
+      button {
+        position: absolute;
+        background-color: var(--purple-light);
+        border-radius: 47px;
+        width: 56px;
+        height: 46px;
+        border: none;
+        padding: 0;
+        top: 4px;
+        right: 4px;
+
+        svg {
+          position: absolute;
+          top: 16px;
+          left: 22px;
+        }
+      }
+    }
+  }
+
 }
