@@ -53,6 +53,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { JoinComponent } from './join/join.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +94,8 @@ import { PaginationComponent } from './pagination/pagination.component';
     AboutComponent,
     ContactsComponent,
     JoinComponent,
-    PaginationComponent
+    PaginationComponent,
+    ProfileCalendarComponent
     
   ],
   imports: [

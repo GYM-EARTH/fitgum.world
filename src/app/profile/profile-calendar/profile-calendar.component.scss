@@ -1,0 +1,31 @@
+.dashboard {
+    background: var(--bg-b-grey);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    aside {
+        width: 250px;
+        background: var(--purple);
+        padding-top: 30px;
+        height: 100%;
+        nav {
+            a {
+                display: block;
+                margin: 0 20px;
+                line-height: 44px;
+                text-decoration: none;
+                font-size: 16px;
+                padding-left: 50px;
+                color: white;
+                border-radius: 4px;
+            }
+            a.active {
+                background: white;
+                color: var(--purple);
+            }
+        }
+    }
+}
+
+.chat {
+}
