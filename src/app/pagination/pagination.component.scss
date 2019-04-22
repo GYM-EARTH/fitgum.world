@@ -1,0 +1,28 @@
+.paggination-section {
+  padding: 35px 0 55px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.2;
+        color: rgba(47, 48, 54, 0.5);
+      }
+
+      .active {
+        color: rgba(47, 48, 54, 1);
+      }
+    }
+
+  }
+}

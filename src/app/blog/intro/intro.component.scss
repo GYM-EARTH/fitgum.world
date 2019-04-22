@@ -1,6 +1,46 @@
 :host > div {
     position: relative;
 }
+
+.intro-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #fff;
+
+  &__list {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -20px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      opacity: .6;
+      background: #fff;
+    }
+
+    &:first-child::before {
+      content: none;
+    }
+  }
+}
+
 .preview {
     height: 615px;
     overflow: hidden;
@@ -18,7 +58,7 @@
     }
 
     img {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 .intro {

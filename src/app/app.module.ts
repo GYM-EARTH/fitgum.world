@@ -52,6 +52,7 @@ import { ProfileChatComponent } from './profile/profile-chat/profile-chat.compon
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { JoinComponent } from './join/join.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +92,8 @@ import { JoinComponent } from './join/join.component';
     ProfileChatComponent,
     AboutComponent,
     ContactsComponent,
-    JoinComponent
+    JoinComponent,
+    PaginationComponent
     
   ],
   imports: [
