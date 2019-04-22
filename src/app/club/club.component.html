@@ -4,20 +4,20 @@
   <section class="section-profile-club">
     <div class="container">
       <div class="club">
-        <div class="club__block-images">
-          <img class="club__images" src="./assets/club-logo.png" alt="">
+        <div class="club__block-images" [ngStyle]="{'background-color': '#'+club.color}">
+          <img class="club__images" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
         </div>
         <div class="club__block-data">
           <ul class="tags-list">
-            <li class="tags-list__items tags-list__items_blue">Fitness</li>
-            <li class="tags-list__items tags-list__items_yellow">Gym</li>
+            <li class="tags-list__items tags-list__items_blue">{{club?.type.title}}</li>
+            <!-- <li class="tags-list__items tags-list__items_yellow">Gym</li> -->
           </ul>
-          <h1 class="club__name">Fitness Club</h1>
-          <span class="club__profile-link">@username</span>
+          <h1 class="club__name">{{club?.title}}</h1>
+          <span class="club__profile-link">@{{club?.slug}}</span>
           <ul class="post-stat-list">
-            <li class="post-stat-list__items"><b>1200</b> Post</li>
-            <li class="post-stat-list__items"><b>100K</b> Followers</li>
-            <li class="post-stat-list__items"><b>200</b> Following</li>
+            <li class="post-stat-list__items"><b>{{club?.views}}</b> Просмотров</li>
+            <!-- <li class="post-stat-list__items"><b>100K</b> Followers</li>
+            <li class="post-stat-list__items"><b>200</b> Following</li> -->
           </ul>
         </div>
       </div>
@@ -27,35 +27,35 @@
     <div>
       <ul class="list-submenu">
         <li class="list-submenu__items">
-          <a class="list-submenu__links list-submenu__links_active" href="#">About</a>
+          <a class="list-submenu__links list-submenu__links_active" href="#">О клубе</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Services</a>
+          <a class="list-submenu__links" href="#">Услуги</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Services hours</a>
+          <a class="list-submenu__links" href="#">Время работы</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Photos</a>
+          <a class="list-submenu__links" href="#">Фото</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Teams</a>
+          <a class="list-submenu__links" href="#">Команда</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Shop</a>
+          <a class="list-submenu__links" href="#">Магазин</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Map</a>
+          <a class="list-submenu__links" href="#">Карта</a>
         </li>
       </ul>
     </div>
     <div class="page">
       <section class="about">
-        <h2 class="headline">About</h2>
-        <p>Must go faster. I was part of something special. Must go faster... go, go, go, go, go! Remind me to thank John for a lovely weekend. You know what? It is beets. I've crashed into a beet truck. Just my luck, no ice. Hey, take a look at the earthlings. Goodbye!</p>
+        <h2 class="headline">О клубе</h2>
+        <div class="innerHTML" [innerHTML]="club?.content"></div>
       </section>
       <section class="services">
-        <h2 class="headline">Services</h2>
+        <h2 class="headline">Услуги</h2>
         <ul class="services-list">
           <li class="services-list__items">
             <article class="services-block">
@@ -129,7 +129,7 @@
               </div>
               <div class="members-list__content">
                 <h3>Mabelle Sanchez</h3>
-                <span class="members-list__content_bold">Owner</span>
+                <span>Owner</span>
               </div>
             </li>
             <li class="members-list__items">

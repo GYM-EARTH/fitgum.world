@@ -25,6 +25,17 @@
 
   &__block-images {
     margin-top: -70px;
+    background: white;
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border: 3px solid white;
+
+    img {
+      max-width: 77%;
+      margin: auto;
+    }
   }
 
   &__block-data {
@@ -46,7 +57,6 @@
   }
 
   &__profile-link {
-    font-weight: bold;
     font-size: 16px;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -64,13 +74,12 @@
 
   &__items {
     margin-right: 15px;
-    font-weight: bold;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 26px;
     text-align: center;
     letter-spacing: 0.6px;
     text-transform: uppercase;
-    padding: 8px 18px;
+    padding: 0 18px;
     border-radius: 15px;
 
     &_yellow {
@@ -96,7 +105,7 @@
 
   &__items {
     margin-right: 20px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
     color: var(--grey-text);
@@ -135,15 +144,17 @@
 
   &__links {
     display: block;
-    font-weight: bold;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 58px;
     text-align: center;
     color: var(--grey-text);
     text-decoration: none;
-    padding: 20px;
+    transition: all .3s;
 
     &_active {
+      color: var(--dark-black);
+    }
+    &:hover {
       color: var(--dark-black);
     }
   }
@@ -151,9 +162,9 @@
 
 .headline {
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 77px;
   color: var(--dark-black);
-  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .about {
@@ -217,11 +228,9 @@
 
 .hours {
   &__headline {
-    font-weight: bold;
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 77px;
     color: var(--dark-black);
-    margin-bottom: 15px;
   }
 }
 
@@ -236,7 +245,6 @@
   }
 
   &__week {
-    font-weight: bold;
     font-size: 16px;
     line-height: 1.2;
     color: var(--dark-black);
@@ -244,7 +252,6 @@
 
   &__time {
     margin-left: auto;
-    font-weight: bold;
     font-size: 16px;
     line-height: 1.2;
     color: var(--grey-text);
@@ -275,7 +282,7 @@
     padding: 5px 0;
 
     h3 {
-      font-weight: bold;
+      font-weight: normal;
       font-size: 16px;
       line-height: 1.2;
       color: var(--dark-black);
@@ -286,10 +293,6 @@
       font-size: 14px;
       line-height: 1.2;
       color: var(--grey-text);
-    }
-
-    &_bold {
-      font-weight: bold;
     }
   }
 }
