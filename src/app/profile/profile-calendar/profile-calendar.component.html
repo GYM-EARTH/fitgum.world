@@ -9,7 +9,37 @@
     </nav>
   </aside>
   <section class="chat">
-    <p>Calendar component work</p>
+    <div class="top-bar">
+      <div class="top-bar__l">
+        <button class="top-bar__week">Week</button>
+        <button class="top-bar__month">Month</button>
+      </div>
+      <div class="top-bar__r">
+        <ul class="date-picker-list">
+          <li class="date-picker-list__items">
+            <button class="btn-arrow btn-l">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.00001 0.75C9.00001 0.335786 8.66422 0 8.25001 0C8.06632 0 7.88902 0.0674089 7.75174 0.189443L0.594509 6.55142C0.284922 6.82661 0.257036 7.30067 0.532224 7.61025C0.541984 7.62123 0.552064 7.63192 0.562451 7.64231L7.71968 14.7995C8.01257 15.0924 8.48745 15.0924 8.78034 14.7995C8.92099 14.6589 9.00001 14.4681 9.00001 14.2692V0.75Z" fill="#757A7D"/>
+              </svg>
+            </button>
+          </li>
+          <li class="date-picker-list__items">
+            <button class="btn-arrow-center">
+              <span>April</span>
+              <span>2019</span>
+            </button>
+          </li>
+          <li class="date-picker-list__items">
+            <button class="btn-arrow btn-r">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-8.58307e-06 0.75C-8.58307e-06 0.335786 0.335778 0 0.749991 0C0.933677 0 1.11098 0.0674089 1.24826 0.189443L8.40549 6.55142C8.71508 6.82661 8.74296 7.30067 8.46778 7.61025C8.45802 7.62123 8.44794 7.63192 8.43755 7.64231L1.28032 14.7995C0.987428 15.0924 0.512554 15.0924 0.219661 14.7995C0.0790085 14.6589 -8.58307e-06 14.4681 -8.58307e-06 14.2692V0.75Z" fill="#757A7D"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <button class="btn-create">Create new</button>
+      </div>
+    </div>
   </section>
 </div>
 <app-footer></app-footer>
