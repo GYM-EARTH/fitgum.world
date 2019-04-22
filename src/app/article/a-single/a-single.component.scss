@@ -3,10 +3,27 @@
     display: grid;
     grid-template-columns: auto 370px;
 }
+
+.sharing {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 60px;
+
+  li {
+    margin-right: 25px;
+
+    a {
+      display: block;
+    }
+  }
+}
+
 .blog__aside {
     width: 370px;
     height: 370px;
-    
+
     h1 {
         font-size: 34px;
         font-weight: 600;
@@ -14,7 +31,7 @@
     article {
         margin-top: 25px;
         overflow: hidden;
-        
+
         figure {
             border-radius: 8px;
             float: left;
@@ -38,7 +55,7 @@
             overflow: hidden;
         }
         nav {
-           
+
             a {
                 text-decoration: none;
                 text-transform: uppercase;
@@ -76,7 +93,7 @@
         article {
             overflow: hidden;
             padding-bottom: 25px;
-            
+
             figure {
                 overflow: hidden;
                 img {
@@ -98,7 +115,7 @@
             }
             nav {
                 line-height: 44px;
-               
+
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
@@ -129,7 +146,10 @@
             }
             footer {
                 font-size: 14px;
-                line-height: 44px;
+                margin-bottom: 50px;
+                display: flex;
+                padding-top: 25px;
+                align-items: flex-start;
 
                 time {
                     color: var(--grey-text);
