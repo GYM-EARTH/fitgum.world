@@ -18,6 +18,7 @@ import { ProfileChatComponent } from './profile/profile-chat/profile-chat.compon
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
+import { CalendarDetailComponent } from './profile/calendar-detail/calendar-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'profile/edit', component: ProfileEditComponent },
   { path: 'profile/chat', component: ProfileChatComponent },
   { path: 'profile/calendar', component: ProfileCalendarComponent },
+  { path: 'profile/calendar/detail', component: CalendarDetailComponent },
   { path: 'trainers', component: TrainersComponent },
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },

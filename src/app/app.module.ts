@@ -54,6 +54,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { JoinComponent } from './join/join.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
+import { CalendarDetailComponent } from './profile/calendar-detail/calendar-detail.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { ProfileCalendarComponent } from './profile/profile-calendar/profile-cal
     ContactsComponent,
     JoinComponent,
     PaginationComponent,
-    ProfileCalendarComponent
+    ProfileCalendarComponent,
+    CalendarDetailComponent
     
   ],
   imports: [
