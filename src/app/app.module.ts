@@ -55,6 +55,7 @@ import { JoinComponent } from './join/join.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
 import { CalendarDetailComponent } from './profile/calendar-detail/calendar-detail.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -97,7 +98,8 @@ import { CalendarDetailComponent } from './profile/calendar-detail/calendar-deta
     JoinComponent,
     PaginationComponent,
     ProfileCalendarComponent,
-    CalendarDetailComponent
+    CalendarDetailComponent,
+    VideosComponent
     
   ],
   imports: [
