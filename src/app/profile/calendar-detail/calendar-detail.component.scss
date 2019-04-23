@@ -1,0 +1,148 @@
+.wrapper {
+  background-color: #F2F2F2;
+}
+
+.wrapper {
+  padding-top: 30px;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+.data-list {
+  display: flex;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 30px;
+
+  &__items {
+    flex: 1 1 100%;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid rgba(188, 188, 188, 0.3);
+    text-decoration: none;
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+    flex: 1 0 48px;
+    background-color: #EFDBFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .active &__img {
+    background-color: #7B00DE;
+  }
+
+  .active .svg-colors {
+    stroke: #fff;
+  }
+
+  &__text {
+    margin-left: 15px;
+    flex: 1 1 100%;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--grey-text);
+    display: block;
+  }
+
+  .active &__date {
+    color: #fff;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--dark-black);
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .active &__name {
+    color: #fff;
+  }
+}
+
+.data-list__items.active {
+  background-color: var(--purple-btn);
+}
+
+.avents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &__items {
+    max-width: 230px;
+    flex: 1 0 230px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  &__head {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.2;
+      color: var(--dark-black);
+    }
+
+    span {
+      flex: 1 0 70px;
+      background-color: #FFB800;
+      border-radius: 13px;
+      padding: 6px;
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.2;
+      color: #fff;
+      max-width: 70px;
+      text-align: center;
+    }
+  }
+
+  &__check {
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      color: var(--dark-black);
+    }
+  }
+}
+
+// Тут разберешься потом, если удалю первое свойство инпуты не отобрааются.
+input[type=checkbox] {
+ -webkit-appearance: checkbox;
+  margin-right: 15px;
+}
