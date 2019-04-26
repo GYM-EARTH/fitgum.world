@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'forget-password', component: ForgetComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: 'profile', redirectTo: 'profile/edit', },
   { path: 'profile/edit', component: ProfileEditComponent },
   { path: 'profile/chat', component: ProfileChatComponent },
   { path: 'profile/calendar', component: ProfileCalendarComponent },

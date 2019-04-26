@@ -43,7 +43,8 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: var(--purple);
+            background: url(/assets/icon/profile.svg) 0 0 no-repeat;
+            background-size: contain;
             margin-left: 25px;
         }
         a:hover {

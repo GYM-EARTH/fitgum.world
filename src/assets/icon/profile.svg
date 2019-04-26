@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Add image</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04-Profile-page" transform="translate(-310.000000, -218.000000)">
+            <g id="Edit-profile" transform="translate(280.000000, 130.000000)">
+                <g id="Trainer-profile" transform="translate(30.000000, 88.000000)">
+                    <g id="Add-image">
+                        <circle id="Oval" fill="#D8D8D8" fill-rule="nonzero" cx="25" cy="25" r="25"></circle>
+                        <g id="camera" opacity="0.5" transform="translate(13.000000, 13.000000)">
+                            <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M5,7 L19,7 C20.1045695,7 21,7.8954305 21,9 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,9 C3,7.8954305 3.8954305,7 5,7 Z M12,17 C14.209139,17 16,15.209139 16,13 C16,10.790861 14.209139,9 12,9 C9.790861,9 8,10.790861 8,13 C8,15.209139 9.790861,17 12,17 Z" id="Combined-Shape" fill="#0E1519" fill-rule="nonzero"></path>
+                            <rect id="Rectangle" fill="#0E1519" opacity="0.3" x="9" y="4" width="6" height="2" rx="1"></rect>
+                            <circle id="Oval-2" fill="#0E1519" opacity="0.3" cx="12" cy="13" r="2"></circle>
+                        </g>
+                        <g id="plus" transform="translate(28.000000, 26.000000)">
+                            <rect id="bound" x="0" y="0" width="12" height="12"></rect>
+                            <circle id="Oval-5" fill="#D8D8D8" cx="6" cy="6" r="5"></circle>
+                            <path d="M5.5,5.5 L5.5,3.5 C5.5,3.22385762 5.72385765,3 6,3 C6.27614235,3 6.5,3.22385762 6.5,3.5 L6.5,5.5 L8.5,5.5 C8.77614235,5.5 9,5.72385765 9,6 C9,6.27614235 8.77614235,6.5 8.5,6.5 L6.5,6.5 L6.5,8.5 C6.5,8.77614235 6.27614235,9 6,9 C5.72385765,9 5.5,8.77614235 5.5,8.5 L5.5,6.5 L3.5,6.5 C3.22385762,6.5 3,6.27614235 3,6 C3,5.72385765 3.22385762,5.5 3.5,5.5 L5.5,5.5 Z" id="Combined-Shape" fill="#737678"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
