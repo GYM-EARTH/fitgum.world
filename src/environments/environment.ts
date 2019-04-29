@@ -17,6 +17,9 @@ export const environment = {
     send: 'https://api.fitgum.ru/messages/send',
     get: 'https://api.fitgum.ru/messages/get',
     chats: 'https://api.fitgum.ru/messages/chats'
+  },
+  cabinet: {
+    avatar: 'https://api.fitgum.ru/cabinet/avatar'
   }
 };
 

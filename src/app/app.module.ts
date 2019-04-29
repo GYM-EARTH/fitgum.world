@@ -56,6 +56,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
 import { CalendarDetailComponent } from './profile/calendar-detail/calendar-detail.component';
 import { VideosComponent } from './videos/videos.component';
+import { ProfileAsideComponent } from './profile/profile-aside/profile-aside.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,8 @@ import { VideosComponent } from './videos/videos.component';
     PaginationComponent,
     ProfileCalendarComponent,
     CalendarDetailComponent,
-    VideosComponent
+    VideosComponent,
+    ProfileAsideComponent
     
   ],
   imports: [

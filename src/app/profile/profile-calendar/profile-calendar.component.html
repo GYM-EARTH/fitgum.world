@@ -1,15 +1,8 @@
 <app-header-black></app-header-black>
 <div class="dashboard">
-  <aside>
-    <nav>
-      <a routerLink="/profile/edit" href="/profile/edit" routerLinkActive="active">Настройки</a>
-      <a routerLink="/profile/chat" href="/profile/chat" routerLinkActive="active">Сообщение</a>
-      <a href="">News</a>
-      <a routerLink="/profile/calendar" href="/profile/calendar" routerLinkActive="active">Календарь</a>
-    </nav>
-  </aside>
-  <section class="chat">
-    <div class="top-bar">
+<app-profile-aside></app-profile-aside>
+  <div>
+    <!-- <div class="top-bar">
       <div class="top-bar__l">
         <button class="top-bar__date-btn top-bar__week">Week</button>
         <button class="top-bar__date-btn top-bar__month">Month</button>
@@ -39,17 +32,17 @@
         </ul>
         <button class="btn-create">Create new</button>
       </div>
-    </div>
+    </div> -->
 
     <div class="calendar">
       <div class="calendar__head">
-        <div class="calendar__week">Sat</div>
-        <div class="calendar__week">Fri</div>
-        <div class="calendar__week">Thu</div>
-        <div class="calendar__week">Wed</div>
-        <div class="calendar__week">Tue</div>
-        <div class="calendar__week">Mon</div>
-        <div class="calendar__week">Sun</div>
+        <div class="calendar__week">ПН</div>
+        <div class="calendar__week">ВТ</div>
+        <div class="calendar__week">СР</div>
+        <div class="calendar__week">ЧТ</div>
+        <div class="calendar__week">ПТ</div>
+        <div class="calendar__week">СБ</div>
+        <div class="calendar__week">ВС</div>
       </div>
       <div class="">
         <div class="calendar__row">
@@ -278,6 +271,6 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 <app-footer></app-footer>
