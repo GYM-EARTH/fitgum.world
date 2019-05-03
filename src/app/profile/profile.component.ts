@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PassportService } from '../passport.service';
 import { CookieService } from '../cookie.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -16,7 +17,11 @@ export class ProfileComponent implements OnInit {
 
   constructor(
     private passportService: PassportService,
-    private cookieService: CookieService) {
+    private cookieService: CookieService,
+    private router: Router) {
+      if (!this.cookieService.getCookie('login')) {
+        this.router.navigate(['/signin']);
+      };
       this.token = this.cookieService.getCookie('login');
     }
 

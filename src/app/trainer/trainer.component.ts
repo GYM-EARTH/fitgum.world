@@ -10,6 +10,7 @@ import { ProfileService } from '../profile.service';
 export class TrainerComponent implements OnInit {
 
   public profile;
+  modal: boolean = false;
 
   constructor(
     private profileService: ProfileService,
@@ -21,6 +22,11 @@ export class TrainerComponent implements OnInit {
         this.profile = trainers;
       });
     });
+  }
+
+  sendMessage() {
+    console.log(1);
+    this.modal = true;
   }
 
 }

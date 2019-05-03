@@ -91,7 +91,7 @@ article {
                 }
             }
         }
-        > a:last-child {
+        > .message {
             line-height: 36px;
             background: var(--purple);
             padding: 0 25px;
@@ -100,6 +100,7 @@ article {
             color: white;
             text-decoration: none;
             margin-top: 25px;
+            font-size: 18px;
         }
     }
     > figure {
@@ -290,4 +291,12 @@ article {
         }
       }
     }
+}
+.send {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
 }

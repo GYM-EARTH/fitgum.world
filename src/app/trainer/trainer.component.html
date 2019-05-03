@@ -1,3 +1,4 @@
+<section class="send" *ngIf="modal"></section>
 <app-header-black></app-header-black>
 <main>
   <article>
@@ -28,7 +29,7 @@
       <ul>
         <li>
           <span>Email</span>
-          <a href="">kuvalis.mandy@graham.biz</a>
+          <a href="">{{profile?.email}}</a>
         </li>
         <li>
           <span>Телефон</span>
@@ -39,7 +40,7 @@
           <a href="">Москва</a>
         </li>
       </ul>
-      <a href="">Сообщение</a>
+      <button class="message" (click)="sendMessage()">Сообщение</button>
     </aside>
     <section>
       <h1>About</h1>

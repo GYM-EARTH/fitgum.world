@@ -20,6 +20,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ProfileCalendarComponent } from './profile/profile-calendar/profile-calendar.component';
 import { CalendarDetailComponent } from './profile/calendar-detail/calendar-detail.component';
 import { VideosComponent } from './videos/videos.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -41,7 +42,8 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contacts', component: ContactsComponent },
-  { path: 'videos', component: VideosComponent }
+  { path: 'videos', component: VideosComponent },
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

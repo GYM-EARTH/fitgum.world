@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChatService } from '../../chat.service';
 import { CookieService } from '../../cookie.service';
 import { EchoService } from '../../echo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-chat',
@@ -23,7 +24,13 @@ export class ProfileChatComponent implements OnInit {
   constructor(
     private chatService: ChatService,
     private cookieService: CookieService,
-    private echoService: EchoService) { }
+    private echoService: EchoService,
+    private router: Router) {
+      if (!this.cookieService.getCookie('login')) {
+        this.router.navigate(['/signin']);
+      };
+    }
+
 
   ngOnInit() {
     this.token = this.cookieService.getCookie('login');

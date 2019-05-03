@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CookieService } from 'src/app/cookie.service';
 
 @Component({
   selector: 'app-profile-calendar',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileCalendarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router, private cookieService: CookieService,) {
+    if (!this.cookieService.getCookie('login')) {
+      this.router.navigate(['/signin']);
+    };
+  }
   ngOnInit() {
   }
 
