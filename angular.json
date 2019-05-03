@@ -35,6 +35,22 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "en": {
+              "aot": true,
+              "outputPath": "dist/fitgum-en/",
+              "i18nFile": "src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en",
+              "i18nMissingTranslation": "error"
+            },
+            "jp": {
+              "aot": true,
+              "outputPath": "dist/fitgum-jp/",
+              "i18nFile": "src/locale/messages.jp.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "jp",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -69,6 +85,12 @@
             "browserTarget": "fitgum:build"
           },
           "configurations": {
+            "en": {
+              "browserTarget": "fitgum:build:en"
+            },
+            "jp": {
+              "browserTarget": "fitgum:build:jp"
+            },
             "production": {
               "browserTarget": "fitgum:build:production"
             }

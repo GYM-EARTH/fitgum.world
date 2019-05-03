@@ -3,6 +3,7 @@
   <app-profile-aside></app-profile-aside>
   <section class="chat">
     <div class="chanels">
+        <div *ngIf="!chats">jhh</div>
       <ul>
         <li>
           <section *ngFor="let chat of chats; index as i" (click)="selectChat(chat?.id, chat?.users)">
