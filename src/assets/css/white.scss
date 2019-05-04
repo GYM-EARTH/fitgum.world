@@ -30,7 +30,13 @@
     }
     
     app-recomendation .products {
-        h1 { color: var(--dark) }
+        > h1 { color: var(--dark) }
+        article {
+            h1 { color: var(--dark) }
+        }
+        footer {
+            color: var(--light)
+        }
     }
     
     app-news .news {
@@ -54,6 +60,7 @@
 
         article { background: var(--white) }
     }
+
 
     .dashboard {
         background: var(--background-light);
