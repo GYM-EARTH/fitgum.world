@@ -13,8 +13,8 @@
             font-weight: bold;
             padding: 0 25px;;
     
-            span:first-child { color: var(--dark-black); }
-            span:last-child { color: var(--dark-black); }
+            span:first-child { color: var(--dark); }
+            span:last-child { color: var(--dark); }
         }
     }
     .categories {
@@ -24,7 +24,7 @@
     }
     h1 {
         font-size: 18px;
-        color: var(--dark-black);
+        color: var(--dark);
         margin-bottom: 20px;
         font-weight: 600;
     }
@@ -34,7 +34,7 @@
     
         a {
             opacity: .6;
-            color: var(--grey-text);
+            color: var(--light);
             transition: .3s;
             font-size: 16px;
             text-decoration: none;
@@ -60,18 +60,18 @@
         input[type="text"] {
             border-bottom-left-radius: 4px;
             border-top-left-radius: 4px;
-            border-top: 1px solid var(--border-grey);
-            border-bottom: 1px solid var(--border-grey);
-            border-left: 1px solid var(--border-grey);
+            border-top: 1px solid var(--light);
+            border-bottom: 1px solid var(--light);
+            border-left: 1px solid var(--light);
             border-right: none;
             width: 155px;
             font-size: 16px;
             padding: 0 20px;
-            color: var(--dark-black);
+            color: var(--dark);
             float: left;
 
             &::placeholder {
-                color: var(--dark-black);
+                color: var(--dark);
                 opacity: .4;
             }
         }
@@ -96,7 +96,7 @@
 .podval {
     display: flex;
     height: 130px;
-    border-top: 1px solid var(--bg-b-grey);
+    border-top: 1px solid var(--light);
     padding: 0 90px;
     align-items: center;
     justify-content: space-between;
@@ -111,7 +111,7 @@
         display: flex;
         width: 38px;
         height: 24px;
-        border: 1px solid var(--bg-b-grey);
+        border: 1px solid var(--light);
         border-radius: 3px;
         margin-left: 15px;
         

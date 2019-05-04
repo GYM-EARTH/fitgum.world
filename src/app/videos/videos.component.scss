@@ -48,7 +48,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 1.2;
-    color: var(--dark-black);
+    color: var(--dark);
   }
 
   &__tags {
@@ -65,7 +65,7 @@
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
-    color: var(--grey-text);
+    color: var(--light);
 
     &:first-child {
       margin: 0;

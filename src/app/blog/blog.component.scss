@@ -10,7 +10,7 @@
 
     li {
         a {
-            color: var(--grey-text);
+            color: var(--light);
             padding: 0 25px;
             font-size: 18px;
             line-height: 44px;
@@ -19,7 +19,7 @@
             text-transform: uppercase;
             font-weight: 600;
             letter-spacing: 1.4px;
-            border: 1px solid var(--border-grey);
+            border: 1px solid var(--light);
             display: inline-block;
             transition: all .3s;
 

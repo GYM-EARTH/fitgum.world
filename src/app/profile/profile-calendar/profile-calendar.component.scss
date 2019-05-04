@@ -1,5 +1,5 @@
 .dashboard {
-    background: var(--bg-b-grey);
+    background: var(--light);
     display: grid;
     grid-template-columns: auto 1fr;
 }
@@ -23,11 +23,11 @@
   &__week {
     border: 1px solid rgba(117, 122, 125, 0.2);
     border-radius: 4px 0px 0px 4px;
-    color: var(--grey-text);
+    color: var(--light);
   }
 
   &__month {
-    color: var(--purple-btn);
+    color: var(--purple);
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(145, 0, 255, 0.06);
     border-radius: 0px 4px 4px 0px;
@@ -81,7 +81,7 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.2;
-  color: var(--grey-text);
+  color: var(--light);
   background-color: white;
   padding: 0 25px;
   height: 48px;
@@ -134,7 +134,7 @@
 
   &__head {
     display: flex;
-    border-bottom: 1px solid var(--bg-b-grey);
+    border-bottom: 1px solid var(--light);
   }
   &__week {
     flex: 1 1 100%;
@@ -142,7 +142,7 @@
     font-size: 16px;
     line-height: 60px;
     text-transform: uppercase;
-    color: var(--grey-text);
+    color: var(--light);
     opacity: .8;
   }
 
@@ -166,11 +166,11 @@
   }
   .calendar__day {
     height: 120px;
-    border-right: 1px solid var(--bg-b-grey);
+    border-right: 1px solid var(--light);
     padding: 10px;
     text-align: right;
-    border-bottom: 1px solid var(--bg-b-grey);
-    color: var(--dark-black);
+    border-bottom: 1px solid var(--light);
+    color: var(--dark);
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -192,7 +192,7 @@
       font-size: 16px;
       line-height: 34px;
       text-align: center;
-      color: var(--dark-black);
+      color: var(--dark);
       border-radius: 50%;
     }
 

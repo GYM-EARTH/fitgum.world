@@ -31,7 +31,7 @@ article {
             font-weight: normal;
             font-size: 26px;
             margin-top: 25px;
-            color: var(--dark-black);
+            color: var(--dark);
         }
         > span:first-of-type {
             font-size: 16px;
@@ -55,7 +55,7 @@ article {
                 color: var(--purple);
             }
             li:not(:first-child) a {
-                color: var(--dark-black);
+                color: var(--dark);
             }
             li {
                 margin-bottom: 10px;
@@ -63,7 +63,7 @@ article {
                 span {
                     font-size: 14px;
                     text-transform: uppercase;
-                    color: var(--grey-text);
+                    color: var(--light);
                 }
                 a {
                     display: block;
@@ -104,11 +104,11 @@ article {
             font-weight: normal;
             font-size: 24px;
             line-height: 77px;
-            color: var(--dark-black);
+            color: var(--dark);
         }
         p {
             font-size: 16px;
-            color: var(--grey-text);
+            color: var(--light);
         }
     }
 }

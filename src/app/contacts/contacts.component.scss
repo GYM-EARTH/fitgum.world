@@ -8,7 +8,7 @@
 
     h1 {
         font-size: 74px;
-        color: var(--dark-black);
+        color: var(--dark);
         text-align: center;
         margin-top: 100px;
         font-weight: 600;
@@ -16,7 +16,7 @@
     p {
         font-size: 24px;
         font-weight: 600;
-        color: var(--grey-text);
+        color: var(--light);
         line-height: 44px;
     }
 }
@@ -31,7 +31,7 @@ div {
     margin: 0 auto;
     
     p {
-        color: var(--dark-black);
+        color: var(--dark);
         opacity: .6;
         font-size: 18px;
         margin-bottom: 30px;
@@ -44,7 +44,7 @@ div {
         }
     }
     address {
-        color: var(--dark-black);
+        color: var(--dark);
         opacity: .6;
         font-size: 18px;
         font-style: normal;
@@ -52,7 +52,7 @@ div {
     h1 {
         font-size: 36px;
         opacity: .9;
-        color: var(--dark-black);
+        color: var(--dark);
         line-height: 77px;
         font-weight: 600;
     }
@@ -61,7 +61,7 @@ div {
         font-size: 12px;
         line-height: 44px;
         text-transform: uppercase;
-        color: var(--grey-text);
+        color: var(--light);
     }
 }
 .message {
@@ -70,7 +70,7 @@ div {
     h1 {
         font-size: 36px;
         opacity: .9;
-        color: var(--dark-black);
+        color: var(--dark);
         line-height: 77px;
     }
     label {
@@ -78,7 +78,7 @@ div {
         font-size: 12px;
         line-height: 44px;
         text-transform: uppercase;
-        color: var(--grey-text);
+        color: var(--light);
     }
     input[type="text"],
     textarea {
@@ -88,7 +88,7 @@ div {
         border-radius: 4px;
         resize: none;
         font-size: 14px;
-        color: var(--dark-black);
+        color: var(--dark);
     }
     input[type="text"] {
         height: 48px;
@@ -100,7 +100,7 @@ div {
     }
     input[type="submit"] {
         height: 50px;
-        background: var(--purple-btn);
+        background: var(--purple);
         border-radius: 4px;
         color: white;
         font-size: 16px;

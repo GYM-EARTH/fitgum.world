@@ -74,7 +74,7 @@
                         border-radius: 50%;
                         opacity: .6;
                         display: inline-block;
-                        background: var(--grey-text);
+                        background: var(--light);
                         margin-right: 19px;
                         position: relative;
                         top: -1px;
@@ -101,7 +101,7 @@
                 }
             }
             h1 {
-                color: var(--dark-black);
+                color: var(--dark);
                 font-size: 52px;
                 font-weight: 600;
                 line-height: 52px;
@@ -110,7 +110,7 @@
                 padding: 0 25px;
                 font-size: 16px;
                 opacity: .9;
-                color: var(--dark-black);
+                color: var(--dark);
                 line-height: 28px;
             }
             nav {
@@ -135,7 +135,7 @@
                             border-radius: 50%;
                             opacity: .6;
                             display: inline-block;
-                            background: var(--grey-text);
+                            background: var(--light);
                             margin-right: 19px;
                             position: relative;
                             top: -1px;
@@ -152,12 +152,12 @@
                 align-items: flex-start;
 
                 time {
-                    color: var(--grey-text);
+                    color: var(--light);
                     text-transform: uppercase;
                     margin-right: 15px;
                 }
                 span {
-                    color: var(--grey-text);
+                    color: var(--light);
                     &::before {
                         content: "";
                         line-height: 44px;
@@ -166,12 +166,12 @@
                         border-radius: 50%;
                         opacity: .6;
                         display: inline-block;
-                        background: var(--grey-text);
+                        background: var(--light);
                         margin-right: 15px;
                         vertical-align:  middle;
                     }
                     a {
-                        color: var(--grey-text);
+                        color: var(--light);
                     }
                 }
             }
