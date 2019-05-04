@@ -1,6 +1,6 @@
 <app-header-black></app-header-black>
 <main>
-  <div class="area-images"></div>
+  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"></div>
   <section class="section-profile-club">
     <div class="container">
       <div class="club">
@@ -52,7 +52,7 @@
     <div class="page">
       <section class="about">
         <h2 class="headline">О клубе</h2>
-        <div class="innerHTML" [innerHTML]="club?.content"></div>
+        <div class="content__club" [innerHTML]="club?.content"></div>
       </section>
       <section class="services">
         <h2 class="headline">Услуги</h2>

@@ -2,7 +2,7 @@
 <div class="dashboard">
 <app-profile-aside></app-profile-aside>
   <div>
-    <!-- <div class="top-bar">
+    <div class="top-bar">
       <div class="top-bar__l">
         <button class="top-bar__date-btn top-bar__week">Week</button>
         <button class="top-bar__date-btn top-bar__month">Month</button>
@@ -18,8 +18,7 @@
           </li>
           <li class="date-picker-list__items">
             <button class="btn-arrow-center">
-              <span>April</span>
-              <span>2019</span>
+              <span>{{currentMonth}} {{fullYear}}</span>
             </button>
           </li>
           <li class="date-picker-list__items">
@@ -32,236 +31,19 @@
         </ul>
         <button class="btn-create">Create new</button>
       </div>
-    </div> -->
+    </div>
 
     <div class="calendar">
       <div class="calendar__head">
         <div class="calendar__week" *ngFor="let day of nameDay">{{day}}</div>
       </div>
-      <div class="">
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">31</span>
+      <div class="calendar__table">
+        <div>
+          <div class="calendar__day" *ngFor="let day of days">
+            <div>
+              <span>{{day}}</span>
             </div>
           </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>1</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>2</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>3</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>4</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>5</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>6</span>
-            </div>
-          </div>
-        </div>
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>7</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>8</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>9</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>10</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>11</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>12</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>13</span>
-            </div>
-            <div class="calendar__event">100m marathon</div>
-          </div>
-        </div>
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>14</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>15</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>16</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>17</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="active">18</span>
-            </div>
-            <div class="calendar__event calendar__event_active">100m marathon</div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>19</span>
-            </div>
-          </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>20</span>
-            </div>
-          </div>
-        </div>
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>21</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>22</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>23</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>24</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>25</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>26</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>27</span>
-          </div>
-        </div>
-        </div>
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>29</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>30</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span>31</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">1</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">2</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">3</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">4</span>
-          </div>
-        </div>
-        </div>
-        <div class="calendar__row">
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">5</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">6</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">7</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">8</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">9</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">10</span>
-          </div>
-        </div>
-          <div class="calendar__col">
-            <div class="calendar__date-block">
-              <span class="gray">11</span>
-          </div>
-        </div>
         </div>
       </div>
     </div>

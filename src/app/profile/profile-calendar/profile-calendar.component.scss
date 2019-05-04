@@ -68,23 +68,22 @@
 
 .btn-l {
   border-radius: 6px 0 0 6px;
+  border-right: 1px solid #DEE2EA;
 }
 
 .btn-r {
   border-radius: 0 6px 6px 0;
+  border-left: 1px solid #DEE2EA;
 }
 
 .btn-arrow-center {
   border: none;
-  border-left: 1px solid #DEE2EA;
-  border-right: 1px solid #DEE2EA;
   text-align: center;
-  font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
   color: var(--grey-text);
-  background-color: #fff;
-  padding: 0 50px 0 25px;
+  background-color: white;
+  padding: 0 25px;
   height: 48px;
 
   span {
@@ -94,13 +93,13 @@
 
 
 .btn-create {
+  cursor: pointer;
   border: none;
   margin-left: 20px;
   background: var(--purple-light);
   border-radius: 6px;
   padding: 16px 30px;
   line-height: 1.2;
-  font-weight: 600;
   font-size: 16px;
   line-height: normal;
   text-align: center;
@@ -135,8 +134,8 @@
 
   &__head {
     display: flex;
+    border-bottom: 1px solid var(--bg-b-grey);
   }
-
   &__week {
     flex: 1 1 100%;
     text-align: center;
@@ -161,17 +160,25 @@
     }
   }
 
-  &__col {
-    flex: 1 1 100%;
+  .calendar__table > div {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .calendar__day {
+    height: 120px;
+    border-right: 1px solid var(--bg-b-grey);
     padding: 10px;
-    border-left: 1px solid rgba(239, 239, 239, 0.8);
+    text-align: right;
+    border-bottom: 1px solid var(--bg-b-grey);
+    color: var(--dark-black);
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 
-    &:first-child {
-      border-left: none;
+    &:nth-child(7n) {
+      border-right: none;
     }
   }
-
   &__date-block {
     margin-bottom: 22px;
     display: flex;

@@ -9,10 +9,14 @@ import { CookieService } from 'src/app/cookie.service';
 })
 export class ProfileCalendarComponent implements OnInit {
 
-  public Date = new Date();
-  // year = this.Date.getYear();
+  Date = new Date();
+  fullYear = this.Date.getFullYear();
   month = this.Date.getMonth();
-  days = this.Date.getDay();
+  // date = this.Date.getDate();
+
+  currentMonth;
+  spaceDate;
+  days;
   
   nameDay = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
   nameMonth = ['Декабрь', 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь'];
@@ -21,7 +25,14 @@ export class ProfileCalendarComponent implements OnInit {
     if (!this.cookieService.getCookie('login')) {
       this.router.navigate(['/signin']);
     };
-    console.log(this.month);
+
+
+    this.currentMonth = this.nameMonth[this.month + 1];
+    this.spaceDate = new Date(this.fullYear, this.month + 1, 0);
+    this.spaceDate = this.spaceDate.getDate();
+    this.days = Array(this.spaceDate).fill(0).map((x,i)=>i +1);
+    
+
   }
   ngOnInit() {
   }
