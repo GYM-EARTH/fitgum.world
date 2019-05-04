@@ -1,19 +1,22 @@
-section {
+.clubs {
     display: grid;
     grid-template-columns: repeat(4, 270px);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     justify-content: center;
-    background: var(--light);
     padding: 60px 0;
 }
 article {
     height: 270px;
-    background: white;
-    box-shadow: 0 6px 12px rgba(0,0,0,.02);
+    box-shadow: var(--shadow);
     border-radius: 8px;
     overflow: hidden;
-
+    cursor: pointer;
+    transition: all .3s;
+    
+    &:hover {
+        box-shadow: var(--shadow-h);
+    }
     figure {
         height: 140px;
         background: black;

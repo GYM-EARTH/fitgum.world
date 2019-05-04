@@ -1,46 +1,64 @@
 .white {
     background: white;
     
+    app-welcome .intro {
+        h1 { color: var(--white) }
+        p { color: var(--white) }
+        a {
+            background: var(--white);
+            
+            &:hover { color: var(--white) }
+        }
+    }
     .newsletter input[type="text"] {
-        border-color: var(--border-light);
+        border-color: var(--border-light)
     }
     .podval {
-        border-color: var(--border-light);
+        border-color: var(--border-light)
     }
     .payment a {
-        border-color: var(--border-light);
+        border-color: var(--border-light)
     }
     app-header-black .header {
-        border-color: var(--border-light);
+        border-color: var(--border-light)
     }
     app-trainers .experienced {
-        background: var(--background-light);
+        background: var(--background-light)
         
-        article {
-            background: var(--white);
+        article { background: var(--white) }
+    }
+    
+    app-experience .experienced {
+        > h1 { color: var(--dark) }
+        > p { color: var(--light) }
+        header {
+            h1 { color: var(--dark) }
+            p { color: var(--light) }
         }
     }
     app-products .products {
-        background: var(--background-light);
+        background: var(--background-light)
 
-        article {
-            background: var(--white);
-        }
+        article { background: var(--white) }
     }
 
     .dashboard {
-        background: var(--background-light);
+        background: var(--background-light)
 
-        section {
-            background: var(--white);
-        }
+        section { background: var(--white) }
     }
     .dashboard  {
-        background: var(--background-light);
+        background: var(--background-light)
     }
 
     app-services p {
-        background: var(--background-light);
+        background: var(--background-light)
+    }
+    
+    app-clubs .clubs {
+        background: var(--background-light)
+        
+        article { background: var(--white) }
     }
 }
   

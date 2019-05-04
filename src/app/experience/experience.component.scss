@@ -3,14 +3,11 @@
     
     > h1 {
         font-size: 48px;
-        color: rgba(14, 21, 25, .9);
-        font-weight: normal;
         margin-left: 135px;
     }
     > p {
         font-size: 18px;
         margin: 25px 0 50px 135px;
-        color: rgba(14, 21, 25, .6);
     }
     
     div {
@@ -44,7 +41,6 @@
                 right: 0px;
                 position: absolute;
                 height: 280px;
-                background: black;
                 overflow: hidden;
                 border-top-left-radius: 6px;
                 border-top-right-radius: 6px;
@@ -63,12 +59,10 @@
                 
                 h1 {
                     font-size: 24px;
-                    color: var(--dark);
-                    opacity: .9;
+                    font-weight: 600;
                 }
                 p {
                     font-size: 16px;
-                    color: rgba(14, 21, 25, .6);
                 }
             }
         }
