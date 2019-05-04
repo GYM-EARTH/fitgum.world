@@ -22,16 +22,24 @@
     app-header-black .header {
         border-color: var(--border-light)
     }
+    
     app-trainers .experienced {
-        background: var(--background-light)
+        background: var(--background-light);
         
         article { background: var(--white) }
     }
+    
     app-recomendation .products {
         h1 { color: var(--dark) }
     }
+    
     app-news .news {
         h1 { color: var(--dark) }
+    }
+
+    app-explore .explore {
+        > h1 { color: var(--dark) }
+        > p { color: var(--light) }
     }
     app-experience .experienced {
         > h1 { color: var(--dark) }
@@ -41,14 +49,14 @@
             p { color: var(--light) }
         }
     }
-    app-products .products {
-        background: var(--background-light)
+    app-products-list .products {
+        background: var(--background-light);
 
         article { background: var(--white) }
     }
 
     .dashboard {
-        background: var(--background-light)
+        background: var(--background-light);
 
         section { background: var(--white) }
     }
@@ -61,7 +69,7 @@
     }
     
     app-clubs .clubs {
-        background: var(--background-light)
+        background: var(--background-light);
         
         article { background: var(--white) }
     }

@@ -22,7 +22,7 @@
             padding-bottom: 25px;
             transition: all .3s;
             
-            &:nth-child(4n+1) {
+            &:nth-child(n+4) {
                 display: none;
             }
             &:hover {
