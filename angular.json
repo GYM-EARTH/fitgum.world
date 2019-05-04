@@ -45,12 +45,12 @@
               "i18nLocale": "en",
               "i18nMissingTranslation": "error"
             },
-            "jp": {
+            "ja": {
               "aot": true,
-              "outputPath": "dist/fitgum-jp/",
-              "i18nFile": "src/locale/messages.jp.xlf",
+              "outputPath": "dist/fitgum-ja/",
+              "i18nFile": "src/locale/messages.ja.xlf",
               "i18nFormat": "xlf",
-              "i18nLocale": "jp",
+              "i18nLocale": "ja",
               "i18nMissingTranslation": "error"
             },
             "production": {
@@ -90,8 +90,8 @@
             "en": {
               "browserTarget": "fitgum:build:en"
             },
-            "jp": {
-              "browserTarget": "fitgum:build:jp"
+            "ja": {
+              "browserTarget": "fitgum:build:ja"
             },
             "production": {
               "browserTarget": "fitgum:build:production"

@@ -1,96 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="ru" datatype="plaintext" original="ng2.template">
+  <file source-language="ja" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="1554cbc730116e93fa89dd7decf5a7c12650bf70" datatype="html">
-        <source>Клубы</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <note priority="1" from="description">clubs</note>
-      </trans-unit>
-      <trans-unit id="2f868ce4fd7e4777facf1b11f05c38975bd22816" datatype="html">
-        <source>Новости</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <note priority="1" from="description">news</note>
-      </trans-unit>
-      <trans-unit id="5a308dc197a8e5e2b284c6de055a086a00554d2d" datatype="html">
-        <source>Услуги</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <note priority="1" from="description">services</note>
-      </trans-unit>
-      <trans-unit id="9b504f1e1011da09d253505a58e7429be904a3b2" datatype="html">
-        <source>Тренеры</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-        <note priority="1" from="description">trainers</note>
-      </trans-unit>
-      <trans-unit id="899959419fe7945d7f6459643c69ea1f9596de35" datatype="html">
-        <source>Продукты</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <note priority="1" from="description">products</note>
-      </trans-unit>
-      <trans-unit id="754dcc05c8100aa297bb950caa4795ae97999919" datatype="html">
-        <source>О нас</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <note priority="1" from="description">about</note>
-      </trans-unit>
-      <trans-unit id="951ecb60667a10dc48cac0c53d5f4de0f4e82417" datatype="html">
-        <source>Контакты</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-        <note priority="1" from="description">contacts</note>
-      </trans-unit>
-      <trans-unit id="15b94eeb99b93bf636366f164040cacbdf855073" datatype="html">
-        <source>Войти</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <note priority="1" from="description">signin</note>
-      </trans-unit>
-      <trans-unit id="9313958545203394ce206f6f0f8f70b85eaccc24" datatype="html">
-        <source>Регистрация</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-        <note priority="1" from="description">signup</note>
-      </trans-unit>
-      <trans-unit id="b0eeb717141d6d6319d9c07dd1adf52caa28f172" datatype="html">
-        <source>Выход</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <note priority="1" from="description">signout</note>
-      </trans-unit>
       <trans-unit id="introductionHeader" datatype="html">
-        <source>Построй Своё Тело<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Преобразуй свою Жизнь.</source>
+        <source>Построй свое тело<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Преобразуй свою жизнь.</source>
+        <target>体を作る<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> あなたの人生を変えます。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/welcome/welcome.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="started" datatype="html">
         <source>Начать</source>
+        <target>始めるために</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/welcome/welcome.component.html</context>
           <context context-type="linenumber">11</context>
@@ -99,6 +21,96 @@
           <context context-type="sourcefile">app/welcome/welcome.component.html</context>
           <context context-type="linenumber">14</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="1554cbc730116e93fa89dd7decf5a7c12650bf70" datatype="html">
+        <source>Клубы</source>
+        <target>クラブ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">clubs</note>
+      </trans-unit>
+      <trans-unit id="2f868ce4fd7e4777facf1b11f05c38975bd22816" datatype="html">
+        <source>Новости</source>
+        <target>ニュース</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">news</note>
+      </trans-unit>
+      <trans-unit id="5a308dc197a8e5e2b284c6de055a086a00554d2d" datatype="html">
+        <source>Услуги</source>
+        <target>サービス内容</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">services</note>
+      </trans-unit>
+      <trans-unit id="9b504f1e1011da09d253505a58e7429be904a3b2" datatype="html">
+        <source>Тренеры</source>
+        <target>トレーナー</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">trainers</note>
+      </trans-unit>
+      <trans-unit id="899959419fe7945d7f6459643c69ea1f9596de35" datatype="html">
+        <source>Продукты</source>
+        <target>製品情報</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">products</note>
+      </trans-unit>
+      <trans-unit id="754dcc05c8100aa297bb950caa4795ae97999919" datatype="html">
+        <source>О нас</source>
+        <target>私達について</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">about</note>
+      </trans-unit>
+      <trans-unit id="951ecb60667a10dc48cac0c53d5f4de0f4e82417" datatype="html">
+        <source>Контакты</source>
+        <target>お問い合わせ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">contacts</note>
+      </trans-unit>
+      <trans-unit id="15b94eeb99b93bf636366f164040cacbdf855073" datatype="html">
+        <source>Войти</source>
+        <target>サインイン</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">signin</note>
+      </trans-unit>
+      <trans-unit id="9313958545203394ce206f6f0f8f70b85eaccc24" datatype="html">
+        <source>Регистрация</source>
+        <target>登録</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">signup</note>
+      </trans-unit>
+      <trans-unit id="b0eeb717141d6d6319d9c07dd1adf52caa28f172" datatype="html">
+        <source>Выход</source>
+        <target>終了する</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/header/header-white/header-white.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">signout</note>
       </trans-unit>
     </body>
   </file>

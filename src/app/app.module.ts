@@ -8,9 +8,15 @@ import { environment } from '../environments/environment';
 
 import { registerLocaleData } from '@angular/common';
 import localeRu from '@angular/common/locales/ru';
-import localeFrExtra from '@angular/common/locales/extra/ru';
+import localeRuExtra from '@angular/common/locales/extra/ru';
+import localeEn from '@angular/common/locales/en';
+import localeEnExtra from '@angular/common/locales/extra/en';
+import localeJa from '@angular/common/locales/ja';
+import localeJaExtra from '@angular/common/locales/extra/ja';
 
-registerLocaleData(localeRu, 'ru-RU', localeFrExtra);
+registerLocaleData(localeRu, 'ru', localeRuExtra);
+registerLocaleData(localeEn, 'en', localeEnExtra);
+registerLocaleData(localeJa, 'ja', localeJaExtra);
 
 import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';
