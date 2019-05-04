@@ -6,6 +6,12 @@
          
       <h1 i18n="@@introductionHeader">Построй Своё Тело<br> Преобразуй свою Жизнь.</h1>
       <p>Это моя эспрессо-машина? Ч-что-как ты<br> взял мой эспрессо-аппарат? Мой папа однажды сказал мне</p>
-      <a routerLink="/signin" href="/signin">Начать</a>
+      
+      <ng-template [ngIf]="!auth">
+        <a routerLink="/signin" href="/signin">Начать</a>
+      </ng-template>
+      <ng-template [ngIf]="auth">
+          <a routerLink="/profile" href="/profile">Начать</a>
+        </ng-template>
     </section>
   </div>

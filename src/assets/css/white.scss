@@ -27,7 +27,12 @@
         
         article { background: var(--white) }
     }
-    
+    app-recomendation .products {
+        h1 { color: var(--dark) }
+    }
+    app-news .news {
+        h1 { color: var(--dark) }
+    }
     app-experience .experienced {
         > h1 { color: var(--dark) }
         > p { color: var(--light) }
