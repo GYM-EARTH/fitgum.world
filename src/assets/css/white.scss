@@ -1,0 +1,46 @@
+.white {
+    background: white;
+    
+    .newsletter input[type="text"] {
+        border-color: var(--border-light);
+    }
+    .podval {
+        border-color: var(--border-light);
+    }
+    .payment a {
+        border-color: var(--border-light);
+    }
+    app-header-black .header {
+        border-color: var(--border-light);
+    }
+    app-trainers .experienced {
+        background: var(--background-light);
+        
+        article {
+            background: var(--white);
+        }
+    }
+    app-products .products {
+        background: var(--background-light);
+
+        article {
+            background: var(--white);
+        }
+    }
+
+    .dashboard {
+        background: var(--background-light);
+
+        section {
+            background: var(--white);
+        }
+    }
+    .dashboard  {
+        background: var(--background-light);
+    }
+
+    app-services p {
+        background: var(--background-light);
+    }
+}
+  

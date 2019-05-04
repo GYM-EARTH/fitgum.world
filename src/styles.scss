@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@import url('./assets/css/white.scss');
-@import url('./assets/css/black.scss');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +23,9 @@
     --dark: #4A4A4A;
     --border-dark: #111;
     --background-dark: #111;
+
+    --shadow: 0 0 10px rgba(0,0,0,.1);
+    --shadow-h: 0 0 30px rgba(0,0,0,.1);
 }
 html, body {
     height: 100%;
@@ -33,21 +35,6 @@ body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
-// .content {
-//     font-size: 18px;
-//     color: var(--dark-black);
-//     opacity: .8;
-//     line-height: 33px;
-
-//     h2 {
-//         font-size: 48px;
-//         font-weight: 600;
-//     }
-//     h3,h4,h5 {
-//         font-weight: 600;
-//         font-size: 36px;
-//     }
-// }
 .content__club {
     p {
         padding: 0 25px;

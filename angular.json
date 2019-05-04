@@ -29,7 +29,9 @@
               "src/.htaccess"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/white.scss",
+              "src/assets/css/black.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true

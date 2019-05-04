@@ -1,5 +1,4 @@
 .products {
-    background: var(--light);
     padding: 60px 0;
 
     h1 {
@@ -24,9 +23,13 @@
             position: relative;
             padding-top: 252px;
             transition: all .3s;
-            box-shadow: 0 30px 84px -4px rgba(62, 41,29, .13);
+            box-shadow: var(--shadow);
             z-index: 1;
             cursor: pointer;
+            
+            &:hover {
+                box-shadow: var(--shadow-h);
+            }
             
             figure {
                 height: 250px;
