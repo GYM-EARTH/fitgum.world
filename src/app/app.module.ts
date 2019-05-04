@@ -65,6 +65,8 @@ import { VideosComponent } from './videos/videos.component';
 import { ProfileAsideComponent } from './profile/profile-aside/profile-aside.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
+import { RecomendationComponent } from './recomendation/recomendation.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -111,7 +113,9 @@ import { ProductsListComponent } from './products/products-list/products-list.co
     VideosComponent,
     ProfileAsideComponent,
     PageNotFoundComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    RecomendationComponent,
+    ServicesComponent
     
   ],
   imports: [

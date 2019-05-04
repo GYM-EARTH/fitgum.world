@@ -22,6 +22,7 @@ import { CalendarDetailComponent } from './profile/calendar-detail/calendar-deta
 import { VideosComponent } from './videos/videos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'videos', component: VideosComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'services', component: ServicesComponent },
   // { path: '**', component: PageNotFoundComponent }
 ];
 
