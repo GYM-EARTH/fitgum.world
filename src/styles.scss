@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@import url(./assets/css/white.css);
-@import url(./assets/css/black.css);
+@import url('./assets/css/white.scss');
+@import url('./assets/css/black.scss');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +11,20 @@
     box-sizing: border-box;
 }
 :root {
+    
     --pink: #bd10e0;
     --purple: #9013fe;
-    --grey-light: #eff0f4;
-    --grey-dark: #4f5362;
+    
+    --white: white;
+    --light: #9B9B9B;
+    --border-light: #eee;
+    --backgriund-light: #eee;
+    
+    --black: black;
+    --dark: #4A4A4A;
+    --border-dark: #111;
+    --background-dark: #111;
+    
     --grey-white: #efefef;
     --grey-text: #757a7d;
     --dark-black: #0e1519;

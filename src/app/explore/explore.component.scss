@@ -21,10 +21,10 @@
     &__see {
         text-align: center;
         line-height: 58px;
-        border: 1px solid var(--purple-light);
+        border: 1px solid var(--purple);
         border-radius: 47px;
         font-size: 16px;
-        color: var(--purple-light);
+        color: var(--purple);
         text-decoration: none;
         display: inline-block;
         padding: 0 45px;
@@ -35,7 +35,7 @@
         transition: .3s;
 
         &:hover {
-            background: var(--purple-light);
+            background: var(--purple);
             color: white;
         }
     }

@@ -25,13 +25,13 @@
 
             &.active {
                 color: white;
-                background: var(--purple-light);
-                border-color: var(--purple-light) ;
+                background: var(--purple);
+                border-color: var(--purple) ;
             }
             &:hover {
                 color: white;
-                background: var(--purple-light);
-                border-color: var(--purple-light) ;
+                background: var(--purple);
+                border-color: var(--purple) ;
             }
         }
         & + li {
