@@ -64,6 +64,7 @@ import { CalendarDetailComponent } from './profile/calendar-detail/calendar-deta
 import { VideosComponent } from './videos/videos.component';
 import { ProfileAsideComponent } from './profile/profile-aside/profile-aside.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductsListComponent } from './products/products-list/products-list.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +110,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CalendarDetailComponent,
     VideosComponent,
     ProfileAsideComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductsListComponent
     
   ],
   imports: [

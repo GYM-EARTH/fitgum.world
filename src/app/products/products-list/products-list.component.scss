@@ -1,0 +1,108 @@
+.products {
+    background: var(--bg-b-grey);
+    padding: 60px 0;
+
+    h1 {
+        font-size: 48px;
+        color: rgba(14, 21, 25, .9);
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 50px;
+    } 
+
+    div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+        justify-content: center;
+
+        article {
+            width: 270px;
+            height: 380px;
+            border-radius: 10px;
+            position: relative;
+            padding-top: 252px;
+            transition: all .3s;
+            box-shadow: 0 30px 84px -4px rgba(62, 41,29, .13);
+            z-index: 1;
+            cursor: pointer;
+            
+            figure {
+                height: 250px;
+                overflow: hidden;
+                background: black;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                img {
+                    max-height: 100%;
+                    margin: auto;
+                    transform: translateX(-15%);
+                }
+            }
+            header {
+                padding: 20px;
+                
+                h1 {
+                    font-size: 16px;
+                    color: rgba(14, 21, 25, .9);
+                    font-weight: normal;
+                }
+            }
+            footer {
+                font-size: 12px;
+                color: rgba(14, 21, 25, .6);
+                text-transform: uppercase;
+                padding: 0 20px 20px;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    line-height: 26px;
+                }
+
+                a {
+                    display: inline-block;
+                    line-height: 26px;
+                    background: var(--purple-light);
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: white;
+                    padding: 0 10px;
+                    border-radius: 33px;
+                }
+            }
+        }
+    }
+    
+    div:last-of-type {
+        text-align: center;
+        
+        .load {
+            text-align: center;
+            line-height: 58px;
+            border: 1px solid var(--purple-light);
+            border-radius: 47px;
+            font-size: 16px;
+            color: var(--purple-light);
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 45px;
+            text-transform: uppercase;
+            margin: 60px auto 0;
+            font-weight: 600;
+            letter-spacing: 2px;
+            transition: .3s;
+
+            &:hover {
+                background: var(--purple-light);
+                color: white;
+            }
+        }
+    }
+}
