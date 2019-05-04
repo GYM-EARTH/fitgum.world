@@ -32,5 +32,11 @@
         margin: 0 auto;
         font-weight: 600;
         letter-spacing: 2px;
+        transition: .3s;
+
+        &:hover {
+            background: var(--purple-light);
+            color: white;
+        }
     }
 }

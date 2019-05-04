@@ -36,13 +36,7 @@
 
     <div class="calendar">
       <div class="calendar__head">
-        <div class="calendar__week">ПН</div>
-        <div class="calendar__week">ВТ</div>
-        <div class="calendar__week">СР</div>
-        <div class="calendar__week">ЧТ</div>
-        <div class="calendar__week">ПТ</div>
-        <div class="calendar__week">СБ</div>
-        <div class="calendar__week">ВС</div>
+        <div class="calendar__week" *ngFor="let day of nameDay">{{day}}</div>
       </div>
       <div class="">
         <div class="calendar__row">

@@ -38,6 +38,12 @@
             margin-left: 25px;
             border-radius: 8px;
             font-weight: 600;
+            border: 1px solid white;
+            &:hover {
+                background: var(--purple-light);
+                color: white;
+                border-color: var(--purple-light);
+            }
         }
         .profile {
             width: 48px;

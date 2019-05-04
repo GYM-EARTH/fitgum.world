@@ -32,6 +32,10 @@
             margin-left: 25px;
             border-radius: 8px;
             font-weight: 600;
+            &:hover {
+                background: var(--purple-light);
+                color: white;
+            }
         }
         .profile {
             width: 48px;

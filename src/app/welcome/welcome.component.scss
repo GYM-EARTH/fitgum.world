@@ -43,6 +43,12 @@
         justify-self: baseline;
         font-weight: 600;
         letter-spacing: 2px;
+        transition: all .3s;
+        
+        &:hover {
+            background: var(--purple-light);
+            color: white;
+        }
     }
 }
 .search {
