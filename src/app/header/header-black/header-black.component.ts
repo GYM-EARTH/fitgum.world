@@ -24,7 +24,7 @@ export class HeaderBlackComponent implements OnInit {
 
   signOut() {
     this.cookieService.deleteCookie('login');
-    this.router.navigate(['/']);
+    this.router.navigate(['/signin']);
   }
 
 }
