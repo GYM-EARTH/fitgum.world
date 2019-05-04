@@ -1,6 +1,25 @@
 .white {
     background: white;
-    
+
+    app-header-white .header {
+        border-bottom-color: var(--white);
+
+        nav {
+            a {
+                color: var(--white);
+            }
+            .signup {
+                color: var(--purple);
+                background: var(--white);
+                border-color: var(--white);
+                
+                &:hover {
+                    color: var(--white);
+                }    
+            } 
+        }
+    }
+
     app-welcome .intro {
         h1 { color: var(--white) }
         p { color: var(--white) }

@@ -1,0 +1,122 @@
+.black {
+    background: black;
+ 
+    app-header-black .header {
+        border-bottom-color: var(--black);
+
+        nav {
+            a {
+                color: var(--dark);
+            }
+            .signup {
+                color: var(--purple);
+                background: var(--black);
+                border-color: var(--black);
+                
+                &:hover {
+                    color: var(--black);
+                }    
+            } 
+        }
+    }
+
+    app-header-white .header {
+        border-bottom-color: var(--black);
+
+        nav {
+            a {
+                color: var(--black);
+            }
+            .signup {
+                color: var(--purple);
+                background: var(--black);
+                border-color: var(--black);
+                
+                &:hover {
+                    color: var(--black);
+                }    
+            } 
+        }
+    }
+    
+    app-welcome .intro {
+        h1 { color: var(--black) }
+        p { color: var(--black) }
+        a {
+            background: var(--black);
+            
+            &:hover { color: var(--black) }
+        }
+    }
+    .newsletter input[type="text"] {
+        border-color: var(--border-dark)
+    }
+    .podval {
+        border-color: var(--border-dark)
+    }
+    .payment a {
+        border-color: var(--border-dark)
+    }
+    app-header-black .header {
+        border-color: var(--border-dark)
+    }
+    
+    app-trainers .experienced {
+        background: var(--background-dark);
+        
+        article { background: var(--black) }
+    }
+    
+    app-recomendation .products {
+        > h1 { color: var(--light) }
+        article {
+            h1 { color: var(--light) }
+        }
+        footer {
+            color: var(--dark)
+        }
+    }
+    
+    app-news .news {
+        h1 { color: var(--light) }
+    }
+
+    app-explore .explore {
+        > h1 { color: var(--light) }
+        > p { color: var(--dark) }
+    }
+    app-experience .experienced {
+        > h1 { color: var(--light) }
+        > p { color: var(--dark) }
+        header {
+            h1 { color: var(--light) }
+            p { color: var(--dark) }
+        }
+    }
+    app-products-list .products {
+        background: var(--background-dark);
+
+        article { background: var(--black) }
+    }
+
+
+    .dashboard {
+        background: var(--background-dark);
+
+        section { background: var(--black) }
+    }
+    .dashboard  {
+        background: var(--background-dark)
+    }
+
+    app-services p {
+        background: var(--background-dark)
+    }
+    
+    app-clubs .clubs {
+        background: var(--background-dark);
+        
+        article { background: var(--black) }
+    }
+}
+  

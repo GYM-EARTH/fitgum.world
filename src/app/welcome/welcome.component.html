@@ -8,10 +8,10 @@
       <p>Это моя эспрессо-машина? Ч-что-как ты<br> взял мой эспрессо-аппарат? Мой папа однажды сказал мне</p>
       
       <ng-template [ngIf]="!auth">
-        <a routerLink="/signin" href="/signin">Начать</a>
+        <a i18n="@@started" routerLink="/signin" href="/signin">Начать</a>
       </ng-template>
       <ng-template [ngIf]="auth">
-          <a routerLink="/profile" href="/profile">Начать</a>
-        </ng-template>
+        <a i18n="@@started" routerLink="/profile" href="/profile">Начать</a>
+      </ng-template>
     </section>
   </div>

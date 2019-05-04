@@ -7,10 +7,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { registerLocaleData } from '@angular/common';
-import localeFr from '@angular/common/locales/fr';
-import localeFrExtra from '@angular/common/locales/extra/fr';
+import localeRu from '@angular/common/locales/ru';
+import localeFrExtra from '@angular/common/locales/extra/ru';
 
-registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
+registerLocaleData(localeRu, 'ru-RU', localeFrExtra);
 
 import { PassportService } from './passport.service';
 import { ProfileService } from './profile.service';

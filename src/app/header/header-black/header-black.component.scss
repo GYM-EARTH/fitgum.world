@@ -20,7 +20,6 @@
         display: flex;
         a {
             font-size: 16px;
-            color: var(---light);
             padding: 0 25px;
             line-height: 45px;
             display: inline-block;
@@ -30,13 +29,11 @@
         }
         .signup {
             border: 1px solid var(--purple);
-            color: var(--purple);
             margin-left: 25px;
             border-radius: 8px;
             font-weight: 600;
             &:hover {
                 background: var(--purple);
-                color: white;
             }
         }
         .profile {
@@ -47,7 +44,7 @@
             background-size: contain;
             margin-left: 25px;
         }
-        a:hover {
+        .nav__a:hover {
             color: var(--purple);
         }
         .active {

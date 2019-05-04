@@ -1,13 +1,13 @@
 <header class="header">
   <a routerLink="/" href="/"><span>fit</span><span>gum</span></a>
   <nav>
-    <a routerLink="/clubs" href="/clubs" routerLinkActive="active">Клубы</a>
-    <a routerLink="/news" href="/news" routerLinkActive="active">Новости</a>
-    <a routerLink="/services" href="/services" routerLinkActive="active">Услуги</a>
-    <a routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a>
-    <a routerLink="/products" href="/products" routerLinkActive="active">Продукты</a>
-    <a routerLink="/about" href="/about" routerLinkActive="active">О нас</a>
-    <a routerLink="/contacts" href="/contacts" routerLinkActive="active">Контакты</a>
+    <a class="nav__a" routerLink="/clubs" href="/clubs" routerLinkActive="active">Клубы</a>
+    <a class="nav__a" routerLink="/news" href="/news" routerLinkActive="active">Новости</a>
+    <a class="nav__a" routerLink="/services" href="/services" routerLinkActive="active">Услуги</a>
+    <a class="nav__a" routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a>
+    <a class="nav__a" routerLink="/products" href="/products" routerLinkActive="active">Продукты</a>
+    <a class="nav__a" routerLink="/about" href="/about" routerLinkActive="active">О нас</a>
+    <a class="nav__a" routerLink="/contacts" href="/contacts" routerLinkActive="active">Контакты</a>
     <ng-template [ngIf]="!auth">
       <a routerLink="/signin" href="/signin">Войти</a>
       <a class="signup" routerLink="/signup" href="/signup">Регистрация</a>
