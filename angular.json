@@ -45,9 +45,9 @@
               "i18nLocale": "en",
               "i18nMissingTranslation": "error"
             },
-            "ja": {
+            "jp": {
               "aot": true,
-              "outputPath": "dist/fitgum-ja/",
+              "outputPath": "dist/fitgum-jp/",
               "i18nFile": "src/locale/messages.ja.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "ja",
