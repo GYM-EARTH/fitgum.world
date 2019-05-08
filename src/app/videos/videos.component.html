@@ -1,21 +1,28 @@
 <app-header-black></app-header-black>
-<section class="videos">
+  <section class="videos">
+  <div class="new">
+      <div><iframe src="https://www.youtube-nocookie.com/embed/urRVZ4SW7WU?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=yCo9e8xzrus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div><iframe src="https://www.youtube-nocookie.com/embed/yCo9e8xzrus?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=urRVZ4SW7WU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+  </div>
   <div class="container">
     <div class="video">
-      <div class="video__img-block">
-        <button class="video__youtube-btn"></button>
-        <img class="video__images" src="/assets/video-images.jpg" alt="">
-        <!-- <iframe src="https://www.youtube-nocookie.com/embed/t2D0NOKVWXo?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=ZUOtuApSP3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <iframe src="https://www.youtube-nocookie.com/embed/ZUOtuApSP3o?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=t2D0NOKVWXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-      </div>
-      <article class="video__wrapper">
-        <h1 class="video__headline">How to Stay Dedicated With SMART Fitness Goals</h1>
+      <article *ngFor="let video of videos">
+          <a href="{{video.url}}">
+        <figure class="video__img-block">
+          <button class="video__youtube-btn"></button>
+          <img class="video__images" src="https://file.fitgum.ru/{{video?.preview}}" alt="">
+          
+          
+        </figure>
+        <h1>{{video?.title}}</h1>
         <ul class="video__tags">
-          <li class="video__tag">423k Views</li>
+          <li class="video__tag">{{video?.views}} Просмотры</li>
           <li class="video__tag">12 Aug 2019</li>
         </ul>
+      </a>
       </article>
     </div>
   </div>
 </section>
+<app-pagination></app-pagination>
 <app-footer></app-footer>

@@ -26,6 +26,7 @@ import { CookieService } from './cookie.service';
 import { SocketService } from './socket.service';
 import { EchoService } from './echo.service';
 import { VacanciesService } from './vacancies.service';
+import { VideosService } from './videos.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -140,7 +141,8 @@ import { JobsComponent } from './jobs/jobs.component';
     CookieService,
     SocketService,
     EchoService,
-    VacanciesService],
+    VacanciesService,
+    VideosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
