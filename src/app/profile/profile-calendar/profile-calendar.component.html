@@ -1,4 +1,7 @@
 <app-header-black></app-header-black>
+<section class="backdrop" *ngIf="modal">
+  <app-calendar-detail></app-calendar-detail>
+</section>
 <div class="dashboard">
 <app-profile-aside></app-profile-aside>
   <div>
@@ -39,7 +42,7 @@
       </div>
       <div class="calendar__table">
         <div>
-          <div class="calendar__day" *ngFor="let day of days">
+          <div (click)="openCalendar()" class="calendar__day" *ngFor="let day of days">
             <div>
               <span>{{day}}</span>
             </div>

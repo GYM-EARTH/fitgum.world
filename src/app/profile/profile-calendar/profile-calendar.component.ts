@@ -9,6 +9,8 @@ import { CookieService } from 'src/app/cookie.service';
 })
 export class ProfileCalendarComponent implements OnInit {
 
+  modal: boolean;
+
   Date = new Date();
   fullYear = this.Date.getFullYear();
   month = this.Date.getMonth();
@@ -35,6 +37,10 @@ export class ProfileCalendarComponent implements OnInit {
 
   }
   ngOnInit() {
+  }
+
+  openCalendar() {
+    this.modal = true;
   }
 
 }
