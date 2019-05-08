@@ -1,20 +1,20 @@
 <header class="header">
-    <a routerLink="/" href="/"><span>F</span><span>G</span></a>
-    <nav>
-      <a class="nav__a" i18n="clubs" routerLink="/clubs" href="/clubs" routerLinkActive="active">Клубы</a>
-      <a class="nav__a" i18n="news" routerLink="/news" href="/news" routerLinkActive="active">Новости</a>
-      <a class="nav__a" i18n="services" routerLink="/services" href="/services" routerLinkActive="active">Услуги</a>
-      <a class="nav__a" i18n="trainers" routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a>
-      <a class="nav__a" i18n="products" routerLink="/products" href="/products" routerLinkActive="active">Питание</a>
-      <a class="nav__a" i18n="about" routerLink="/about" href="/about" routerLinkActive="active">О нас</a>
-      <a class="nav__a" i18n="contacts" routerLink="/contacts" href="/contacts" routerLinkActive="active">Контакты</a>
-      <ng-template [ngIf]="!auth">
-        <a i18n="signin" routerLink="/signin" href="/signin">Войти</a>
-        <a i18n="signup" class="signup" routerLink="/signup" href="/signup">Регистрация</a>
-      </ng-template>
-      <ng-template [ngIf]="auth">
-        <a  i18n="signout" (click)="signOut()" routerLink="/signin" href="/signin">Выход</a>
-        <a class="profile" routerLink="/profile" href="/profile"></a>
-      </ng-template>
-    </nav>
-  </header>
+  <a routerLink="/" href="/"><span>F</span><span>G</span></a>
+  <nav>
+    <a class="nav__a" i18n="clubs" routerLink="/clubs" href="/clubs" routerLinkActive="active">Клубы</a>
+    <a class="nav__a" i18n="news" routerLink="/news" href="/news" routerLinkActive="active">Новости</a>
+    <a class="nav__a" i18n="services" routerLink="/services" href="/services" routerLinkActive="active">Услуги</a>
+    <a class="nav__a" i18n="trainers" routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a>
+    <a class="nav__a" i18n="products" routerLink="/products" href="/products" routerLinkActive="active">Питание</a>
+    <a class="nav__a" i18n="about" routerLink="/about" href="/about" routerLinkActive="active">О нас</a>
+    <a class="nav__a" i18n="contacts" routerLink="/contacts" href="/contacts" routerLinkActive="active">Контакты</a>
+    <ng-template [ngIf]="!auth">
+      <a i18n="signin" routerLink="/signin" href="/signin">Войти</a>
+      <a i18n="signup" class="signup" routerLink="/signup" href="/signup">Регистрация</a>
+    </ng-template>
+    <ng-template [ngIf]="auth">
+      <a  i18n="signout" (click)="signOut()" routerLink="/signin" href="/signin">Выход</a>
+      <a class="profile" routerLink="/profile" href="/profile"></a>
+    </ng-template>
+  </nav>
+</header>
