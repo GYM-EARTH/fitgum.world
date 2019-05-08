@@ -51,7 +51,6 @@ import { NewsComponent } from './news/news.component';
 import { SearchComponent } from './search/search.component';
 import { BlogComponent } from './blog/blog.component';
 import { ArticleComponent } from './article/article.component';
-import { ChatComponent } from './chat/chat.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { IntroComponent } from './blog/intro/intro.component';
 import { ListComponent } from './blog/list/list.component';
@@ -100,7 +99,6 @@ import { ServicesComponent } from './services/services.component';
     SearchComponent,
     BlogComponent,
     ArticleComponent,
-    ChatComponent,
     TrainerComponent,
     IntroComponent,
     ListComponent,
