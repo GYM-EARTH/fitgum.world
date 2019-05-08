@@ -1,4 +1,23 @@
-<section class="send" *ngIf="modal"></section>
+<section class="send" *ngIf="modal">
+  <form class="new" (ngSubmit)="onSubmit()" #chatForm="ngForm">
+    <h1>Mabelle Sanchez</h1>
+    <div class="messages">
+      <ul>
+
+        <li class="messages__you">
+          <blockquote>sqwsws</blockquote>
+        </li>
+        <li class="messages__me">
+          <blockquote>swqswqs</blockquote>
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <input type="text" [(ngModel)]="message" name="message" placeholder="Type a message...">
+    </div>
+  </form>
+</section>
 <app-header-black></app-header-black>
 <main>
   <article>
@@ -40,7 +59,7 @@
           <a href="">Москва</a>
         </li>
       </ul>
-      <button class="message" (click)="sendMessage()">Сообщение</button>
+      <button *ngIf="token" class="message" (click)="sendMessage(profile.id)">Сообщение</button>
     </aside>
     <section>
       <h1>About</h1>
