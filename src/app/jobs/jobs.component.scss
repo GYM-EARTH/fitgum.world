@@ -1,0 +1,101 @@
+.start {
+    height: 490px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(/assets/bg-jobs.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: 64px;
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+    a {
+        background: var(--purple);
+        line-height: 60px;
+        padding: 0 25px;
+        border-radius: 4px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--white);
+        margin-top: 40px;
+
+        &:hover {
+            background: var(--white);
+            color: var(--purple);
+        }
+    }
+}
+.jobs {
+    width: 1170px;
+    margin: auto;
+    > h1 {
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 48px;
+        color: var(--dark);
+    }
+    &__job {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid var(--border-light);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            box-shadow: var(--shadow-h);
+            border-color: transparent;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        footer {
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            
+            span, time {
+                color: var(--dark);
+            }
+
+            .building::before {
+                content: "";
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                background: url('/assets/icon/building.svg') 0 0 no-repeat;
+                margin-right: 5px;
+            }
+            .marker::before {
+                content: "";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                vertical-align: middle;
+                background: url('/assets/icon/marker.svg') 0 0 no-repeat;
+                margin-right: 5px;
+            }
+            .clock::before {
+                content: "";
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                background: url('/assets/icon/clock.svg') 0 0 no-repeat;
+                margin-right: 5px;
+            }
+        }
+    }
+}

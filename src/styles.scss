@@ -35,6 +35,12 @@ body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
+.content_jobs {
+    p {
+        font-size: 16px;
+        color: var(--light);
+    }
+}
 .content__club {
     p {
         padding: 0 25px;

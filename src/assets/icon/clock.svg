@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.600000024">
+        <g id="Job-page" transform="translate(-780.000000, -1729.000000)">
+            <g id="Group-8-Copy-3" transform="translate(135.000000, 1554.000000)">
+                <g id="Group-7" transform="translate(643.000000, 172.000000)">
+                    <g id="clock">
+                        <rect id="bound" x="0" y="0" width="18" height="18"></rect>
+                        <path d="M9,16.5 C5.27207794,16.5 2.25,13.477922 2.25,9.75 C2.25,6.02207794 5.27207794,3 9,3 C12.727922,3 15.75,6.02207794 15.75,9.75 C15.75,13.477922 12.727922,16.5 9,16.5 Z" id="Mask" fill="#0E1519" fill-rule="nonzero" opacity="0.3"></path>
+                        <path d="M8.9722617,5.625 L9.03562965,5.625 C9.22828643,5.625 9.38959853,5.77098543 9.4087686,5.9626861 L9.75,9.375 L12.1860521,10.7670298 C12.3028927,10.8337958 12.375,10.9580496 12.375,11.092621 L12.375,11.25 C12.375,11.4081873 12.2467639,11.5364234 12.0885766,11.5364234 C12.0631187,11.5364234 12.0377744,11.5330294 12.0132136,11.526331 L8.5489959,10.5815443 C8.3754618,10.5342169 8.25997395,10.370339 8.27376945,10.1909967 L8.59836622,5.97123881 C8.61339503,5.77586488 8.77631055,5.625 8.9722617,5.625 Z" id="Path-107" fill="#0E1519" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<app-header-white></app-header-white>
+<section class="start">
+  <h1>Текущие позиции</h1>
+  <a href="">Просмотреть открытые позиции</a>
+</section>
+<section class="jobs">
+  <h1>Доступные вакансии</h1>
+  <article class="jobs__job"  *ngFor="let job of jobs">
+    <header>
+      <h1>{{job?.title}}</h1>
+    </header>
+    <div [innerHTML]="job.definition" class="content_jobs"></div>
+    <footer>
+      <span class="building">Индивидуальная тренировка</span>
+      <span class="marker">{{job?.views}}</span>
+      <span class="clock">{{job?.salary}}</span>
+      <time pubdate [attr.datetime]="job.created_at">{{job?.created_at | date:'mediumDate'}}</time>
+    </footer>
+  </article>
+</section>
+<app-pagination></app-pagination>
+<app-footer></app-footer>

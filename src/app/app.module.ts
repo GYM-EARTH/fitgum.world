@@ -25,6 +25,7 @@ import { NewsService } from './news.service';
 import { CookieService } from './cookie.service';
 import { SocketService } from './socket.service';
 import { EchoService } from './echo.service';
+import { VacanciesService } from './vacancies.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -72,6 +73,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductsListComponent } from './products/products-list/products-list.component';
 import { RecomendationComponent } from './recomendation/recomendation.component';
 import { ServicesComponent } from './services/services.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -119,7 +121,8 @@ import { ServicesComponent } from './services/services.component';
     PageNotFoundComponent,
     ProductsListComponent,
     RecomendationComponent,
-    ServicesComponent
+    ServicesComponent,
+    JobsComponent
     
   ],
   imports: [
@@ -136,7 +139,8 @@ import { ServicesComponent } from './services/services.component';
     NewsService,
     CookieService,
     SocketService,
-    EchoService],
+    EchoService,
+    VacanciesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

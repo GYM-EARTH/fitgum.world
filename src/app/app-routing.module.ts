@@ -6,7 +6,7 @@ import { ForgetComponent } from './forget/forget.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { ClubsComponent } from './clubs/clubs.component';
-import { ChatComponent } from './chat/chat.component';
+import { JobsComponent } from './jobs/jobs.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { BlogComponent } from './blog/blog.component';
 import { TrainersComponent } from './trainers/trainers.component';
@@ -38,7 +38,7 @@ const routes: Routes = [
   { path: 'trainers/:id', component: TrainerComponent },
   { path: 'clubs', component: ClubsComponent },
   { path: 'clubs/:id', component: ClubComponent },
-  { path: 'chat', component: ChatComponent },
+  { path: 'jobs', component: JobsComponent },
   { path: 'news', component: BlogComponent },
   { path: 'news/:id', component: ArticleComponent },
   { path: 'search', component: SearchComponent },
