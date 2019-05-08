@@ -31,13 +31,16 @@
     background: white;
     display: grid;
     grid-template-columns: 360px auto;
-    border-top: 1px solid var(--light);
-    border-bottom: 1px solid var(--light);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 .chanels {
     overflow-y: scroll;
     max-height: 700px;
-    border-right: 1px solid var(--light);
+    border-right-width: 1px;
+    border-right-style: solid;
     
     ul {
         list-style: none;
@@ -81,7 +84,8 @@
     grid-template-rows: auto 1fr auto;
     
     header {
-        border-bottom: 1px solid var(--light);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
         padding: 15px 30px;
     }
     &__answer {
@@ -137,7 +141,8 @@
         color: var(--dark);
     }
     footer {
-        border-top: 1px solid var(--light);
+        border-top-width: 1px;
+        border-top-style: solid;
         padding: 14px 30px;
         input {
             background: rgba(174, 179, 205, .1) url(/assets/icon/send.svg) 720px 50% no-repeat;

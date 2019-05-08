@@ -1,6 +1,49 @@
 .black {
     background: black;
- 
+    .wrapper {
+        background: var(--background-dark);
+    }
+    .btn-arrow,
+    .calendar,
+    .avents-list__items,
+    .data-list__items {
+        background: var(--black);
+    }
+    .btn-arrow-center {
+       color: var(--dark);
+       background: var(--black);
+    }
+    .calendar .calendar__day,
+    .btn-l,
+    .btn-r,
+    .calendar__head,
+    .data-list__items {
+        border-color: var(--border-dark);
+    }
+    .profile nav a.active {
+        background: var(--black);
+    }
+    .profile nav a {
+        color: var(--black);
+    }
+    .dashboard section form label {
+        color: var(--dark);
+    }
+    .dashboard section footer,
+    .dashboard section > h1,
+    .chat,
+    .chanels,
+    .messages header,
+    .messages footer {
+        border-color: var(--border-dark);
+    }
+    .dashboard section form input,
+    .dashboard section form textarea {
+        background: var(--black);
+        border-color: var(--border-dark);
+        color: var(--light);
+        
+    }
     app-header-black .header {
         border-bottom-color: var(--black);
 
