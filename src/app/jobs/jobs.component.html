@@ -5,7 +5,7 @@
 </section>
 <section class="jobs">
   <h1>Доступные вакансии</h1>
-  <article class="jobs__job"  *ngFor="let job of jobs">
+  <article class="jobs__job" *ngFor="let job of jobs" [routerLink]="['/jobs', job.id]">
     <header>
       <h1>{{job?.title}}</h1>
     </header>

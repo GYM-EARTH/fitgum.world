@@ -13,4 +13,8 @@ export class VacanciesService {
   public getAll() {
     return this.http.get<{data: Vacancies[]}>(environment.vacancies);
   }
+
+  public getBy(id: number) {
+    return this.http.get<{vacancies}>(`${environment.vacancies}/${id}`);
+  }
 }

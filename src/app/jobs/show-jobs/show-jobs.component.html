@@ -1,0 +1,41 @@
+<app-header-white></app-header-white>
+<section class="start">
+  <h1>Текущие позиции</h1>
+  <a href="">Просмотреть открытые позиции</a>
+</section>
+<div class="wrapper">
+  <article class="job">
+    <h1>{{job?.title}}</h1>
+    <footer>
+        <span class="building">{{job?.club.title}}</span>
+        <span class="marker">{{job?.city.title}}</span>
+        <span class="clock">{{job?.salary}}</span>
+        <time pubdate [attr.datetime]="job.created_at">{{job?.created_at | date:'mediumDate'}}</time>
+      </footer>
+      <div [innerHTML]="job.definition" class="content_jobs"></div>
+      <section>
+        <h2>Рабочие обязанности</h2>
+        <div [innerHTML]="job.responsibility" class="content_jobs"></div>
+      </section>
+      <section>
+        <h2>Образование + Опыт</h2>
+        <div [innerHTML]="job.demand" class="content_jobs"></div>
+      </section>
+      <section>
+          <h2>О компании</h2>
+          <div [innerHTML]="job.conditions" class="content_jobs"></div>
+        </section>
+  </article>
+  <aside>
+    <section class="apply">
+      <h1>Подать заявку на эту работу</h1>
+      <a href="">Начать заявку</a>
+      <span>Or</span>
+      <a href="">Подать заявку на Linkedin</a>
+    </section>
+    <section class="share">
+        <h1>Поделитесь этой работой</h1>
+      </section>
+  </aside>
+</div>
+<app-footer></app-footer>

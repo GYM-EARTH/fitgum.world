@@ -1,0 +1,150 @@
+.start {
+    height: 490px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(/assets/bg-jobs.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    h1 {
+        font-size: 64px;
+        color: white;
+        text-align: center;
+        margin-top: 100px;
+    }
+    a {
+        background: var(--purple);
+        line-height: 60px;
+        padding: 0 25px;
+        border-radius: 4px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--white);
+        margin-top: 40px;
+
+        &:hover {
+            background: var(--white);
+            color: var(--purple);
+        }
+    }
+}
+.wrapper {
+    width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    grid-column-gap: 40px;
+}
+.job {
+    width: 100%;
+    h1 {
+        font-size: 38px;
+        color: var(--dark);
+    }
+    h2 {
+        font-size: 18px;
+        color: var(--dark);
+        margin: 22px 0;
+    }
+    section {
+        margin-top: 40px;
+    }
+    footer {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        
+        span, time {
+            color: var(--dark);
+        }
+
+        .building::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            background: url('/assets/icon/building.svg') 0 0 no-repeat;
+            margin-right: 5px;
+        }
+        .marker::before {
+            content: "";
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            background: url('/assets/icon/marker.svg') 0 0 no-repeat;
+            margin-right: 5px;
+        }
+        .clock::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            background: url('/assets/icon/clock.svg') 0 0 no-repeat;
+            margin-right: 5px;
+        }
+    }
+}
+.apply {
+    background: #F9FCFF;
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
+    padding: 30px;
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: var(--dark);
+        margin-bottom: 20px;
+    }
+    a:first-of-type {
+        line-height: 54px;
+        display: block;
+        text-align: center;
+        background: var(--purple);
+        font-size: 16px;
+        color: var(--white);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    span {
+        display: block;
+        font-size: 16px;
+        color: var(--light);
+        line-height: 44px;
+        text-align: center;
+    }
+    a:last-of-type {
+        line-height: 54px;
+        display: block;
+        text-align: center;
+        background: #0077B5;
+        font-size: 16px;
+        color: var(--white);
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+
+.share {
+    margin-top: 40px;
+    background: #F9FCFF;
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
+    padding: 30px;
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        color: var(--dark);
+        margin-bottom: 20px;
+    }
+}

@@ -75,6 +75,7 @@ import { ProductsListComponent } from './products/products-list/products-list.co
 import { RecomendationComponent } from './recomendation/recomendation.component';
 import { ServicesComponent } from './services/services.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
 
 @NgModule({
   declarations: [
@@ -123,7 +124,8 @@ import { JobsComponent } from './jobs/jobs.component';
     ProductsListComponent,
     RecomendationComponent,
     ServicesComponent,
-    JobsComponent
+    JobsComponent,
+    ShowJobsComponent
     
   ],
   imports: [

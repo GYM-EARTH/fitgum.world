@@ -40,6 +40,14 @@ body {
         font-size: 16px;
         color: var(--light);
     }
+    ul {
+        margin-left: 22px;
+        font-size: 16px;
+        color: var(--light);
+        li + li {
+            margin-top: 10px;
+        }
+    }
 }
 .content__club {
     p {

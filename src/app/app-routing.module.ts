@@ -23,6 +23,7 @@ import { VideosComponent } from './videos/videos.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
+import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'clubs', component: ClubsComponent },
   { path: 'clubs/:id', component: ClubComponent },
   { path: 'jobs', component: JobsComponent },
+  { path: 'jobs/:id', component: ShowJobsComponent },
   { path: 'news', component: BlogComponent },
   { path: 'news/:id', component: ArticleComponent },
   { path: 'search', component: SearchComponent },
