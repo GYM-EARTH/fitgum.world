@@ -29,7 +29,6 @@
         font-weight: 600;
     }
     li {
-        margin-bottom: 5px;
         list-style: none;
     
         a {
@@ -38,6 +37,8 @@
             transition: .3s;
             font-size: 16px;
             text-decoration: none;
+            display: inline-block;
+            line-height: 44px;
             
             &:hover {
                 opacity: 1;

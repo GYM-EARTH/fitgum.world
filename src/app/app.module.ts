@@ -29,6 +29,8 @@ import { EchoService } from './echo.service';
 import { VacanciesService } from './vacancies.service';
 import { VideosService } from './videos.service';
 
+import { TimePipe } from './time.pipe';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
@@ -126,7 +128,8 @@ import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
     RecomendationComponent,
     ServicesComponent,
     JobsComponent,
-    ShowJobsComponent
+    ShowJobsComponent,
+    TimePipe
     
   ],
   imports: [

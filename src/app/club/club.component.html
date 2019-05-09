@@ -1,7 +1,7 @@
 <app-header-black></app-header-black>
 <main>
   <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"></div>
-  <section class="section-profile-club">
+  <section>
     <div class="container">
       <div class="club">
         <div class="club__block-images" [ngStyle]="{'background-color': '#'+club.color}">
@@ -56,72 +56,38 @@
       </section>
       <section class="services">
         <h2 class="headline">Услуги</h2>
-        <ul class="services-list">
+        <ul class="services-list" *ngIf="club.services.length">
           <li class="services-list__items">
-            <article class="services-block">
+            <article class="services-block" *ngFor="let service of club.services">
               <div class="services-block__image">
                 <img src="./assets/services-1.jpg" alt="">
               </div>
-              <h3 class="services-block__headline">Finca De Girasoles</h3>
-              <p class="services-block__desc">MELISSA LEAPMAN</p>
-            </article>
-          </li>
-          <li class="services-list__items">
-            <article class="services-block">
-              <div class="services-block__image">
-                <img src="./assets/services-2.jpg" alt="">
-              </div>
-              <h3 class="services-block__headline">Finca De Girasoles</h3>
-              <p class="services-block__desc">MELISSA LEAPMAN</p>
-            </article>
-          </li>
-          <li class="services-list__items">
-            <article class="services-block">
-              <div class="services-block__image">
-                <img src="./assets/services-3.jpg" alt="">
-              </div>
-              <h3 class="services-block__headline">Finca De Girasoles</h3>
-              <p class="services-block__desc">MELISSA LEAPMAN</p>
+              <h3 class="services-block__headline">{{service.title}}</h3>
+              <p class="services-block__desc">{{service.description}}</p>
             </article>
           </li>
         </ul>
+        <p class="isnot" *ngIf="!club.services.length">Услуги не добавлены.</p>
       </section>
       <div class="hour-and-members">
         <div class="hours">
-          <h3 class="hours__headline">Services hours</h3>
-          <ul class="hours-list">
-            <li class="hours-list__items">
-              <span class="hours-list__week">Mon</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Tue</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Wed</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Thu</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Fri</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Sat</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
-            </li>
-            <li class="hours-list__items">
-              <span class="hours-list__week">Sun</span>
-              <span class="hours-list__time">8:30 - 23:00</span>
+          <h3 class="hours__headline">Часы работы</h3>
+          <ul class="hours-list" *ngIf="club.club_times.length">
+            <li class="hours-list__items" *ngFor="let time of club.club_times">
+              <span class="hours-list__week" *ngIf="time.id == 1">Пн</span>
+              <span class="hours-list__week" *ngIf="time.id == 2">Вт</span>
+              <span class="hours-list__week" *ngIf="time.id == 3">Ср</span>
+              <span class="hours-list__week" *ngIf="time.id == 4">Чт</span>
+              <span class="hours-list__week" *ngIf="time.id == 5">Пт</span>
+              <span class="hours-list__week" *ngIf="time.id == 6">Сб</span>
+              <span class="hours-list__week" *ngIf="time.id == 7">Вс</span>
+              <span class="hours-list__time">{{time.start | time}} - {{time.finish | time}}</span>
             </li>
           </ul>
+          <p class="isnot" *ngIf="!club.club_times.length">Время не добавлено.</p>
         </div>
         <div class="members">
-          <h3 class="hours__headline">Teams Memebers</h3>
+          <h3 class="hours__headline">Члены команд</h3>
           <ul class="members-list">
             <li class="members-list__items">
               <div class="members-list__image">
@@ -155,26 +121,12 @@
       </div>
       <section class="photo">
         <h2 class="headline">Фото</h2>
-        <ul>
-          <li>
-            <img src="/assets/profile-images-1.jpg">
-          </li>
-          <li>
-            <img src="/assets/profile-images-2.jpg">
-          </li>
-          <li>
-            <img src="/assets/profile-images-3.jpg">
-          </li>
-          <li>
-            <img src="/assets/profile-images-4.jpg">
-          </li>
-          <li>
-            <img src="/assets/profile-images-5.jpg">
-          </li>
-          <li>
-            <img src="/assets/profile-images-6.jpg">
+        <ul *ngIf="club.club_photos.length">
+          <li *ngFor="let photo of club.club_photos">
+            <img src="https://file.fitgum.ru/{{photo.image}}">
           </li>
         </ul>
+        <p class="isnot" *ngIf="!club.club_photos.length">Фотографии не добавлены.</p>
       </section>
     </div>
   </section>

@@ -11,11 +11,6 @@
 .area-images {
   width: auto;
   height: 421px;
-  background-color: #D8D8D8;
-}
-
-.section-profile-club {
-  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.101817);
 }
 
 .club {
@@ -25,7 +20,6 @@
 
   &__block-images {
     margin-top: -70px;
-    background: white;
     border-radius: 200px;
     height: 200px;
     width: 200px;
@@ -105,9 +99,8 @@
 
   &__items {
     margin-right: 20px;
-    font-weight: 600;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 44px;
     color: var(--light);
   }
 
@@ -129,17 +122,16 @@
 
 .list-submenu {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #FAFAFA;
-  border: 1px solid #ECECEC;
-  box-sizing: border-box;
+  background: var(--background-white);
+  border: 1px solid var(--border-light);
   border-radius: 6px;
+  overflow: hidden;
 
   &__items {
-    background: rgba(255, 255, 255, 0.0001);
-    box-shadow: inset 0px -1px 0px #ECECEC;
-    border-radius: 6px;
+
+    & + * {
+      border-top: 1px solid var(--border-light);
+    }
   }
 
   &__links {
@@ -193,13 +185,21 @@
   margin-bottom: 40px;
 
   &__image {
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 180px;
+    font-size: 0;
+    transition: all.3s;
+    cursor: pointer;
+    
+    &:hover {
+      box-shadow: var(--shadow-h);
+    }
+    
     img {
-      width: auto;
-      height: 180px;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.120952);
-      border-radius: 8px;
-      display: block;
-      margin-bottom: 20px;
+      max-width: 100%;
     }
   }
 
