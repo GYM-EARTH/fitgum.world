@@ -32,7 +32,6 @@
         list-style: none;
     
         a {
-            opacity: .6;
             color: var(--light);
             transition: .3s;
             font-size: 16px;
@@ -41,10 +40,10 @@
             line-height: 44px;
             
             &:hover {
-                opacity: 1;
+                color: var(--dark);
             }
             &.active {
-                opacity: 1;
+                color: var(--dark);
             }
         }
     }
