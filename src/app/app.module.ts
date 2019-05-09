@@ -28,6 +28,7 @@ import { SocketService } from './socket.service';
 import { EchoService } from './echo.service';
 import { VacanciesService } from './vacancies.service';
 import { VideosService } from './videos.service';
+import { ProgramsService } from './programs.service';
 
 import { TimePipe } from './time.pipe';
 
@@ -153,7 +154,9 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     SocketService,
     EchoService,
     VacanciesService,
-    VideosService],
+    VideosService,
+    ProgramsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
