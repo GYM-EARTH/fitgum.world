@@ -42,9 +42,10 @@
       </div>
       <div class="calendar__table">
         <div>
-          <div (click)="openCalendar()" class="calendar__day" *ngFor="let day of days">
+          <div (click)="openCalendar()" class="calendar__day" *ngFor="let day of days; index as i">
             <div>
-              <span>{{day}}</span>
+              <span [ngClass]="{'calendar__today' : currentDay == i}">{{day}}</span>
+              <div *ngIf="program?.program_days?.length > i" class="calendar__event">{{program?.program_days[i]?.title}}</div>
             </div>
           </div>
         </div>

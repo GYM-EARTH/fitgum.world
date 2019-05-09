@@ -8,7 +8,7 @@
         <li class="intro-tags__list">Lifestyle</li>
       </ul>
       <h1>{{firstArticle?.title}}</h1>
-      <footer><time pubdate [attr.datetime]="firstArticle.created_at">{{firstArticle?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
+      <footer><time pubdate [attr.datetime]="firstArticle?.created_at">{{firstArticle?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
       <a *ngIf="firstArticle" [routerLink]="['/news', firstArticle.slug]">Читать</a>
     </section>
   </div>

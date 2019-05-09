@@ -3,6 +3,43 @@
     background: var(--purple);
     padding-top: 30px;
     height: 100%;
+    figure {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: url(/assets/icon/profile.svg) 0 0 no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 30px auto 30px;
+        border: 2px solid var(--white);
+    }
+    &__xp {
+        margin: 30px;
+        p {
+            font-size: 14px;
+            color: var(--white);
+            font-weight: 600;
+            line-height: 44px;
+            span {
+                color: var(--yellow);
+            }
+        }
+        &__progress {
+            height: 14px;
+            background: rgba(0,0,0,.3);
+            border-radius: 10px;
+
+            div {
+                width: 60%;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: var(--shadow);
+                background: linear-gradient(45deg, var(--orange), var(--yellow));
+                height: 100%;
+            }
+        }
+    }
     nav {
         a {
             display: block;
