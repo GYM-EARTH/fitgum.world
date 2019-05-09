@@ -1,6 +1,49 @@
 .white {
     background: white;
-
+    .wrapper {
+        background: var(--background-light);
+    }
+    .btn-arrow,
+    .calendar,
+    .avents-list__items,
+    .data-list__items {
+        background: var(--white);
+    }
+    .btn-arrow-center {
+       color: var(--light);
+       background: var(--white);
+    }
+    .calendar .calendar__day,
+    .btn-l,
+    .btn-r,
+    .calendar__head,
+    .data-list__items {
+        border-color: var(--border-light);
+    }
+    .profile nav a.active {
+        background: var(--white);
+    }
+    .profile nav a {
+        color: var(--white);
+    }
+    .dashboard section form label {
+        color: var(--light);
+    }
+    .dashboard section footer,
+    .dashboard section > h1,
+    .chat,
+    .chanels,
+    .messages header,
+    .messages footer {
+        border-color: var(--border-light);
+    }
+    .dashboard section form input,
+    .dashboard section form textarea {
+        background: var(--white);
+        border-color: var(--border-light);
+        color: var(--dark);
+        
+    }
     app-header-white .header {
         border-bottom-color: var(--white);
 
