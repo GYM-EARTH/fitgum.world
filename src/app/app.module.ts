@@ -138,7 +138,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
