@@ -24,6 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
 import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'HomePage'}},
@@ -49,6 +51,8 @@ const routes: Routes = [
   { path: 'videos', component: VideosComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'terms-of-use', component: TermsOfUseComponent },
+	{ path: 'privacy-policy', component: PrivacyPolicyComponent }
   // { path: '**', component: PageNotFoundComponent }
 ];
 

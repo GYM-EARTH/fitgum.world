@@ -101,6 +101,15 @@
     padding: 0 90px;
     align-items: center;
     justify-content: space-between;
+    transition: all .3s;
+    
+    > a {
+        color: var(--light);
+        text-decoration: none;
+        &:hover {
+            color: var(--dark);
+        }
+    }
 }
 .payment {
     display: flex;

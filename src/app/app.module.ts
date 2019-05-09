@@ -79,6 +79,8 @@ import { RecomendationComponent } from './recomendation/recomendation.component'
 import { ServicesComponent } from './services/services.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
+import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -129,7 +131,9 @@ import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
     ServicesComponent,
     JobsComponent,
     ShowJobsComponent,
-    TimePipe
+    TimePipe,
+    TermsOfUseComponent,
+    PrivacyPolicyComponent
     
   ],
   imports: [

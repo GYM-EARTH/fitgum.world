@@ -1,0 +1,31 @@
+:host {
+    width: 777px;
+    display: block;
+    margin: 44px auto;
+}
+* {
+    font-size: 14px;
+}
+h2 {
+    text-align: center;
+    line-height: 44px;
+    margin-top: 22px;
+}
+ul, li {
+    list-style: none;
+}
+:host > ul > li + li {
+    margin-top: 22px;
+}
+p {
+    text-align: justify
+}
+b {
+    margin-right: 22px;
+}
+span {
+    padding: 0 22px;
+}
+li > ul {
+    margin-top: 22px;
+}
