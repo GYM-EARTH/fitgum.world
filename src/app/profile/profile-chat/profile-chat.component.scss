@@ -31,8 +31,6 @@
     background: white;
     display: grid;
     grid-template-columns: 360px auto;
-    border-top-width: 1px;
-    border-top-style: solid;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
@@ -51,6 +49,9 @@
         overflow: hidden;
         position: relative;
         padding: 14px 0;
+        &:hover {
+            background: var(--purple);
+        }
     }
     figure {
         float: left;
