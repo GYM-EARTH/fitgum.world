@@ -4,7 +4,25 @@
     </IfModule>
 
     RewriteEngine On
-
+    
+    # Server Side Rendering
+    RewriteCond %{REQUEST_URI} !^/robots.txt
+    RewriteCond %{REQUEST_URI} !^/profile/
+    RewriteCond %{REQUEST_URI} !^/terms-of-use
+    RewriteCond %{REQUEST_URI} !^/privacy-policy
+    RewriteRule ^(clubs*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(news*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(services*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(trainers*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(products*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(about*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(contacts*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(sigin*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(signup*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(videos*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(jobs*.*)$ http://134.0.112.4:4000/$1  [P,L]
+    RewriteRule ^(.*) http://134.0.112.4:4000/  [P,L]
+    
     # Redirect Www
     RewriteCond %{HTTP_HOST} ^www\.(.*)$
     RewriteRule ^(.*)$ http://%1/$1 [L,R=301]

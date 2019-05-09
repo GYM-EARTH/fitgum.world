@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /profile
+
+Allow: /
+sitemap: https://api.fitgum.ru/sitemap-articles
+Host: https://fitgum.ru
