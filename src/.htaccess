@@ -6,6 +6,7 @@
     RewriteEngine On
     
     # Server Side Rendering
+    RewriteCond %{REQUEST_URI} !^/manifest.json
     RewriteCond %{REQUEST_URI} !^/robots.txt
     RewriteCond %{REQUEST_URI} !^/profile/
     RewriteCond %{REQUEST_URI} !^/terms-of-use
