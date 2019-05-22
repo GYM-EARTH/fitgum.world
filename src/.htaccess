@@ -22,7 +22,7 @@
     RewriteRule ^(signup*.*)$ http://134.0.112.4:4000/$1  [P,L]
     RewriteRule ^(videos*.*)$ http://134.0.112.4:4000/$1  [P,L]
     RewriteRule ^(jobs*.*)$ http://134.0.112.4:4000/$1  [P,L]
-    RewriteRule ^(.*) http://134.0.112.4:4000/  [P,L]
+    #RewriteRule ^(.*) http://134.0.112.4:4000/  [P,L]
     
     # Redirect Www
     RewriteCond %{HTTP_HOST} ^www\.(.*)$

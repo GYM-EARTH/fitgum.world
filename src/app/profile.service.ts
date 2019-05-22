@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from  '../environments/environment'
 import { Trainers } from './trainers';
-import { CookieService } from './cookie.service';
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json',
+    'Accept': 'application/json'
+  })
+};
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
+  fd;
 
+  token;
   constructor(private http: HttpClient) { }
 
   public getAll() {
@@ -21,5 +29,22 @@ export class ProfileService {
 
   public getBy(slug: string) {
     return this.http.get<{Trainers}>(`${environment.trainers}/${slug}`);
+  }
+
+  public uploadPhoto(file, token) {
+
+    this.token = token;
+    this.fd = new FormData();
+  
+    this.fd.append('image', file, file.name);
+    
+    return this.http.post<any>(environment.cabinet.avatar, this.fd, {
+        headers: new HttpHeaders({
+          // 'Content-Type':  '',
+          'Accept': 'application/json',
+          'Authorization': "Bearer " + this.token,
+        })
+      });
+
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TrainersService } from '../trainers.service';
+import { UsersService } from '../users.service';
 
 @Component({
   selector: 'app-experience',
@@ -10,10 +10,10 @@ export class ExperienceComponent implements OnInit {
 
   public trainers;
 
-  constructor(private trainersService: TrainersService) { }
+  constructor(private usersService: UsersService) { }
 
   ngOnInit() {
-    this.trainersService.getAll().subscribe(trainers => this.trainers = trainers.data);
+    this.usersService.getAll().subscribe(trainers => this.trainers = trainers.data);
   }
 
 }

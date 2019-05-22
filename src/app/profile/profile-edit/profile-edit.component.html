@@ -4,12 +4,14 @@
   <section>
     <h1>Редактировать профиль</h1>
     <section class="profile__photo">
-      <form action="">
-        <input type="file">
+      <img src="{{profile?.avatar}}" alt="">
+      <form>
+        <input type="file" name="photo" (change)="onFileSelected($event)">
+        <input type="button" (click)="onUpload()" value="Go">
       </form>
       <header>
-        <h1>Trainer Name</h1>
-        <span>user name</span>
+        <h1>{{profile?.name}}</h1>
+        <span>{{profile?.email}}</span>
       </header>
 
     </section>

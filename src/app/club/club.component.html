@@ -1,6 +1,6 @@
 <app-header-black></app-header-black>
 <main>
-  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"></div>
+  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
   <section>
     <div class="container">
       <div class="club">
@@ -60,7 +60,7 @@
           <li class="services-list__items">
             <article class="services-block" *ngFor="let service of club.services">
               <div class="services-block__image">
-                <img src="./assets/services-1.jpg" alt="">
+                <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
               </div>
               <h3 class="services-block__headline">{{service.title}}</h3>
               <p class="services-block__desc">{{service.description}}</p>
@@ -89,31 +89,13 @@
         <div class="members">
           <h3 class="hours__headline">Члены команд</h3>
           <ul class="members-list">
-            <li class="members-list__items">
+            <li class="members-list__items" *ngFor="let trainer of club.trainers">
               <div class="members-list__image">
-                <img src="./assets/teams-members.jpg" alt="">
+                <img src="https://file.fitgum.ru/{{trainer.photo}}" alt="">
               </div>
               <div class="members-list__content">
-                <h3>Mabelle Sanchez</h3>
-                <span>Owner</span>
-              </div>
-            </li>
-            <li class="members-list__items">
-              <div class="members-list__image">
-                <img src="./assets/teams-members.jpg" alt="">
-              </div>
-              <div class="members-list__content">
-                <h3>Mabelle Sanchez</h3>
-                <span>Triner</span>
-              </div>
-            </li>
-            <li class="members-list__items">
-              <div class="members-list__image">
-                <img src="./assets/teams-members.jpg" alt="">
-              </div>
-              <div class="members-list__content">
-                <h3>Mabelle Sanchez</h3>
-                <span>Triner</span>
+                <h3>{{trainer?.name}}</h3>
+                <span>{{trainer?.description}}</span>
               </div>
             </li>
           </ul>

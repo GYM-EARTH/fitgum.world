@@ -22,6 +22,9 @@ export const environment = {
   },
   cabinet: {
     avatar: 'https://api.fitgum.ru/cabinet/avatar'
+  },
+  users: {
+    trainers: 'https://api.fitgum.ru/users/trainers'
   }
 };
 

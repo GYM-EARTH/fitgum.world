@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from '../../cookie.service';
 import { PassportService } from '../../passport.service';
+import { ProfileService } from '../../profile.service';
 
 @Component({
   selector: 'app-profile-edit',
@@ -14,11 +15,14 @@ export class ProfileEditComponent implements OnInit {
   
   private userID;
   private token;
+  
+  seletedFile: File = null;
 
   constructor(
     private passportService: PassportService,
     private router: Router,
-    private cookieService: CookieService) {
+    private cookieService: CookieService,
+    private profileService: ProfileService) {
     if (!this.cookieService.getCookie('login')) {
       this.router.navigate(['/signin']);
     };
@@ -35,5 +39,15 @@ export class ProfileEditComponent implements OnInit {
       
     });
   }
+
+  onFileSelected(event){
+    this.seletedFile = event.target.files[0]
+  }
+
+  onUpload() {
+    this.profileService.uploadPhoto(this.seletedFile, this.token).subscribe();
+  }
+
+
 
 }

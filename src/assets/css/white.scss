@@ -1,5 +1,8 @@
 .white {
     background: white;
+    .area-images + section {
+        border-bottom: 1px solid var(--border-light);
+    }
     .wrapper {
         background: var(--background-light);
     }

@@ -29,6 +29,7 @@ import { EchoService } from './echo.service';
 import { VacanciesService } from './vacancies.service';
 import { VideosService } from './videos.service';
 import { ProgramsService } from './programs.service';
+import { UsersService } from './users.service';
 
 import { TimePipe } from './time.pipe';
 
@@ -82,6 +83,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
 
 @NgModule({
   declarations: [
@@ -134,7 +136,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     ShowJobsComponent,
     TimePipe,
     TermsOfUseComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    HomeClubsComponent
     
   ],
   imports: [
@@ -155,7 +158,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
     EchoService,
     VacanciesService,
     VideosService,
-    ProgramsService
+    ProgramsService,
+    UsersService
   ],
   bootstrap: [AppComponent]
 })

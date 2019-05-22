@@ -44,16 +44,12 @@
   }
 
   &__name {
-    font-weight: 600;
     font-size: 34px;
-    line-height: 1.2;
     color: var(--dark);
   }
 
   &__profile-link {
     font-size: 16px;
-    line-height: 1.2;
-    margin-bottom: 20px;
     display: block;
     color: var(--light);
   }
@@ -99,15 +95,13 @@
 
   &__items {
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 44px;
     color: var(--light);
   }
 
   b {
-    font-weight: 600;
     color: var(--dark);
-    font-size: 22px;
   }
 }
 
@@ -191,7 +185,6 @@
     margin-bottom: 20px;
     height: 180px;
     font-size: 0;
-    transition: all.3s;
     cursor: pointer;
     
     &:hover {
@@ -270,11 +263,14 @@
 
   &__image {
     margin-right: 10px;
-
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 50%;
     img {
+      max-height: 100%;
       display: block;
-      width: 44px;
-      height: 44px;
+      
     }
   }
 
