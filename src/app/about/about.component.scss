@@ -1,17 +1,17 @@
 .start {
-    height: 420px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/assets/about/background.jpg) 0 0 no-repeat;
+    // background: url(/assets/about/background.jpg) 0 0 no-repeat;
     background-size: cover;
     margin-bottom: 50px;
+    background: var(--background-light);
 
     h1 {
         font-size: 74px;
         color: white;
         text-align: center;
-        margin-top: 100px;
     }
 }
 .prev,

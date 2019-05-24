@@ -2,18 +2,19 @@
     position: relative;
 }
 .preview {
-    height: 800px;
+    height: 700px;
     overflow: hidden;
-    background: black;
+    background: linear-gradient(-45deg, var(--pink),var(--purple), var(--blue), var(--green), var(--yellow));
 
     img {
+        opacity: 0;
         max-width: 100%;
         
     }
 }
 .intro {
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 90px;
     right: 90px;
     bottom: 0;
@@ -40,7 +41,6 @@
         text-transform: uppercase;
         font-size: 18px;
         justify-self: baseline;
-        font-weight: 600;
         letter-spacing: 2px;
         transition: all .3s;
         

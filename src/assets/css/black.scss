@@ -1,8 +1,6 @@
 .black {
     background: black;
-    .wrapper {
-        background: var(--background-dark);
-    }
+
     .btn-arrow,
     .calendar,
     .avents-list__items,
@@ -121,6 +119,9 @@
     }
     
     app-news .news {
+        h1 { color: var(--light) }
+    }
+    app-home-clubs .clubs {
         h1 { color: var(--light) }
     }
 

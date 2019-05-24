@@ -1,8 +1,8 @@
 {
-  "name": "fitgum",
-  "short_name": "fitgum",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "GYM.Earth",
+  "short_name": "GYM",
+  "theme_color": "#9013fe",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",

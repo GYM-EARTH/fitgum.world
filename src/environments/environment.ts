@@ -9,7 +9,7 @@ export const environment = {
     register: 'https://api.fitgum.ru/register',
     profile: 'https://api.fitgum.ru/cabinet'
   },
-  clubs: 'https://api.fitgum.ru/clubs',
+  clubs: 'http://api.gym.earth/clubs',
   news: 'https://api.fitgum.ru/news',
   trainers: 'https://api.fitgum.ru/trainers',
   vacancies: 'https://api.fitgum.ru/vacancies',

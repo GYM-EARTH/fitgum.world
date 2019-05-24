@@ -18,8 +18,8 @@
         font-weight: bold;
         padding: 0 25px;;
 
-        span:first-child { color: var(--pink); }
-        span:last-child { color: var(--purple); }
+        span:first-child { color: var(--purple); }
+        span:last-child { color: var(--green); }
     }
     nav {
         display: flex;
@@ -35,7 +35,6 @@
         .signup {
             margin-left: 25px;
             border-radius: 8px;
-            font-weight: 600;
             border-width: 1px;
             border-style: solid;
             &:hover {

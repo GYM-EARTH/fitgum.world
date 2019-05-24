@@ -3,9 +3,6 @@
     .area-images + section {
         border-bottom: 1px solid var(--border-light);
     }
-    .wrapper {
-        background: var(--background-light);
-    }
     .btn-arrow,
     .calendar,
     .avents-list__items,
@@ -123,6 +120,9 @@
     }
     
     app-news .news {
+        h1 { color: var(--dark) }
+    }
+    app-home-clubs .clubs {
         h1 { color: var(--dark) }
     }
 

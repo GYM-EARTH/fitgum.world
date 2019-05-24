@@ -1,11 +1,11 @@
 <app-header-black></app-header-black>
 <main>
-  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
+  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="http://files.gym.earth/{{club?.cover}}" alt=""></div>
   <section>
     <div class="container">
       <div class="club">
         <div class="club__block-images" [ngStyle]="{'background-color': '#'+club.color}">
-          <img class="club__images" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
+          <img class="club__images" src="http://files.gym.earth/{{club?.logo}}" alt="">
         </div>
         <div class="club__block-data">
           <ul class="tags-list">
@@ -71,7 +71,7 @@
       </section>
       <div class="hour-and-members">
         <div class="hours">
-          <h3 class="hours__headline">Часы работы</h3>
+          <h3 class="hours__headline">Время</h3>
           <ul class="hours-list" *ngIf="club.club_times.length">
             <li class="hours-list__items" *ngFor="let time of club.club_times">
               <span class="hours-list__week" *ngIf="time.id == 1">Пн</span>
@@ -87,7 +87,7 @@
           <p class="isnot" *ngIf="!club.club_times.length">Время не добавлено.</p>
         </div>
         <div class="members">
-          <h3 class="hours__headline">Члены команд</h3>
+          <h3 class="hours__headline">Команда</h3>
           <ul class="members-list">
             <li class="members-list__items" *ngFor="let trainer of club.trainers">
               <div class="members-list__image">

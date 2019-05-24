@@ -13,8 +13,8 @@
         font-weight: bold;
         padding: 0 25px;;
 
-        span:first-child { color: var(--pink); }
-        span:last-child { color: var(--purple); }
+        span:first-child { color: var(--purple); }
+        span:last-child { color: var(--green); }
     }
     nav {
         display: flex;
@@ -25,13 +25,11 @@
             display: inline-block;
             text-decoration: none;
             transition: all .3s;
-            font-weight: 600;
         }
         .signup {
             border: 1px solid var(--purple);
             margin-left: 25px;
             border-radius: 8px;
-            font-weight: 600;
             &:hover {
                 background: var(--purple);
             }
@@ -45,7 +43,7 @@
             margin-left: 25px;
         }
         .nav__a:hover {
-            color: var(--purple);
+            color: var(--green);
         }
         .active {
             color: var(--purple);

@@ -2,28 +2,31 @@
   <div>
     <article *ngFor="let i of blog" [routerLink]="['/news', i.slug]">
       <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
-      <nav><a href="">Fitness</a><a href="">Gym</a></nav>
+      <nav>
+        <a href="">{{i.category?.title}}</a>
+        <a href="">Gym</a>
+      </nav>
       <header><h1>{{i?.title}}</h1></header>
-      <footer><time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
+      <footer><time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time><span>By <a routerLink="/" href="/">GYM.Earth</a></span></footer>
       <p>{{i?.description}}</p>
     </article>
   </div>
-  <app-pagination></app-pagination>
+  <!-- <app-pagination></app-pagination> -->
 </section>
 <aside class="blog__aside">
     <section class="blog__latest">
       <h1>Последние новости</h1>
       <div>
         <article *ngFor="let i of blog" [routerLink]="['/news', i.slug]">
-            <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
-            <nav><a href="">Fitness</a><a href="">Gym</a></nav>
+            <!-- <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure> -->
+            <nav><a href="">{{i?.category.title}}</a><a href="">Gym</a></nav>
             <header><h1>{{i?.title}}</h1></header>
             <p>{{i?.description}}</p>
           </article>
       </div>
     </section>
 
-    <section class="blog__tags">
+    <!-- <section class="blog__tags">
         <h1>Популярные теги</h1>
         <ul>
           <li><a href="#">Fitness</a></li>
@@ -36,5 +39,5 @@
           <li><a href="#">Lifestyle</a></li>
           <li><a href="#">Nutrition</a></li>
         </ul>
-      </section>
+      </section> -->
 </aside>

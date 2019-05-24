@@ -11,6 +11,12 @@
 .area-images {
   width: auto;
   height: 421px;
+  overflow: hidden;
+  img {
+    max-height: 100%;
+    margin: auto;
+    display: block;
+  }
 }
 
 .club {

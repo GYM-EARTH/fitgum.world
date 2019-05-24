@@ -119,15 +119,16 @@
             overflow: hidden;
             padding-bottom: 25px;
             transition: all .3s;
+            align-self: start;
             
             &:hover {
                 box-shadow: var(--shadow-h);
             }
             figure {
-                height: 260px;
+                max-height: 260px;
                 overflow: hidden;
                 img {
-                    max-height: 100%;
+                    max-width: 100%;
                 }
             }
             h1 {
