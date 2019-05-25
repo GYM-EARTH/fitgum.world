@@ -115,14 +115,15 @@
         article {
             width: 370px;
             border-radius: 10px;
-            box-shadow: var(--shadow);
+            border: 1px solid var(--border-light);
             overflow: hidden;
             padding-bottom: 25px;
             transition: all .3s;
             align-self: start;
             
             &:hover {
-                box-shadow: var(--shadow-h);
+                border-color: transparent;
+                box-shadow: var(--shadow);
             }
             figure {
                 max-height: 260px;

@@ -84,6 +84,7 @@ import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
+import { NewsletterComponent } from './modals/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -137,7 +138,8 @@ import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
     TimePipe,
     TermsOfUseComponent,
     PrivacyPolicyComponent,
-    HomeClubsComponent
+    HomeClubsComponent,
+    NewsletterComponent
     
   ],
   imports: [

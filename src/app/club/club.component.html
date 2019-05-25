@@ -1,11 +1,11 @@
 <app-header-black></app-header-black>
 <main>
-  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
+  <div class="area-images" [ngStyle]="{'background-color': '#'+club?.color}"><img  *ngIf="club?.cover" src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
   <section>
     <div class="container">
       <div class="club">
-        <div class="club__block-images" [ngStyle]="{'background-color': '#'+club.color}">
-          <img class="club__images" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
+        <div class="club__block-images" [ngStyle]="{'background-color': '#'+club?.color}">
+          <img class="club__images" *ngIf="club?.logo" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
         </div>
         <div class="club__block-data">
           <ul class="tags-list">
@@ -27,36 +27,36 @@
     <div>
       <ul class="list-submenu">
         <li class="list-submenu__items">
-          <a class="list-submenu__links list-submenu__links_active" href="#">О клубе</a>
+          <a class="list-submenu__links list-submenu__links_active" (click)="scroll(about)">О клубе</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Услуги</a>
+          <a class="list-submenu__links" (click)="scroll(service)">Услуги</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Время работы</a>
+          <a class="list-submenu__links" (click)="scroll(work)">Время работы</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Фото</a>
+          <a class="list-submenu__links" (click)="scroll(photo)">Галерея</a>
         </li>
         <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Команда</a>
+          <a class="list-submenu__links" (click)="scroll(team)">Команда</a>
         </li>
         <!-- <li class="list-submenu__items">
           <a class="list-submenu__links" href="#">Магазин</a>
         </li> -->
-        <li class="list-submenu__items">
+        <!-- <li class="list-submenu__items">
           <a class="list-submenu__links" href="#">Карта</a>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class="page">
-      <section class="about">
+      <section class="about" #about>
         <h2 class="headline">О клубе</h2>
         <div class="content__club" [innerHTML]="club?.content"></div>
       </section>
-      <section class="services">
+      <section class="services" #service>
         <h2 class="headline">Услуги</h2>
-        <ul class="services-list" *ngIf="club.services.length">
+        <ul class="services-list" *ngIf="club?.services.length">
           <li class="services-list__items" *ngFor="let service of club.services">
             <article class="services-block">
               <div class="services-block__image">
@@ -67,12 +67,12 @@
             </article>
           </li>
         </ul>
-        <p class="isnot" *ngIf="!club.services.length">Услуги не добавлены.</p>
+        <p class="isnot" *ngIf="!club?.services.length">Услуги не добавлены.</p>
       </section>
-      <div class="hour-and-members">
+      <div class="hour-and-members" #work #team>
         <div class="hours">
           <h3 class="hours__headline">Время</h3>
-          <ul class="hours-list" *ngIf="club.club_times.length">
+          <ul class="hours-list" *ngIf="club?.club_times.length">
               <li class="hours-list__items"><span class="hours-list__week">Пн</span><span class="hours-list__time">{{club.club_times[0].start | time}} - {{club.club_times[0].finish | time}}</span></li>
               <li class="hours-list__items"><span class="hours-list__week">Вт</span><span class="hours-list__time">{{club.club_times[1].start | time}} - {{club.club_times[1].finish | time}}</span></li>
               <li class="hours-list__items"><span class="hours-list__week">Ср</span><span class="hours-list__time">{{club.club_times[2].start | time}} - {{club.club_times[2].finish | time}}</span></li>
@@ -81,12 +81,12 @@
               <li class="hours-list__items"><span class="hours-list__week">Сб</span><span class="hours-list__time">{{club.club_times[5].start | time}} - {{club.club_times[5].finish | time}}</span></li>
               <li class="hours-list__items"><span class="hours-list__week">Вс</span><span class="hours-list__time">{{club.club_times[6].start | time}} - {{club.club_times[6].finish | time}}</span></li>
           </ul>
-          <p class="isnot" *ngIf="!club.club_times.length">Время не добавлено.</p>
+          <p class="isnot" *ngIf="!club?.club_times.length">Время не добавлено.</p>
         </div>
         <div class="members">
           <h3 class="hours__headline">Команда</h3>
           <ul class="members-list">
-            <li class="members-list__items" *ngFor="let trainer of club.trainers">
+            <li class="members-list__items" *ngFor="let trainer of club?.trainers">
               <div class="members-list__image">
                 <img src="https://file.fitgum.ru/{{trainer.photo}}" alt="">
               </div>
@@ -95,18 +95,18 @@
                 <span>{{trainer?.description}}</span>
               </div>
             </li>
-            <p class="isnot" *ngIf="!club.trainers.length">Участники не добавлены.</p>
+            <p class="isnot" *ngIf="!club?.trainers.length">Участники не добавлены.</p>
           </ul>
         </div>
       </div>
-      <section class="photo">
+      <section class="photo" name="photos" #photo>
         <h1 class="headline">Галерея</h1>
-        <ul *ngIf="club.club_photos.length">
+        <ul *ngIf="club?.club_photos.length">
           <li *ngFor="let photo of club.club_photos">
             <img src="https://file.fitgum.ru/{{photo.image}}">
           </li>
         </ul>
-        <p class="isnot" *ngIf="!club.club_photos.length">Фотографии не добавлены.</p>
+        <p class="isnot" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
       </section>
     </div>
   </section>

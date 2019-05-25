@@ -2,16 +2,16 @@
     <div>
       <article>
         <nav>
-          <a href="">Fitness</a>
-          <a href="">Gym</a>
+          <a href="">{{article?.category.title}}</a>
+          <!-- <a href="">Gym</a> -->
         </nav>
         <header><h1>{{article?.title}}</h1></header>
         <footer>
           <div>
-            <time datetime="">{{article?.created_at}}</time>
-            <span>By <a href="">FitGum</a></span>
+            <time pubdate [attr.datetime]="article.created_at">{{article?.created_at | date:'mediumDate'}}</time>
+            <!-- <span>By <a href="">FitGum</a></span> -->
           </div>
-          <ul class="sharing">
+          <!-- <ul class="sharing">
             <li>
               <a href="#">
                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </footer>
         <figure><img src="https://file.fitgum.ru/{{article?.preview}}" alt=""></figure>
         <div class="content__news" [innerHTML]="article?.content"></div>
@@ -48,7 +48,10 @@
       <div>
         <article *ngFor="let i of posts" [routerLink]="['/news', i.slug]">
           <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
-          <nav><a href="">Fitness</a><a href="">Gym</a></nav>
+          <nav>
+            <a href="">{{i?.category.title}}</a>
+            <!-- <a href="">Gym</a> -->
+          </nav>
           <header><h1>{{i?.title}}</h1></header>
           <p>{{i?.description}}</p>
         </article>

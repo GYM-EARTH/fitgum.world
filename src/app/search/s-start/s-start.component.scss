@@ -4,7 +4,7 @@
 .preview {
     height: 325px;
     overflow: hidden;
-    background: black;
+    background: var(--background-light);
 
     img {
         max-width: 100%;
@@ -42,11 +42,14 @@
         background: white url(/assets/icon/search.svg) 25px 50% no-repeat;
         outline: none;
         padding-left: 65px;
+        padding-right: 65px;
         font-size: 18px;
-        box-shadow: 0 6px 7px rgba(0,0,0,.1);
+        box-shadow: var(--shadow);
+        font-family: 'Open Sans', sans-serif;
+        color: var(--dark);
         
         &::placeholder {
-            // font-size: 18px;
+            color: var(--light);
         }
     }
     input[type="submit"] {
@@ -57,17 +60,13 @@
         border-radius: 50px;
         border: none;
         font-size: 18px;
-        text-transform: uppercase;
-        font-weight: 600;
         cursor: pointer;
         outline: none;
         margin-left: 25px;
         transition: all .3s;
-        font-weight: 600;
-        letter-spacing: 2px;
-
+        box-shadow: var(--shadow);
         &:hover {
-            box-shadow: 0 6px 7px rgba(0,0,0,.1);
+            box-shadow: var(--shadow-h);
         }
     }
 }

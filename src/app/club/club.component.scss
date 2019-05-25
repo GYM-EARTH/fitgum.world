@@ -5,7 +5,8 @@
 
 .container {
   max-width: 1135px;
-  margin: 0 auto;
+  margin: -70px auto 0;
+  
 }
 
 .area-images {
@@ -24,7 +25,7 @@
   grid-column-gap: 65px;
 
   &__block-images {
-    margin-top: -70px;
+    margin-top: 25px;
     border-radius: 200px;
     height: 200px;
     width: 200px;
@@ -65,7 +66,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 
   &__items {
     margin-right: 15px;
@@ -93,7 +94,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   display: flex;
   line-height: 44px;
@@ -126,7 +128,7 @@
   overflow: hidden;
 
   &__items {
-    padding: 0 25px;
+    
 
     & + * {
       border-top: 1px solid var(--border-light);
@@ -134,9 +136,11 @@
   }
 
   &__links {
-
+    padding: 0 25px;
     font-size: 18px;
     line-height: 58px;
+    display: block;
+    cursor: pointer;
     text-align: center;
     color: var(--light);
     text-decoration: none;
@@ -157,17 +161,6 @@
   color: var(--dark);
 }
 
-.about {
-  max-width: 797px;
-  margin-bottom: 30px;
-
-  p {
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--light);
-  }
-}
-
 
 .services-list {
   list-style: none;
@@ -180,7 +173,6 @@
 
 .services-block {
   text-align: center;
-  margin-bottom: 40px;
   h3 {
     font-size: 18px;
     color: var(--dark);
@@ -207,14 +199,12 @@
   &__headline {
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.2;
     color: var(--dark);
-    margin-bottom: 10px;
+    line-height: 44px;
   }
 
   &__desc {
     font-size: 12px;
-    line-height: 22px;
     text-transform: uppercase;
     color: var(--light);
   }
@@ -222,9 +212,8 @@
 
 .hour-and-members {
   display: grid;
-  grid-template-columns: 170px 400px;
-  grid-column-gap: 120px;
-  margin-bottom: 20px;
+  grid-template-columns: 270px 270px 270px;
+  grid-column-gap: 30px;
 }
 
 .hours {

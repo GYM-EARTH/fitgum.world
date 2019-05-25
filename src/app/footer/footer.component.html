@@ -1,3 +1,4 @@
+<app-newsletter *ngIf="modal"></app-newsletter>
 <footer class="footer">
   <div class="footer__logo">
     <a routerLink="/" href="/"><span>fit</span><span>gum</span></a>
@@ -9,6 +10,7 @@
         <!-- <li><a href="">Удобный магазин</a></li>
         <li><a href="">Ресторан</a></li>
         <li><a href="">Прачечная</a></li> -->
+        <li><a routerLink="/search" href="/search">Поиск</a></li>
         <li><a routerLink="/jobs" href="/jobs" routerLinkActive="active">Вакансии</a></li>
       </ul>
     </section>
@@ -27,7 +29,7 @@
     <h1>Новостная рассылка</h1>
     <form>
       <input type="text" placeholder="E-mail">
-      <input type="submit" value="Да">
+      <input type="submit" value="Да" (click)="sendMessage()">
     </form>
   </section>
 </footer>

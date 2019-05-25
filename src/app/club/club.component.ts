@@ -23,4 +23,8 @@ export class ClubComponent implements OnInit {
     });
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+}
+
 }
