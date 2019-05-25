@@ -3,7 +3,7 @@
     <p>Сертифицированные персональные тренеры мирового класса,<br> энергичные инструкторы и инновационные фитнес-программы.</p>
     <div>
       <!-- <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]"> -->
-        <p class="isnot" *ngIf="!trainers.length">Тренеры не добавлены.</p>
+        <p class="isnot" *ngIf="!trainers?.length">Тренеры не добавлены.</p>
         <article *ngFor="let trainer of trainers" >
         <figure><img src="{{trainer?.avatar}}" alt=""></figure>
         <header>

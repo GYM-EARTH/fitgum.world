@@ -14,7 +14,10 @@
     </ng-template>
     <ng-template [ngIf]="auth">
       <a i18n="signout" (click)="signOut()" routerLink="/signin" href="/signin">Выход</a>
-      <a class="profile" routerLink="/profile" href="/profile"><img src="{{profile?.avatar}}" alt=""></a>
+      <a class="profile" routerLink="/profile" href="/profile"><img src="{{profile?.avatar}}" alt="">
+        <img *ngIf="profile?.avatar" src="{{profile?.avatar}}" alt="">
+        <img *ngIf="!profile?.avatar" src="/assets/icon/profile.svg" alt="">
+      </a>
     </ng-template>
   </nav>
 </header>

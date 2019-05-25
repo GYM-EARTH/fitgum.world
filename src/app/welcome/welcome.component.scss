@@ -4,17 +4,26 @@
 .preview {
     height: 700px;
     overflow: hidden;
-    background: linear-gradient(-45deg, var(--pink),var(--purple), var(--blue), var(--green), var(--yellow));
-
+    // background: linear-gradient(-45deg, var(--pink),var(--purple), var(--blue), var(--green), var(--yellow));
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(135deg, rgba(0,0,0,0.86) 0%, rgba(255,255,255,0.00) 100%);
+    }
     img {
-        opacity: 0;
+        opacity: 1;
         max-width: 100%;
         
     }
 }
 .intro {
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 90px;
     right: 90px;
     bottom: 0;
