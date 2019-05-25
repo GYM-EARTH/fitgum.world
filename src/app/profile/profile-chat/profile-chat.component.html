@@ -1,16 +1,18 @@
 <app-header-black></app-header-black>
 <div class="dashboard">
-  <app-profile-aside></app-profile-aside>
+  <app-profile-aside [profile]="profile"></app-profile-aside>
   <section class="chat">
     <div class="chanels">
-        <div *ngIf="!chats">jhh</div>
       <ul>
         <li>
           <section *ngFor="let chat of chats; index as i" (click)="selectChat(chat?.id, chat?.users)">
-              <figure></figure>
+              <figure>
+                  <img *ngIf="chat?.users[1].avatar" src="{{chat?.users[1].avatar}}" alt="">
+                  <img *ngIf="!chat?.users[1].avatar" src="/assets/icon/profile.svg" alt="">
+              </figure>
               <h1>{{chat?.users[0].name}}</h1>
               <p>The Basics Of Buying A Telescope</p>
-              <footer>{{chat.updated_at}}</footer>
+              <footer>{{chat.updated_at | date:'mediumDate'}}</footer>
           </section>
         </li>
       </ul>
@@ -18,9 +20,12 @@
     <section class="messages">
       <header>
         <div class="messages__answer">
-          <figure></figure>
-          <h1>Uzoma Buchi</h1>
-          <span>Available</span>
+          <figure>
+              <img *ngIf="profile?.avatar" src="{{profile?.avatar}}" alt="">
+              <img *ngIf="!profile?.avatar" src="/assets/icon/profile.svg" alt="">
+          </figure>
+          <h1>{{profile?.name}}</h1>
+          <span *ngIf="!profile?.email_verified_at">Available</span>
         </div>
       </header>
       <ul>

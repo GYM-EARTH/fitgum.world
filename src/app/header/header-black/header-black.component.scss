@@ -13,12 +13,12 @@
         font-weight: bold;
         padding: 0 25px;;
 
-        span:first-child { color: var(--purple); }
-        span:last-child { color: var(--green); }
+        span:first-child { color: var(--pink); }
+        span:last-child { color: var(--purple); }
     }
     nav {
         display: flex;
-        a {
+        a:not(.profile) {
             font-size: 16px;
             padding: 0 25px;
             line-height: 45px;
@@ -38,12 +38,16 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: url(/assets/icon/profile.svg) 0 0 no-repeat;
-            background-size: contain;
             margin-left: 25px;
+            overflow: hidden;
+            img {
+                position: relative;
+                z-index: 1;
+                max-width: 100%;
+            }
         }
         .nav__a:hover {
-            color: var(--green);
+            color: var(--pink);
         }
         .active {
             color: var(--purple);

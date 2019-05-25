@@ -2,8 +2,10 @@
     <h1>Фитнес Опыт</h1>
     <p>Сертифицированные персональные тренеры мирового класса,<br> энергичные инструкторы и инновационные фитнес-программы.</p>
     <div>
-      <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]">
-        <figure><img src="https://file.fitgum.ru/{{trainer?.photo}}" alt=""></figure>
+      <!-- <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]"> -->
+        <p class="isnot" *ngIf="!trainers.length">Тренеры не добавлены.</p>
+        <article *ngFor="let trainer of trainers" >
+        <figure><img src="{{trainer?.avatar}}" alt=""></figure>
         <header>
           <h1>{{trainer?.name}}</h1>
           <p>{{trainer?.email}}</p>

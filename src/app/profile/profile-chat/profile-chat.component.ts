@@ -3,6 +3,7 @@ import { ChatService } from '../../chat.service';
 import { CookieService } from '../../cookie.service';
 import { EchoService } from '../../echo.service';
 import { Router } from '@angular/router';
+import { PassportService } from '../../passport.service';
 
 @Component({
   selector: 'app-profile-chat',
@@ -20,15 +21,21 @@ export class ProfileChatComponent implements OnInit {
   public userID;
   
   private token;
+  profile;
 
   constructor(
     private chatService: ChatService,
     private cookieService: CookieService,
     private echoService: EchoService,
-    private router: Router) {
+    private router: Router,
+    private passportService: PassportService) {
       if (!this.cookieService.getCookie('login')) {
         this.router.navigate(['/signin']);
       };
+      
+      this.token = this.cookieService.getCookie('login');
+      this.passportService.getProfile(this.token).subscribe(profile => this.profile = profile);
+
     }
 
 

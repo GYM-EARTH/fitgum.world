@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from '../../cookie.service';
 import { ProgramsService } from '../../programs.service';
+import { PassportService } from '../../passport.service';
 
 @Component({
   selector: 'app-profile-calendar',
@@ -11,6 +12,9 @@ import { ProgramsService } from '../../programs.service';
 export class ProfileCalendarComponent implements OnInit {
 
   modal: boolean;
+
+  private token;
+  profile;
 
   programs;
   program;
@@ -31,12 +35,16 @@ export class ProfileCalendarComponent implements OnInit {
   constructor(
     private router: Router,
     private cookieService: CookieService,
-    private programsService: ProgramsService) {
+    private programsService: ProgramsService,
+    private passportService: PassportService) {
     
       if (!this.cookieService.getCookie('login')) {
         this.router.navigate(['/signin']);
       };
-
+      
+      this.token = this.cookieService.getCookie('login');
+      this.passportService.getProfile(this.token).subscribe(profile => this.profile = profile);
+      
       this.currentMonth = this.nameMonth[this.month + 1];
       this.spaceDate = new Date(this.fullYear, this.month + 1, 0);
       this.spaceDate = this.spaceDate.getDate();

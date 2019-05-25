@@ -55,29 +55,28 @@
                 a {
                     font-size: 14px;
                     text-decoration: none;
-                    text-transform: uppercase;
 
                     &:first-child {
-                        color: #50b8Bf
+                        color: var(--blue)
                     }
-                    &:last-child {
-                        margin-left: 25px;
-                        color: #daaa53;
-                        &::before {
-                            content: "";
-                            line-height: 44px;
-                            width: 4px;
-                            height: 4px;
-                            border-radius: 50%;
-                            opacity: .6;
-                            display: inline-block;
-                            background: var(--light);
-                            margin-right: 19px;
-                            position: relative;
-                            top: -1px;
-                            vertical-align:  middle;
-                        }
-                    }
+                    // &:last-child {
+                    //     margin-left: 25px;
+                    //     color: #daaa53;
+                    //     &::before {
+                    //         content: "";
+                    //         line-height: 44px;
+                    //         width: 4px;
+                    //         height: 4px;
+                    //         border-radius: 50%;
+                    //         opacity: .6;
+                    //         display: inline-block;
+                    //         background: var(--light);
+                    //         margin-right: 19px;
+                    //         position: relative;
+                    //         top: -1px;
+                    //         vertical-align:  middle;
+                    //     }
+                    // }
                 }
             }
             footer {
@@ -87,7 +86,6 @@
 
                 time {
                     color: var(--light);
-                    text-transform: uppercase;
                     margin-right: 15px;
                 }
                 span {

@@ -1,13 +1,16 @@
 <aside class="profile">
-  <figure></figure>
-  <div class="profile__xp">
+  <figure>
+      <img *ngIf="profile?.avatar" src="{{profile?.avatar}}" alt="">
+      <img *ngIf="!profile?.avatar" src="/assets/icon/profile.svg" alt="">
+  </figure>
+  <!-- <div class="profile__xp">
     <p><span>XP</span> / 1234</p>
     <div class="profile__xp__progress"><div></div></div>
-  </div>
+  </div> -->
   <nav>
     <a class="profile__user" routerLink="/profile/edit" href="/profile/edit" routerLinkActive="active">Настройки</a>
     <a class="profile__chat" routerLink="/profile/chat" href="/profile/chat" routerLinkActive="active">Сообщение</a>
-    <a class="profile__news" href="">News</a>
+    <!-- <a class="profile__news" href="">News</a> -->
     <a class="profile__calendar" routerLink="/profile/calendar" href="/profile/calendar" routerLinkActive="active">Календарь</a>
   </nav>
 </aside>

@@ -3,7 +3,9 @@
   <div>
     <article *ngFor="let i of news" [routerLink]="['/news', i.slug]">
       <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
-      <nav><a href="">Fitness</a><a href="">Gym</a></nav>
+      <nav><a href="">{{i?.category.title}}</a>
+        <!-- <a href="">Gym</a> -->
+      </nav>
       <header><h1>{{i?.title}}</h1></header>
       <footer><time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time><span>By <a href="">FitGum</a></span></footer>
       <p>{{i?.description}}</p>

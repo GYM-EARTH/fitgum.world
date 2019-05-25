@@ -1,13 +1,15 @@
 <app-header-black></app-header-black>
 <div class="dashboard">
-  <app-profile-aside></app-profile-aside>
+  <app-profile-aside [profile]="profile"></app-profile-aside>
   <section>
     <h1>Редактировать профиль</h1>
     <section class="profile__photo">
-      <img src="{{profile?.avatar}}" alt="">
       <form>
-        <input type="file" name="photo" (change)="onFileSelected($event)">
-        <input type="button" (click)="onUpload()" value="Go">
+        <div>
+          <img *ngIf="profile?.avatar" src="{{profile?.avatar}}" alt="">
+          <img *ngIf="!profile?.avatar" src="/assets/icon/profile.svg" alt="">
+          <input type="file" name="photo" (change)="onFileSelected($event)">
+        </div>
       </form>
       <header>
         <h1>{{profile?.name}}</h1>
@@ -21,35 +23,43 @@
           <label for="">Имя</label>
           <input type="text">
         </div>
-        <div>
+        <!-- <div>
           <label for="">Фамилия</label>
           <input type="text">
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
           <label for="">Skype</label>
           <input type="text">
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
           <label for="">Город</label>
           <input type="text">
-        </div>
+        </div> -->
         <div>
           <label for="">Email</label>
           <input type="text">
         </div>
         <div>
-          <label for="">Телефон</label>
+          <label for="">Пароль</label>
           <input type="text">
         </div>
+        <div>
+          <label for="">Повторить пароль</label>
+          <input type="text">
+        </div>
+        <!-- <div>
+          <label for="">Телефон</label>
+          <input type="text">
+        </div> -->
       </div>
-      <div class="form__textarea">
+      <!-- <div class="form__textarea">
         <label for="">Описание</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
-      </div>
+      </div> -->
     </form>
     <footer>
-      <a href="">Save Changes</a>
-      <a href="">Cancel</a>
+      <a (click)="onUpload()">Сохранить Изменения</a>
+      <a href="">Отменить</a>
     </footer>
   </section>
 </div>

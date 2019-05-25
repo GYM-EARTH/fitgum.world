@@ -1,8 +1,8 @@
 <header class="header">
-  <a routerLink="/" href="/"><span>GYM</span><span>Earth</span></a>
+  <a routerLink="/" href="/"><span>fit</span><span>gum</span></a>
   <nav>
     <a class="nav__a" i18n="clubs" routerLink="/clubs" href="/clubs" routerLinkActive="active">Клубы</a>
-    <a class="nav__a" i18n="news" routerLink="/news" href="/news" routerLinkActive="active">Новости</a>
+    <a class="nav__a" i18n="news" routerLink="/news" href="/news" routerLinkActive="active">Блог</a>
     <!-- <a class="nav__a" i18n="services" routerLink="/services" href="/services" routerLinkActive="active">Услуги</a> -->
     <!-- <a class="nav__a" i18n="trainers" routerLink="/trainers" href="/trainers" routerLinkActive="active">Тренеры</a> -->
     <!-- <a class="nav__a" i18n="products" routerLink="/products" href="/products" routerLinkActive="active">Питание</a> -->
@@ -13,8 +13,8 @@
       <a i18n="signup" class="signup" routerLink="/signup" href="/signup">Регистрация</a>
     </ng-template>
     <ng-template [ngIf]="auth">
-      <a  i18n="signout" (click)="signOut()" routerLink="/signin" href="/signin">Выход</a>
-      <a class="profile" routerLink="/profile" href="/profile"></a>
+      <a i18n="signout" (click)="signOut()" routerLink="/signin" href="/signin">Выход</a>
+      <a class="profile" routerLink="/profile" href="/profile"><img src="{{profile?.avatar}}" alt=""></a>
     </ng-template>
   </nav>
 </header>

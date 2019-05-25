@@ -1,11 +1,11 @@
 <app-header-black></app-header-black>
 <main>
-  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="http://files.gym.earth/{{club?.cover}}" alt=""></div>
+  <div class="area-images" [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
   <section>
     <div class="container">
       <div class="club">
         <div class="club__block-images" [ngStyle]="{'background-color': '#'+club.color}">
-          <img class="club__images" src="http://files.gym.earth/{{club?.logo}}" alt="">
+          <img class="club__images" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
         </div>
         <div class="club__block-data">
           <ul class="tags-list">
@@ -15,7 +15,7 @@
           <h1 class="club__name">{{club?.title}}</h1>
           <span class="club__profile-link">@{{club?.slug}}</span>
           <ul class="post-stat-list">
-            <li class="post-stat-list__items"><b>{{club?.views}}</b> Просмотров</li>
+            <li class="post-stat-list__items"><b>{{club?.views}}</b> View</li>
             <!-- <li class="post-stat-list__items"><b>100K</b> Followers</li>
             <li class="post-stat-list__items"><b>200</b> Following</li> -->
           </ul>
@@ -41,9 +41,9 @@
         <li class="list-submenu__items">
           <a class="list-submenu__links" href="#">Команда</a>
         </li>
-        <li class="list-submenu__items">
+        <!-- <li class="list-submenu__items">
           <a class="list-submenu__links" href="#">Магазин</a>
-        </li>
+        </li> -->
         <li class="list-submenu__items">
           <a class="list-submenu__links" href="#">Карта</a>
         </li>
@@ -57,8 +57,8 @@
       <section class="services">
         <h2 class="headline">Услуги</h2>
         <ul class="services-list" *ngIf="club.services.length">
-          <li class="services-list__items">
-            <article class="services-block" *ngFor="let service of club.services">
+          <li class="services-list__items" *ngFor="let service of club.services">
+            <article class="services-block">
               <div class="services-block__image">
                 <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
               </div>
@@ -73,16 +73,13 @@
         <div class="hours">
           <h3 class="hours__headline">Время</h3>
           <ul class="hours-list" *ngIf="club.club_times.length">
-            <li class="hours-list__items" *ngFor="let time of club.club_times">
-              <span class="hours-list__week" *ngIf="time.id == 1">Пн</span>
-              <span class="hours-list__week" *ngIf="time.id == 2">Вт</span>
-              <span class="hours-list__week" *ngIf="time.id == 3">Ср</span>
-              <span class="hours-list__week" *ngIf="time.id == 4">Чт</span>
-              <span class="hours-list__week" *ngIf="time.id == 5">Пт</span>
-              <span class="hours-list__week" *ngIf="time.id == 6">Сб</span>
-              <span class="hours-list__week" *ngIf="time.id == 7">Вс</span>
-              <span class="hours-list__time">{{time.start | time}} - {{time.finish | time}}</span>
-            </li>
+              <li class="hours-list__items"><span class="hours-list__week">Пн</span><span class="hours-list__time">{{club.club_times[0].start | time}} - {{club.club_times[0].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Вт</span><span class="hours-list__time">{{club.club_times[1].start | time}} - {{club.club_times[1].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Ср</span><span class="hours-list__time">{{club.club_times[2].start | time}} - {{club.club_times[2].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Чт</span><span class="hours-list__time">{{club.club_times[3].start | time}} - {{club.club_times[3].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Пт</span><span class="hours-list__time">{{club.club_times[4].start | time}} - {{club.club_times[4].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Сб</span><span class="hours-list__time">{{club.club_times[5].start | time}} - {{club.club_times[5].finish | time}}</span></li>
+              <li class="hours-list__items"><span class="hours-list__week">Вс</span><span class="hours-list__time">{{club.club_times[6].start | time}} - {{club.club_times[6].finish | time}}</span></li>
           </ul>
           <p class="isnot" *ngIf="!club.club_times.length">Время не добавлено.</p>
         </div>
@@ -98,11 +95,12 @@
                 <span>{{trainer?.description}}</span>
               </div>
             </li>
+            <p class="isnot" *ngIf="!club.trainers.length">Участники не добавлены.</p>
           </ul>
         </div>
       </div>
       <section class="photo">
-        <h2 class="headline">Фото</h2>
+        <h1 class="headline">Галерея</h1>
         <ul *ngIf="club.club_photos.length">
           <li *ngFor="let photo of club.club_photos">
             <img src="https://file.fitgum.ru/{{photo.image}}">

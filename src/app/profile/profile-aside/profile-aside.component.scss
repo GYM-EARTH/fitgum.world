@@ -2,17 +2,21 @@
     width: 250px;
     background: var(--purple);
     padding-top: 30px;
+    padding-bottom: 30px;
     height: 100%;
     figure {
         display: block;
         width: 80px;
         height: 80px;
-        background: url(/assets/icon/profile.svg) 0 0 no-repeat;
         background-size: contain;
         border-radius: 50%;
         overflow: hidden;
         margin: 30px auto 30px;
         border: 2px solid var(--white);
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
     }
     &__xp {
         margin: 30px;

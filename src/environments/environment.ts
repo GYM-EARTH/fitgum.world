@@ -9,7 +9,7 @@ export const environment = {
     register: 'https://api.fitgum.ru/register',
     profile: 'https://api.fitgum.ru/cabinet'
   },
-  clubs: 'http://api.gym.earth/clubs',
+  clubs: 'https://api.fitgum.ru/clubs',
   news: 'https://api.fitgum.ru/news',
   trainers: 'https://api.fitgum.ru/trainers',
   vacancies: 'https://api.fitgum.ru/vacancies',
@@ -21,7 +21,8 @@ export const environment = {
     chats: 'https://api.fitgum.ru/messages/chats'
   },
   cabinet: {
-    avatar: 'https://api.fitgum.ru/cabinet/avatar'
+    avatar: 'https://api.fitgum.ru/cabinet/avatar',
+    edit: 'https://api.fitgum.ru/cabinet/edit'
   },
   users: {
     trainers: 'https://api.fitgum.ru/users/trainers'
