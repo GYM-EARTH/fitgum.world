@@ -15,6 +15,7 @@
   overflow: hidden;
   img {
     max-width: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -30,7 +31,8 @@
     height: 200px;
     width: 200px;
     overflow: hidden;
-    border: 3px solid white;
+    border-width: 3px;
+    border-style: solid;
 
     img {
       max-width: 77%;
@@ -123,7 +125,8 @@
 
 .list-submenu {
   list-style: none;
-  border: 1px solid var(--border-light);
+  border-width: 1px;
+  border-style: solid;
   border-radius: 6px;
   overflow: hidden;
 
@@ -131,7 +134,8 @@
     
 
     & + * {
-      border-top: 1px solid var(--border-light);
+      border-top-width: 1px;
+      border-top-style: solid;
     }
   }
 

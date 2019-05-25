@@ -1,17 +1,17 @@
 <div>
     <figure class="preview">
-      <img src="/assets/bg.jpg" alt="">
+      <!-- <img src="/assets/bg.jpg" alt=""> -->
     </figure>
     <section class="intro">
          
       <h1 i18n="@@introductionHeader">Построй Своё Тело<br> Преобразуй свою Жизнь.</h1>
-      <p>Это моя эспрессо-машина? Ч-что-как ты<br> взял мой эспрессо-аппарат? Мой папа однажды сказал мне</p>
+      <p>Это моя эспрессо-машина? Ч-что-как ты<br> взяла мой эспрессо-аппарат? Мой папа однажды сказал мне</p>
       
       <ng-template [ngIf]="!auth">
         <a i18n="@@started" routerLink="/signin" href="/signin">Начать</a>
       </ng-template>
       <ng-template [ngIf]="auth">
-        <a i18n="@@started" routerLink="/profile" href="/profile">Начать</a>
+        <a i18n="@@started" routerLink="/profile" href="/profile">Дальше</a>
       </ng-template>
     </section>
   </div>

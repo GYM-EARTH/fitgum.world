@@ -4,7 +4,7 @@
 .preview {
     height: 700px;
     overflow: hidden;
-    // background: linear-gradient(-45deg, var(--pink),var(--purple), var(--blue), var(--green), var(--yellow));
+    background: var(--purple);
     position: relative;
     &::after {
         content: "";
@@ -13,11 +13,12 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(135deg, rgba(0,0,0,0.86) 0%, rgba(255,255,255,0.00) 100%);
+        background-image: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
     }
     img {
         opacity: 1;
         max-width: 100%;
+        width: 100%;
         
     }
 }
@@ -33,12 +34,10 @@
     h1 {
         font-size: 74px;
         line-height: 74px;
-        text-shadow: var(--shadow);
     }
     p {
         font-size: 18px;
         margin: 45px 0 45px;
-        text-shadow: var(--shadow);
     }
     a {
         line-height: 78px;
@@ -47,10 +46,8 @@
         color: var(--purple);
         border-radius: 8px;
         text-decoration: none;
-        text-transform: uppercase;
         font-size: 18px;
         justify-self: baseline;
-        letter-spacing: 2px;
         transition: all .3s;
         
         &:hover {
