@@ -39,19 +39,19 @@ section {
   z-index: 2;
 }
 :host > div {
+  // background: var(--background-light);
   display: grid;
   grid-template-columns: auto;
   // margin-bottom: 200px;
-  height: 870px;
-  opacity: 1;
-  border-radius: 12px;
   position: relative;
-  margin-bottom: 70px;
+  padding: 60px 0;
+  
+  
   
 }
 agm-map {
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 
 ul {
@@ -91,23 +91,9 @@ aside {
     footer {
       color: var(--white);
     }
-    &::after {
-      border-color: var(--purple) transparent  transparent  transparent;
-    }
+ 
   }
-  &::after {
-    content: "";
-    width: 14px;
-    height: 14px;
-    border-width: 7px;
-    border-style: solid;
-    position: absolute;
-    bottom: -14px;
-    left: 50%;
-    margin-left: -3px;
-    transition: all .3s;
-    border-color: var(--white) transparent  transparent  transparent;
-  }
+
   &:hover {
     box-shadow: var(--shadow-h);
 }

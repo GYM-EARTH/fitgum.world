@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="36px" height="50px" viewBox="0 0 36 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
-    <title>geo</title>
+    <title>Group 6</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <circle id="path-1" cx="11" cy="11" r="8"></circle>
-        <filter x="-37.5%" y="-37.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.563772798   0 0 0 0 0.0729238763   0 0 0 0 0.995067894  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        <filter x="-60.0%" y="-300.0%" width="220.0%" height="700.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="geo" transform="translate(1.000000, 1.000000)">
-            <g id="path-1" fill-rule="nonzero" fill="black" fill-opacity="1">
-                <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+        <g id="Contact" transform="translate(-670.000000, -1280.000000)">
+            <g id="map" transform="translate(135.000000, 1081.000000)">
+                <g id="Group-4" transform="translate(531.000000, 194.000000)">
+                    <g id="Group-6">
+                        <ellipse id="Oval" fill="#717171" filter="url(#filter-1)" cx="22" cy="44" rx="10" ry="2"></ellipse>
+                        <g id="marker-2">
+                            <rect id="bound" x="0" y="0" width="44" height="44"></rect>
+                            <path d="M18.0185402,30.5370804 C12.8799288,28.8617186 9.16666667,24.0311654 9.16666667,18.3333333 C9.16666667,11.245679 14.9123457,5.5 22,5.5 C29.0876542,5.5 34.8333333,11.245679 34.8333333,18.3333333 C34.8333333,24.0311654 31.1200712,28.8617186 25.9814599,30.5370804 L22,38.5 L18.0185402,30.5370804 Z M22,22 C24.0250441,22 25.6666667,20.3583774 25.6666667,18.3333333 C25.6666667,16.3082893 24.0250441,14.6666667 22,14.6666667 C19.9749559,14.6666667 18.3333333,16.3082893 18.3333333,18.3333333 C18.3333333,20.3583774 19.9749559,22 22,22 Z" id="Combined-Shape" fill="#A32CFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
             </g>
-            <circle id="path-1" stroke="#FFFFFF" fill="#9013FE" fill-rule="nonzero" cx="11" cy="11" r="5.5"></circle>
-            <circle id="path-1" fill-opacity="0.1" fill="#9013FE" fill-rule="nonzero" cx="11" cy="11" r="11"></circle>
-            <polygon id="Star" fill="#FFFFFF" points="11 12.75 8.94275162 13.8315595 9.3356511 11.5407797 7.67130219 9.91844052 9.97137581 9.58422026 11 7.5 12.0286242 9.58422026 14.3286978 9.91844052 12.6643489 11.5407797 13.0572484 13.8315595"></polygon>
         </g>
     </g>
 </svg>

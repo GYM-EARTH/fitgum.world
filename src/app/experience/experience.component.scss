@@ -1,5 +1,6 @@
 .experienced {
     margin-top: 35px;
+    position: relative;
     
     > h1 {
         font-size: 48px;
@@ -10,12 +11,16 @@
         margin: 25px 0 50px 135px;
     }
     
-    div {
+    > div {
+        > div {
+            transition: all .3s;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 30px;
+        }
         overflow: hidden;
         overflow-x: scroll;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 30px;
+
         overflow: -moz-scrollbars-none;
         -ms-overflow-style: none;
         padding: 0 0 37px 135px;
@@ -77,5 +82,34 @@
         right: 25px;
         top: 50%;
         margin-top: -24px;
+    }
+}
+.prev,
+.next {
+    width: 59px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid var(--purple);
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    transition: all .3s;
+    
+}
+.prev {
+    background: url(/assets/icon/prev.svg) 50% 50% no-repeat;
+    margin-right: 30px;
+    right: 194px;
+    
+
+    &:hover {
+        background-position: 30% 50%;
+    }
+}
+.next {
+    background: url(/assets/icon/next.svg) 50% 50% no-repeat;
+    right: 135px;
+    &:hover {
+        background-position: 70% 50%;
     }
 }

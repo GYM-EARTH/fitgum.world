@@ -116,16 +116,16 @@
         article {
             width: 370px;
             border-radius: 10px;
-            border-width: 1px;
-            border-style: solid;
+
             overflow: hidden;
             padding-bottom: 25px;
             transition: all .3s;
             align-self: start;
+            box-shadow: var(--shadow);
+            cursor: pointer;
             
             &:hover {
-                border-color: transparent;
-                box-shadow: var(--shadow);
+                box-shadow: var(--shadow-h);
             }
             figure {
                 max-height: 260px;
