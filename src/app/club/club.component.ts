@@ -10,6 +10,7 @@ import { ClubsService } from '../clubs.service';
 export class ClubComponent implements OnInit {
 
   public club;
+  image;
 
   constructor(
     private clubsService: ClubsService,
@@ -25,6 +26,13 @@ export class ClubComponent implements OnInit {
 
   scroll(el: HTMLElement) {
     el.scrollIntoView();
-}
+  }
+  preview(image) {
+    console.log(image);
+    this.image = image;
+  }
+  close() {
+    this.image = null;
+  }
 
 }

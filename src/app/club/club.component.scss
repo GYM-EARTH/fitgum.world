@@ -351,4 +351,56 @@
         background: transparent;
       }
     }
+    &_email {
+      color: var(--white);
+      border: 1px solid var(--blue);
+      background: var(--blue);
+
+      &:hover {
+        color: var(--blue);
+        background: transparent;
+      }
+    }
+}
+.send {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  display: grid;
+  justify-items: baseline;
+  a {
+    margin: auto;
+    font-size:36px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 25px;
+    line-height: 45px;
+    color: var(--purple);
+    display: inline-block;
+    align-self: center;
+    cursor: pointer;
+    // border: 1px solid var(--purple);
+    border-radius: 8px;
+    background: var(--white);
+    &:hover {
+      background: var(--purple);
+      color: var(--white);
+    }
+  }
+}
+.new {
+  margin: auto;
+  width: 700px;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 0;
+  background-size: contain;
+  img {
+    max-width: 100%;
+  }
+
 }
