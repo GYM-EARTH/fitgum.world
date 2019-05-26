@@ -81,13 +81,13 @@
     transition: all .3s;
     
     &:hover {
-      background: var(--orange);
+      background: var(--pink);
       color: var(--white);
     }
 
     &_blue {
-      border: 1px solid var(--orange);
-      color: var(--orange);
+      border: 1px solid var(--pink);
+      color: var(--pink);
     }
   }
 }
@@ -318,4 +318,37 @@
       }
     }
   }
+}
+
+.actions {
+  margin-top: 44px;
+    a {
+      display: block;
+      line-height: 56px;
+      margin-bottom: 22px;
+      font-size: 18px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 6px;
+    }
+    &_call {
+      border: 1px solid var(--green);
+      background: var(--green);
+      color: var(--white);
+
+      &:hover {
+        color: var(--green);
+        background: transparent;
+      }
+    }
+    &_join {
+      color: var(--white);
+      border: 1px solid var(--purple);
+      background: var(--purple);
+
+      &:hover {
+        color: var(--purple);
+        background: transparent;
+      }
+    }
 }

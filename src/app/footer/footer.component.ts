@@ -12,6 +12,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
   sendMessage() {
     this.modal = true;

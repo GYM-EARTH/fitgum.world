@@ -1,5 +1,28 @@
 .white {
     background: white;
+
+    app-about {
+        h1, p {
+            color: var(--dark);
+        }
+    }
+    .list-submenu {
+        border-color: var(--border-light);
+      
+        &__items {
+        
+          & + * {
+            border-color: var(--border-light);
+          }
+        }
+    }
+    .club {
+
+        &__block-images {
+            border-color: var(--white);
+        }
+    }
+
     .area-images + section {
         border-bottom: 1px solid var(--border-light);
     }

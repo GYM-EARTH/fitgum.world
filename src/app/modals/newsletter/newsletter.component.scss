@@ -14,7 +14,8 @@
   border-radius: 4px;
   overflow: hidden;
   height: 300px;
-  background: white;
+  background: var(--purple) url(/assets/right-bg.png);
+  background-size: contain;
   h1 {
     line-height: 60px;
     background: #F0F3F8;

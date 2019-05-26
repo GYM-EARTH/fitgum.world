@@ -16,6 +16,7 @@
           <span class="club__profile-link">@{{club?.slug}}</span>
           <ul class="post-stat-list">
             <li class="post-stat-list__items"><b>{{club?.views}}</b> View</li>
+            <li class="post-stat-list__items"><b>{{club?.views}}</b> Followers</li>
             <!-- <li class="post-stat-list__items"><b>100K</b> Followers</li>
             <li class="post-stat-list__items"><b>200</b> Following</li> -->
           </ul>
@@ -48,6 +49,10 @@
           <a class="list-submenu__links" href="#">Карта</a>
         </li> -->
       </ul>
+      <nav class="actions">
+        <a href="tel:+7{{club.phone}}" class="actions_call">Позвонить</a>
+        <a href="" class="actions_join">Вступить</a>
+      </nav>
     </div>
     <div class="page">
       <section class="about" #about>
@@ -56,8 +61,8 @@
       </section>
       <section class="services" #service>
         <h2 class="headline">Услуги</h2>
-        <ul class="services-list" *ngIf="club?.services.length">
-          <li class="services-list__items" *ngFor="let service of club.services">
+        <ul class="services-list" *ngIf="club?.club_services?.length">
+          <li class="services-list__items" *ngFor="let service of club.club_services">
             <article class="services-block">
               <div class="services-block__image">
                 <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
@@ -67,8 +72,23 @@
             </article>
           </li>
         </ul>
-        <p class="isnot" *ngIf="!club?.services.length">Услуги не добавлены.</p>
+        <p class="isnot" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
       </section>
+      <section class="services" #service>
+          <h2 class="headline">Micro Услуги</h2>
+          <ul class="services-list" *ngIf="club?.micro_services?.length">
+            <li class="services-list__items" *ngFor="let service of club.micro_services">
+              <article class="services-block">
+                <div class="services-block__image">
+                  <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
+                </div>
+                <h3 class="services-block__headline">{{service.title}}</h3>
+                <p class="services-block__desc">{{service.description}}</p>
+              </article>
+            </li>
+          </ul>
+          <p class="isnot" *ngIf="!club?.micro_services?.length">Услуги не добавлены.</p>
+        </section>
       <div class="hour-and-members" #work #team>
         <div class="hours">
           <h3 class="hours__headline">Время</h3>

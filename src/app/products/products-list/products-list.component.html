@@ -1,46 +1,11 @@
 <section class="products">
   <!-- <h1>Рекомендуемые товары</h1> -->
   <div>
-    <article>
-      <figure><img src="https://eda.yandex/images/menu/dea8/1387779-dea807a66b90d951e2090b89afc08373-450x300.jpeg" alt=""></figure>
-      <header>13 стаканов с Киви, клубника, топ микс, арбуз</header>
-      <footer><p>3,8 кг</p><a href="">3999 ₽</a></footer>
+    <article *ngFor="let i of flyers" [routerLink]="['/flyers', i.slug]">
+      <figure><img src="https://file.fitgum.ru/{{i.image}}" alt=""></figure>
+      <header>{{i.title}}</header>
+      <footer><p>{{club_id}}</p><a href="">{{i.price}} ₽</a></footer>
     </article>
-    <article>
-      <figure><img src="https://eda.yandex/images/menu/c964/1380157-c964dba0eb4ed1b41c5a8140b47f1bf8-450x300.jpeg" alt=""></figure>
-      <header>Банан, киви, финики, лимонный сок</header>
-      <footer><p>300 мл</p><a href="">199 ₽</a></footer>
-    </article>
-    <article>
-      <figure><img src="https://eda.yandex/images/menu/6e6c/1368744-6e6c0ced2948484b7ed86b433496f574-450x300.jpeg" alt=""></figure>
-      <header>Two Backless and Armless Wood Tri-Leg Bar Stools</header>
-      <footer><p>300 мл</p><a href="">199 ₽</a></footer>
-    </article>
-    <article>
-      <figure><img src="https://eda.yandex/images/menu/269d/1368744-269d1ae970d3c8c1e03cebe3a8805239-450x300.jpeg" alt=""></figure>
-      <header>Овсяная крупа, гречневая крупа, киви.</header>
-      <footer><p>600 г</p><a href="">420 ₽</a></footer>
-    </article>
-    <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/a/6f/zal-shtangi-trenazhery.jpg" alt=""></figure>
-        <header>Two Backless and Armless Wood Tri-Leg Bar Stools</header>
-        <footer><p>By M. Comfort</p><a href="">$278</a></footer>
-      </article>
-      <article>
-        <figure><img src="https://img5.goodfon.ru/wallpaper/big/7/6e/zima-peizazh-les-gory-skaly-sneg-derevia-solntse-nebo-sklon.jpg" alt=""></figure>
-        <header>Two Backless and Armless Wood Tri-Leg Bar Stools</header>
-        <footer><p>By M. Comfort</p><a href="">$278</a></footer>
-      </article>
-      <article>
-        <figure><img src="https://img4.goodfon.ru/wallpaper/big/3/b8/yoga-fitness-pose.jpg" alt=""></figure>
-        <header>Two Backless and Armless Wood Tri-Leg Bar Stools</header>
-        <footer><p>By M. Comfort</p><a href="">$278</a></footer>
-      </article>
-      <article>
-        <figure><img src="https://img4.goodfon.ru/wallpaper/big/a/a9/stadium-arsenal-fc-emirates-stadium-football-sport-wallpaper.jpg" alt=""></figure>
-        <header>Two Backless and Armless Wood Tri-Leg Bar Stools</header>
-        <footer><p>By M. Comfort</p><a href="">$278</a></footer>
-      </article>
   </div>
   <div>
     <a routerLink="/products" href="/products" class="load">Загрузи больше</a>

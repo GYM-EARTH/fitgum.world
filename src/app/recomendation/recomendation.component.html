@@ -1,12 +1,12 @@
 <section class="products">
-  <h1>Рекомендуемые товары</h1>
+  <h1>Рекомендуемые Продукты</h1>
   <div>
-    <article>
-      <figure><img src="https://eda.yandex/images/menu/dea8/1387779-dea807a66b90d951e2090b89afc08373-450x300.jpeg" alt=""></figure>
-      <header><h1>13 стаканов с Киви, клубника, топ микс, арбуз</h1></header>
-      <footer><p>3,8 кг</p><a href="">3999 ₽</a></footer>
+    <article *ngFor="let i of flyers" [routerLink]="['/flyers', i.slug]">
+      <figure><img src="https://file.fitgum.ru/{{i.image}}" alt=""></figure>
+      <header><h1>{{i.title}}</h1></header>
+      <footer><p>{{club_id}}</p><a href="">{{i.price}} ₽</a></footer>
     </article>
-    <article>
+    <!-- <article>
       <figure><img src="https://eda.yandex/images/menu/c964/1380157-c964dba0eb4ed1b41c5a8140b47f1bf8-450x300.jpeg" alt=""></figure>
       <header><h1>Банан, киви, финики, лимонный сок</h1></header>
       <footer><p>300 мл</p><a href="">199 ₽</a></footer>
@@ -40,7 +40,7 @@
         <figure><img src="https://img4.goodfon.ru/wallpaper/big/a/a9/stadium-arsenal-fc-emirates-stadium-football-sport-wallpaper.jpg" alt=""></figure>
         <header><h1>Two Backless and Armless Wood Tri-Leg Bar Stools</h1></header>
         <footer><p>By M. Comfort</p><a href="">$278</a></footer>
-      </article>
+      </article> -->
   </div>
   <div>
     <a routerLink="/products" href="/products" class="load">Загрузи больше</a>

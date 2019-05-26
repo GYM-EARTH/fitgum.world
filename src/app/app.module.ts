@@ -33,6 +33,7 @@ import { VacanciesService } from './vacancies.service';
 import { VideosService } from './videos.service';
 import { ProgramsService } from './programs.service';
 import { UsersService } from './users.service';
+import { FlyersService } from './flyers.service';
 
 import { TimePipe } from './time.pipe';
 
@@ -170,7 +171,8 @@ import { MapComponent } from './map/map.component';
     VacanciesService,
     VideosService,
     ProgramsService,
-    UsersService
+    UsersService,
+    FlyersService
   ],
   bootstrap: [AppComponent]
 })
