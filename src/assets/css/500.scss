@@ -1,23 +1,23 @@
 @media screen and (max-width:1366px){
 
 }
-@media screen and (max-width:1024px){
-    .header {
-        nav {
-            a:not(.profile):nth-child(4) {display: none;}
-            a:not(.profile):nth-child(3) {display: none;}
-        }
-    }
-}
-@media screen and (max-width:768px){
-    .header {
-        nav {
-            a:not(.profile):nth-child(2) {display: none;}
-            a:not(.profile):nth-child(1) {display: none;}
-        }
-    }
-}
-@media screen and (max-width:500px){
+// @media screen and (max-width:1024px){
+//     .header {
+//         nav {
+//             a:not(.profile):nth-child(4) {display: none;}
+//             a:not(.profile):nth-child(3) {display: none;}
+//         }
+//     }
+// }
+// @media screen and (max-width:768px){
+//     .header {
+//         nav {
+//             a:not(.profile):nth-child(2) {display: none;}
+//             a:not(.profile):nth-child(1) {display: none;}
+//         }
+//     }
+// }
+@media screen and (max-width:1366px){
     .preview {
         height: 500px !important;
     }
@@ -94,14 +94,22 @@
         margin-bottom: 25px !important;
     }
     .podval {
-        padding: 0 45px !important;
-        display: block !important;
+        // padding: 0 45px !important;
+        // display: block !important;
         > p,a {
-            line-height: 44px;
+            display: none
         }
     }
     .new {
         width: 90% !important;
     }
+    .clubs {
+        margin: 0 35px 25px 35px !important; 
+    }
+    .clubs > h1 {
+        font-size: 33px !important;
+        margin-left: 35px !important;
+    }
+
     
 }

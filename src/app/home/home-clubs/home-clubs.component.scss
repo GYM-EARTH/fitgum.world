@@ -7,13 +7,26 @@
         margin-bottom: 50px;
     } 
     > div {
-        display: grid;
-        grid-template-columns: repeat(4, 270px);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-        justify-content: center;
-        margin: 35px 0 60px 0;
+ 
+        > div {
+            transition: all .3s;
+            display: grid;
+            grid-template-columns: repeat(4, 270px);
+            grid-column-gap: 30px;
+        }
+
+        overflow: hidden;
+        overflow-x: scroll;
+
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        padding: 0 0 37px 0;
+        
+        &::-webkit-scrollbar { width: 0 !important }
     }
+    
+
+        
 }
 article {
     height: 270px;

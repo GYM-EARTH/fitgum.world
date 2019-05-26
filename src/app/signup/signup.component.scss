@@ -21,7 +21,6 @@
     h1 {
         font-size: 46px;
         color: white;
-        font-weight: normal;
         line-height: 44px;
         margin-bottom: 50px;
         margin-top: 80px;
@@ -37,16 +36,16 @@
 
     input[type="text"],
     input[type="password"] {
-        background: var(--grey-light);
+        background: var(--background-light);
         height: 48px;
         width: 100%;
         font-size: 12px;
         padding: 0 24px;;
-        color: var(--grey-dark);
+        color: var(--dark);
     }
     input[type="text"]::placeholder,
     input[type="password"]::placeholder {
-        color: var(--grey-dark);
+        color: var(--dark);
     }
     input {
         border-radius: 4px;

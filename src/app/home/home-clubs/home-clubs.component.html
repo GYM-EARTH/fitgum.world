@@ -1,11 +1,14 @@
 <section class="clubs">
-  <h1>Последние Клубы</h1>
+  <h1>Фитнес Уровень</h1>
   <div>
-    <article *ngFor="let club of clubs" [routerLink]="['/clubs', club.slug]">
+    <div>
+    <!-- <article *ngFor="let club of clubs" [routerLink]="['/clubs', club.slug]"> -->
+      <article *ngFor="let club of clubs">
       <figure [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club.logo}}" alt=""></figure>
       <header><h1>{{club.title}}</h1></header>
       <p>{{club.description}}</p>
       <footer>Москва</footer>
     </article>
+  </div>
   </div>
 </section>

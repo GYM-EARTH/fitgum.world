@@ -14,6 +14,15 @@
         <div class="club__block-data">
           <ul class="tags-list">
             <li class="tags-list__items tags-list__items_blue">{{club?.type.title}}</li>
+            <li class="club__levels" *ngFor="let level of club.levels"
+            
+            [ngClass]="{
+              'gold': level?.title == 'Gold',
+              'silver': level?.title == 'Silver',
+              'bronze': level?.title == 'Bronze',
+              'platinum': level?.title == 'Platinum',
+              'premium': level?.title == 'Premium'
+            }">{{level.title}}</li>
             <!-- <li class="tags-list__items tags-list__items_yellow">Gym</li> -->
           </ul>
           <h1 class="club__name">{{club?.title}}</h1>
@@ -54,10 +63,31 @@
         </li> -->
       </ul>
       <nav class="actions">
-        <a href="tel:+7{{club.phone}}" class="actions_call">Позвонить</a>
+        <a href="tel:+7{{club.phone}}" class="actions_call">Позвонить {{club?.phone}}</a>
         <a href="" class="actions_join">Вступить</a>
         <!-- <a href="mailto:{{club.email}}" class="actions_email">E-mail</a> -->
       </nav>
+      <section class="contact">
+          <h5>Контакты</h5>
+      <address>
+          <div>
+              <!-- <span>г.{{club?.city[1].title}}</span> -->
+              <span>ул.{{club?.street}}</span>
+              <span>д.{{club?.house}}</span>
+              <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
+              <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
+              <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
+          </div>
+          <div>
+              <ul>
+                  <li
+                      *ngFor="let metro of club?.metros"
+                      class="{{metro.slug}}">{{metro.title}}</li>
+              </ul>
+          </div>
+
+      </address>
+      </section>
     </div>
     <div class="page">
       <section class="about" #about>
