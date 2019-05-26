@@ -1,0 +1,64 @@
+<app-header-black></app-header-black>
+<div>
+  <aside *ngIf="club">
+    <figure><img src="https://file.fitgum.ru/{{club.cover}}" alt=""></figure>
+    <h1>{{club.title}}</h1>
+    <p>{{club.description}}</p>
+  </aside>
+<section></section>
+<div>
+<agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [styles]="style"
+    [zoom]="10"
+    [streetViewControl]="false"
+    [zoomControl]="false"
+    [scrollwheel]="true">
+    <agm-marker *ngFor="let marker of markers"
+    [iconUrl]="'/assets/icon/geo.svg'"
+    [latitude]="marker.latitude"
+    [longitude]="marker.longitude"
+    (markerClick)="selectClub(marker)">
+      <agm-snazzy-info-window [maxWidth]="200"  [closeWhenOthersOpen]="true">
+        <ng-template>
+            <article class="pop" [routerLink]="['/clubs', marker.slug]">
+              <figure [ngStyle]="{'background-color': '#'+marker.color}"><img src="https://file.fitgum.ru/{{marker.logo}}" alt=""></figure>
+              <header><h1>{{marker?.title}}</h1></header>
+              <p>{{marker.description}}</p>
+              <footer>Присоединиться</footer>
+            </article>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+
+    <agm-marker *ngFor="let marker of vacanciesMarkers"
+    [iconUrl]="'/assets/icon/geo-vacacies.svg'"
+    [latitude]="marker.latitude"
+    [longitude]="marker.longitude">
+    <!-- [isOpen]="true" -->
+      <agm-snazzy-info-window [maxWidth]="200">
+        <ng-template>
+            <article class="pop" [routerLink]="['/clubs', marker.slug]">
+              <figure [ngStyle]="{'background-color': '#'+marker.color}"><img src="https://file.fitgum.ru/{{marker.logo}}" alt=""></figure>
+              <header><h1>{{marker?.title}}</h1></header>
+              <p>{{marker.description}}</p>
+              <footer>Присоединиться</footer>
+            </article>
+        </ng-template>
+      </agm-snazzy-info-window>
+    </agm-marker>
+  </agm-map>
+</div>
+<ul>
+  <li *ngFor="let club of clubs">
+      <article [routerLink]="['/clubs', club.slug]">
+        <figure [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club.logo}}" alt=""></figure>
+        <header><h1>{{club?.title}}</h1></header>
+        <p>{{club.description}}</p>
+        <footer>Москва</footer>
+      </article>
+  </li>
+</ul>
+</div>
+<app-footer></app-footer>

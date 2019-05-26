@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>geo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="11" cy="11" r="8"></circle>
+        <filter x="-37.5%" y="-37.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.494117647   0 0 0 0 0.82745098   0 0 0 0 0.129411765  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="geo" transform="translate(1.000000, 1.000000)">
+            <g id="path-1" fill-rule="nonzero" fill="black" fill-opacity="1">
+                <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+            </g>
+            <circle id="path-1" stroke="#FFFFFF" fill="#7ED321" fill-rule="nonzero" cx="11" cy="11" r="5.5"></circle>
+            <circle id="path-1" fill-opacity="0.1" fill="#7ED321" fill-rule="nonzero" cx="11" cy="11" r="11"></circle>
+            <polygon id="Star" fill="#FFFFFF" points="11 12.75 8.94275162 13.8315595 9.3356511 11.5407797 7.67130219 9.91844052 9.97137581 9.58422026 11 7.5 12.0286242 9.58422026 14.3286978 9.91844052 12.6643489 11.5407797 13.0572484 13.8315595"></polygon>
+        </g>
+    </g>
+</svg>

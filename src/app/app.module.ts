@@ -4,6 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -85,6 +88,7 @@ import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
 import { NewsletterComponent } from './modals/newsletter/newsletter.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -139,7 +143,8 @@ import { NewsletterComponent } from './modals/newsletter/newsletter.component';
     TermsOfUseComponent,
     PrivacyPolicyComponent,
     HomeClubsComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    MapComponent
     
   ],
   imports: [
@@ -149,6 +154,10 @@ import { NewsletterComponent } from './modals/newsletter/newsletter.component';
     FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA4dy2oYRqxWaIGS-BaTEzGSIjZdhvfghU'
+    }),
+    AgmSnazzyInfoWindowModule
   ],
   providers: [
     PassportService,
