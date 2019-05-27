@@ -9,7 +9,7 @@ import { ClubsService } from '../clubs.service';
 })
 export class ClubComponent implements OnInit {
 
-  public club;
+  club;
   image;
 
   constructor(
@@ -28,7 +28,6 @@ export class ClubComponent implements OnInit {
     el.scrollIntoView();
   }
   preview(image) {
-    console.log(image);
     this.image = image;
   }
   close() {

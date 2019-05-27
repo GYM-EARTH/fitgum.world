@@ -1,129 +1,120 @@
 <app-header-black></app-header-black>
-<section *ngIf="image" class="send">
-    <a (click)="close()">Дальше</a>
-    <div class="new"><img src="https://file.fitgum.ru/{{image}}" alt=""></div>
+<section *ngIf="image" class="zoom">
+    <div (click)="close()" class="zoom__new">
+      <img src="https://file.fitgum.ru/{{image}}" alt="{{club?.title}}">
+    </div>
   </section>
 <main>
-  <div class="area-images" [ngStyle]="{'background-color': '#'+club?.color}"><img  *ngIf="club?.cover" src="https://file.fitgum.ru/{{club?.cover}}" alt=""></div>
-  <section>
-    <div class="container">
-      <div class="club">
-        <div class="club__block-images" [ngStyle]="{'background-color': '#'+club?.color}">
-          <img class="club__images" *ngIf="club?.logo" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
-        </div>
-        <div class="club__block-data">
-          <ul class="tags-list">
-            <li class="tags-list__items tags-list__items_blue">{{club?.type.title}}</li>
-            <li class="club__levels" *ngFor="let level of club.levels"
+  <article class="club">
+    
+    <figure class="club__cover">
+      <img  *ngIf="club?.cover" src="https://file.fitgum.ru/{{club?.cover}}" alt="">
+    </figure>
+    
+    <section class="club__top">
+      <figure [ngStyle]="{'background-color': '#'+club?.color}">
+        <img *ngIf="club?.logo" src="https://file.fitgum.ru/{{club?.logo}}" alt="">
+      </figure>
+      
+      <header>
+        <!-- <nav>
+            <a>{{club?.type.title}}</a>
             
-            [ngClass]="{
-              'gold': level?.title == 'Gold',
-              'silver': level?.title == 'Silver',
-              'bronze': level?.title == 'Bronze',
-              'platinum': level?.title == 'Platinum',
-              'premium': level?.title == 'Premium'
-            }">{{level.title}}</li>
-            <!-- <li class="tags-list__items tags-list__items_yellow">Gym</li> -->
-          </ul>
-          <h1 class="club__name">{{club?.title}}</h1>
-          <span class="club__profile-link">@{{club?.slug}}</span>
-          <ul class="post-stat-list">
-            <li class="post-stat-list__items"><b>{{club?.views}}</b> View</li>
-            <li class="post-stat-list__items"><b>0</b> Users</li>
-            <!-- <li class="post-stat-list__items"><b>100K</b> Followers</li>
-            <li class="post-stat-list__items"><b>200</b> Following</li> -->
-          </ul>
+            <a class="levels" *ngFor="let level of club.levels"
+              [ngClass]="{
+                'gold': level?.title == 'Gold',
+                'silver': level?.title == 'Silver',
+                'bronze': level?.title == 'Bronze',
+                'platinum': level?.title == 'Platinum',
+                'premium': level?.title == 'Premium'
+              }">{{level.title}}</a>
+          </nav> -->
+        <h1>{{club?.title}}</h1>
+        <span>@{{club?.slug}}</span>
+      </header>
+    </section>
+    
+    <footer class="club__bot">
+      <nav class="post-stat-list">
+        <a class="post-stat-list__items"><b>{{club?.views}}</b> Просмотры</a>
+        <a class="post-stat-list__items"><b>0</b> Участники</a>
+      </nav>
+    </footer>
+    <nav class="club__nav">
+      <div>
+        <a (click)="scroll(about)">Информация</a>
+        <a (click)="scroll(team)">Персонал</a>
+        <a (click)="scroll(service)">Услуги</a>
+        <a (click)="scroll(work)">Время</a>
+        <a (click)="scroll(photo)">Фотографии</a>
+        <a (click)="scroll(more)">Больше</a>
+      </div>
+    </nav>
+    
+    <section class="club__about" #about>
+      <h1>Данные</h1>
+      <div class="content__club" [innerHTML]="club?.content"></div>
+    </section>
+    
+    <section class="club__contacts">
+      <h1>Контакты</h1>
+      <address>
+        <span>г.Москва</span>
+        <span>ул.{{club?.street}}</span>
+        <span>д.{{club?.house}}</span>
+        <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
+        <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
+        <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
+        <span
+            *ngFor="let metro of club?.metros"
+            class="{{metro.slug}}">{{metro.title}}</span>
+      </address>
+    </section>
+    
+    <section class="club__photos" #photo>
+      <h1>Фотографии</h1>
+      <div>
+        <figure *ngFor="let photo of club.club_photos">
+          <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
+        </figure>
+      </div>
+      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
+    </section>
+    
+    <section class="club__services" #service>
+      <h1>Услуги</h1>
+      <div>
+        <div>
+          <article *ngFor="let service of club.club_services">
+            <figure><img src="https://file.fitgum.ru/{{service.cover}}" alt="{{service.description}}" title="{{service.description}}"></figure>
+            <header><h1>{{service.title}}</h1></header>
+            <!-- <p>{{service.description}}</p> -->
+          </article>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="content">
-    <div>
-      <ul class="list-submenu">
-        <li class="list-submenu__items">
-          <a class="list-submenu__links list-submenu__links_active" (click)="scroll(about)">О клубе</a>
-        </li>
-        <li class="list-submenu__items">
-          <a class="list-submenu__links" (click)="scroll(service)">Услуги</a>
-        </li>
-        <li class="list-submenu__items">
-          <a class="list-submenu__links" (click)="scroll(work)">Время работы</a>
-        </li>
-        <li class="list-submenu__items">
-          <a class="list-submenu__links" (click)="scroll(photo)">Галерея</a>
-        </li>
-        <li class="list-submenu__items">
-          <a class="list-submenu__links" (click)="scroll(team)">Команда</a>
-        </li>
-        <!-- <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Магазин</a>
-        </li> -->
-        <!-- <li class="list-submenu__items">
-          <a class="list-submenu__links" href="#">Карта</a>
-        </li> -->
-      </ul>
-      <nav class="actions">
-        <!-- <a href="tel:+7{{club.phone}}" class="actions_call">Позвонить {{club?.phone}}</a> -->
-        <a href="" class="actions_join">Вступить</a>
-        <!-- <a href="mailto:{{club.email}}" class="actions_email">E-mail</a> -->
-      </nav>
-      <section class="contact">
-          <h5>Контакты</h5>
-      <address>
-          <div>
-              <!-- <span>г.{{club?.city[1].title}}</span> -->
-              <span>ул.{{club?.street}}</span>
-              <span>д.{{club?.house}}</span>
-              <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
-              <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
-              <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
-          </div>
-          <div>
-              <ul>
-                  <li
-                      *ngFor="let metro of club?.metros"
-                      class="{{metro.slug}}">{{metro.title}}</li>
-              </ul>
-          </div>
+      <p class="isnt" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
+    </section>
 
-      </address>
-      </section>
+    <section class="club__more" #more>
+      <h1>Больше</h1>
+      <div>
+        <div>
+          <article *ngFor="let service of club.micro_services">
+            <figure><img src="https://file.fitgum.ru/{{service.cover}}" alt="{{service.description}}" title="{{service.description}}"></figure>
+            <header><h1>{{service.title}}</h1></header>
+            <!-- <p class="services-block__desc">{{service.description}}</p> -->
+          </article>
+        </div>
+      </div>
+      <p class="isnt" *ngIf="!club?.micro_services?.length">Больше не добавлено.</p>
+    </section>
+  </article>
+  <!-- 
+
     </div>
     <div class="page">
-      <section class="about" #about>
-        <h2 class="headline">О клубе</h2>
-        <div class="content__club" [innerHTML]="club?.content"></div>
-      </section>
-      <section class="services" #service>
-        <h2 class="headline">Услуги</h2>
-        <ul class="services-list" *ngIf="club?.club_services?.length">
-          <li class="services-list__items" *ngFor="let service of club.club_services">
-            <article class="services-block">
-              <div class="services-block__image">
-                <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
-              </div>
-              <h3 class="services-block__headline">{{service.title}}</h3>
-              <p class="services-block__desc">{{service.description}}</p>
-            </article>
-          </li>
-        </ul>
-        <p class="isnot" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
-      </section>
-      <section class="services" #service>
-          <h2 class="headline">Micro Услуги</h2>
-          <ul class="services-list" *ngIf="club?.micro_services?.length">
-            <li class="services-list__items" *ngFor="let service of club.micro_services">
-              <article class="services-block">
-                <div class="services-block__image">
-                  <img src="https://file.fitgum.ru/{{service.cover}}" alt="">
-                </div>
-                <h3 class="services-block__headline">{{service.title}}</h3>
-                <p class="services-block__desc">{{service.description}}</p>
-              </article>
-            </li>
-          </ul>
-          <p class="isnot" *ngIf="!club?.micro_services?.length">Услуги не добавлены.</p>
-        </section>
+  
+ 
       <div class="hour-and-members" #work #team>
         <div class="hours">
           <h3 class="hours__headline">Время</h3>
@@ -154,16 +145,8 @@
           </ul>
         </div>
       </div>
-      <section class="photo" name="photos" #photo>
-        <h1 class="headline">Галерея</h1>
-        <ul *ngIf="club?.club_photos.length">
-          <li *ngFor="let photo of club.club_photos">
-            <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
-          </li>
-        </ul>
-        <p class="isnot" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
-      </section>
+  
     </div>
-  </section>
+  </section> -->
 </main>
 <app-footer></app-footer>
