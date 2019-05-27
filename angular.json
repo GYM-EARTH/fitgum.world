@@ -34,6 +34,7 @@
               "src/assets/css/white.scss",
               "src/assets/css/black.scss",
               "src/assets/css/500.scss",
+              "src/assets/css/1024.scss",
               "src/assets/css/1920.scss"
             ],
             "scripts": [],
