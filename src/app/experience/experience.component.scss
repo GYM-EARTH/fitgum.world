@@ -81,18 +81,19 @@
 @media screen and (min-width:320px){
     .experienced {
         margin-top: var(--i-m);
+        
         > h1 {
             font-size: var(--xxxl);
-            line-height: var(--lh-m);
+            margin-bottom: var(--i-m);
             padding-left: var(--i-s);
         }
         > p {
             font-size: var(--m);
-            margin: var(--i-m) var(--i-m) var(--i-m) var(--i-s);
+            margin: 0 var(--i-m) var(--i-m) var(--i-s);
             line-height: var(--lh-s);
         }
         > div {
-            padding: 0 0 37px var(--i-s);
+            padding: 0 0 10px var(--i-s);
         }
         article {
             width: calc(370px / 2);

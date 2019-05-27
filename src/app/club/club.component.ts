@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ClubsService } from '../clubs.service';
 
 @Component({
@@ -14,12 +14,15 @@ export class ClubComponent implements OnInit {
 
   constructor(
     private clubsService: ClubsService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private router: Router,) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.clubsService.getBy(params['id']).subscribe(club => {
         this.club = club;
+      }, err => {
+        this.router.navigate(['404']);
       });
     });
   }

@@ -27,10 +27,9 @@
 
 .club__services,
 .club__more {
-  margin: 22px 0;
+  margin: var(--i-m) 0 0;
   > h1 {
     font-size: var(--xxxl);
-    line-height: var(--lh-m);
     margin-bottom: 22px;
     margin-left: 12px;
   }
@@ -275,11 +274,10 @@
     }
     
     &__photos {
-      margin:  22px 12px;
+      margin:  var(--i-m) 12px;
       h1 {
         font-size: var(--xxxl);
-        line-height: var(--lh-m);
-        margin-bottom: 22px;
+        margin-bottom: var(--i-m);
       }
       > div {
         display: grid;

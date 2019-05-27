@@ -52,8 +52,9 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'terms-of-use', component: TermsOfUseComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent }
-  // { path: '**', component: PageNotFoundComponent }
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**',  redirectTo: '404' }
 ];
 
 @NgModule({
