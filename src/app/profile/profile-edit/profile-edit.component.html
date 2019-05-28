@@ -17,11 +17,11 @@
       </header>
 
     </section> -->
-    <form action="">
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
       <div class="form__grid">
         <div>
           <label for="">Имя</label>
-          <input type="text">
+          <input [(ngModel)]="data.name" name="name" type="text">
         </div>
         <!-- <div>
           <label for="">Фамилия</label>
@@ -37,15 +37,15 @@
         </div> -->
         <div>
           <label for="">Email</label>
-          <input type="text">
+          <input [(ngModel)]="data.email" name="email" type="text">
         </div>
         <div>
           <label for="">Пароль</label>
-          <input type="text">
+          <input [(ngModel)]="data.password" name="password" type="text">
         </div>
         <div>
           <label for="">Повторить пароль</label>
-          <input type="text">
+          <input [(ngModel)]="data.password_confirmation" name="password_confirmation" type="text">
         </div>
         <!-- <div>
           <label for="">Телефон</label>
@@ -56,9 +56,11 @@
         <label for="">Описание</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div> -->
+      <input type="submit" value="Go">
     </form>
     <footer>
       <a (click)="onUpload()">Сохранить Изменения</a>
+      
       <a href="">Отменить</a>
     </footer>
   </section>

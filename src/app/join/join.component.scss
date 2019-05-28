@@ -19,10 +19,10 @@
   form {
     div {
       position: relative;
-      width: 355px;
-      margin: 0 auto;
+      max-width: 300px;
+      margin: auto;
 
-      input {
+      input[type="text"] {
         width: 100%;
         border: none;
         border-radius: 37px;
@@ -43,9 +43,9 @@
       }
       }
 
-      button {
+      input[type="submit"] {
         position: absolute;
-        background-color: var(--purple);
+        background: var(--pink) url(/assets/icon/letter.svg) 50% 50% no-repeat;
         border-radius: 47px;
         width: 56px;
         height: 40px;
@@ -55,22 +55,7 @@
         right: 4px;
         outline: none;
         cursor: pointer;
-
-        &:hover {
-          transform: translateX(-10px);
-        }
-        &:active {
-          transform: translateX(-350px);
-        }
-        &:active + input {
-          opacity: 0;
-        }
-
-        svg {
-          position: absolute;
-          top: 12px;
-          left: 22px;
-        }
+        font-size: 0;
       }
     }
   }

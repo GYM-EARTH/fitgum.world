@@ -1,9 +1,5 @@
 @media screen and (min-width:320px){ 
 .signup {
-    // display: grid;
-    // grid-template-columns: repeat(2, 50%);
-    // height: 100%;
-
     > div:first-child {
         background: black;
         display: grid;
@@ -16,7 +12,8 @@
 }
 }
 .form {
-    width: 340px;
+    max-width: 340px;
+    min-width: 300px;
     margin: auto;
     
     h1 {
@@ -119,10 +116,12 @@
         color: white;
         font-size: var(--xxxl);
         text-align: center;
+        margin: 0 12px;
+        
     }
     > p {
         font-size: var(--m);
-        margin-top: 20px;
+        margin: 22px 12px 0;
         text-align: center;
         color: white;
         opacity: .9;

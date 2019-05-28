@@ -18,10 +18,14 @@ export class JoinComponent implements OnInit {
   }
   
   onSubmit() {
-    this.passportService.newsletterCreate(this.data).subscribe(
-      status => this.status = status
-    );
-    console.log(this.status)
+    console.log(this.data);
+    if(this.data.email.length) {
+      
+      this.passportService.newsletterCreate(this.data).subscribe(
+        status => this.status = status
+      );
+    }
+    
   }
 
 }

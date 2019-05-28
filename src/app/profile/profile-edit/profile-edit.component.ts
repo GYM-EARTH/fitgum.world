@@ -16,6 +16,13 @@ export class ProfileEditComponent implements OnInit {
   private userID;
   private token;
   
+  public data = {
+    "name":"",
+    "email":"",
+    "password":"",
+    "password_confirmation":""
+  };
+
   seletedFile: File = null;
 
   constructor(
@@ -48,6 +55,13 @@ export class ProfileEditComponent implements OnInit {
     this.profileService.uploadPhoto(this.seletedFile, this.token).subscribe();
   }
 
-
+  onSubmit() {
+    console.log(this.data);
+    this.profileService.editProfile(this.data, this.token).subscribe(
+      user => {
+        console.log(user);
+      }
+    );
+  }
 
 }

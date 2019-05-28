@@ -17,8 +17,9 @@
 }
 
 .form {
-    width: 340px;
+    max-width: 340px;
     margin: auto;
+    min-width: 300px;
     
     h1 {
         font-size: var(--xxxl);
@@ -126,11 +127,12 @@
         color: white;
         font-size: var(--xxxl);
         text-align: center;
+        margin: 0 12px;
         
     }
     > p {
         font-size: var(--m);
-        margin-top: 20px;
+        margin: 22px 12px 0;
         text-align: center;
         color: white;
         opacity: .9;

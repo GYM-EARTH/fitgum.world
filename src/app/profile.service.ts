@@ -46,5 +46,20 @@ export class ProfileService {
         })
       });
 
+  };
+  
+  public editProfile(data, token) {
+
+    this.token = token;
+    const body = { email: data.email, name: data.name };
+    
+    return this.http.post<any>(environment.cabinet.edit, body, {
+        headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+          'Accept': 'application/json',
+          'Authorization': "Bearer " + this.token,
+        })
+      });
+
   }
 }
