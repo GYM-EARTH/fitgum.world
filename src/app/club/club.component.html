@@ -60,7 +60,7 @@
     <section class="club__services" #service>
       <h1>Услуги</h1>
       <div>
-        <div>
+        <div [ngStyle]="{'grid-template-columns': 'repeat(' + club?.club_services.length + ', 1fr)'}">
           <article *ngFor="let service of club?.club_services">
             <figure><img src="https://file.fitgum.ru/{{service.cover}}" alt="{{service.description}}" title="{{service.description}}"></figure>
             <header><h1>{{service.title}}</h1></header>
