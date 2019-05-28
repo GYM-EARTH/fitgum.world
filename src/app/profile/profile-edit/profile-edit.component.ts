@@ -15,7 +15,8 @@ export class ProfileEditComponent implements OnInit {
   
   private userID;
   private token;
-  
+  status;
+  error;
   public data = {
     "name":"",
     "email":"",
@@ -56,12 +57,16 @@ export class ProfileEditComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.data);
     this.profileService.editProfile(this.data, this.token).subscribe(
-      user => {
-        console.log(user);
-      }
+      status => this.status = status,
+      error => this.error = error
     );
+
+    setTimeout(() => {
+      this.status = null;
+      this.error = null;
+    }, 7000);
+  
   }
 
 }

@@ -1,6 +1,6 @@
 .profile {
     // width: 250px;
-    background: var(--purple);
+    background: var(--purple) url(/assets/right-bg.png);
     padding-top: 30px;
     padding-bottom: 30px;
     height: 100%;
@@ -12,7 +12,16 @@
         border-radius: 50%;
         overflow: hidden;
         margin: 30px auto 30px;
-        border: 2px solid var(--white);
+        box-shadow: var(--shadow);
+        border: 2px solid var(--purple);
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            border-color: var(--white);
+            box-shadow: var(--shadow-h);
+        }
+        
         img {
             width: 100%;
             max-width: 100%;

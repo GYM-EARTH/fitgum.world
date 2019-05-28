@@ -56,13 +56,13 @@
         <label for="">Описание</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div> -->
-      <input type="submit" value="Go">
+      <footer>
+        <input type="submit" value="Сохранить Изменения">
+        <a href="">Отменить</a>
+     </footer>
+     <span class="status" *ngIf="status">{{status.status}}</span>
+     <span class="error" *ngIf="error">Ошибка</span>
     </form>
-    <footer>
-      <a (click)="onUpload()">Сохранить Изменения</a>
-      
-      <a href="">Отменить</a>
-    </footer>
   </section>
 </div>
 <app-footer></app-footer>
