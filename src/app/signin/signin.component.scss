@@ -1,6 +1,7 @@
+@media screen and (min-width:320px){ 
 .signin {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+    // display: grid;
+    // grid-template-columns: repeat(2, 50%);
     height: 100%;
 
     > div:first-child {
@@ -13,13 +14,14 @@
     }
 
 }
+}
 
 .form {
     width: 340px;
     margin: auto;
     
     h1 {
-        font-size: 46px;
+        font-size: var(--xxxl);
         color: white;
         line-height: 44px;
         margin-bottom: 50px;
@@ -66,18 +68,24 @@
     }
 
     &__info {
-        color: var(--grey-light);
+        color: var(--light);
         font-size: 12px;
-        line-height: 44px;
         text-align: center;
+        line-height: 44px;
 
         a {
             color: var(--light);
+            transition:  all .3s;
+            line-height: 22px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     span {
         display: block;
-        color: var(--grey-light);
+        color: var(--light);
         font-size: 12px;
         line-height: 44px;
         text-align: center;
@@ -115,18 +123,20 @@
 }
 
 .text {
-    width: 440px;
-    margin: auto;
+    margin: var(--i-m) auto;
     
     h1 {
         color: white;
-        font-size: 56px;
+        font-size: var(--xxxl);
+        text-align: center;
+        
     }
     > p {
-        font-size: 20px;
+        font-size: var(--m);
         margin-top: 20px;
+        text-align: center;
         color: white;
-        opacity: .8;
+        opacity: .9;
     }
 
     footer {
