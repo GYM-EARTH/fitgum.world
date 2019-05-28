@@ -203,6 +203,7 @@
     &__cover {
       height: calc(420px / 2);
       overflow: hidden;
+      background: var(--purple) url("/assets/right-bg.png");
       img {
         max-width: 100%;
       }

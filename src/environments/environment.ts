@@ -27,7 +27,10 @@ export const environment = {
   users: {
     trainers: 'https://api.fitgum.ru/users/trainers'
   },
-  flyers: 'https://api.fitgum.ru/flaers'
+  flyers: 'https://api.fitgum.ru/flaers',
+  newsletter: {
+    create: 'https://api.fitgum.ru/newsletter/create'
+  }
 };
 
 /*

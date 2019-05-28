@@ -1,32 +1,18 @@
 .join {
-  padding: 80px 0;
-  background-image: url("/assets/join-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  padding: var(--i-m) 0;
+  background: var(--purple) url("/assets/right-bg.png");
   color: #fff;
 
   h1 {
-    position: relative;
-    font-size: 38px;
-    margin-bottom: 65px;
+    font-size: var(--xxxl);
+    text-align: center;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -25px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 2px;
-      background-color: var(--purple);
-    }
   }
 
   p {
-    font-size: 16px;
-    line-height: 32px;
-    margin-bottom: 30px;
+    font-size: var(--m);
+    margin: var(--i-m) var(--i-m);
+    text-align: center;
   }
 
 
@@ -42,10 +28,15 @@
         border-radius: 37px;
         background-color: #fff;
         padding: 0 60px 0 24px;
-        height: 54px;
+        height: 48px;
         font-size: 14px;
         color: var(--dark);
-        
+        transition: all .3s;
+        box-shadow: var(--shadow);
+        &:focus,
+        &:hover {
+          box-shadow: var(--shadow-h);
+        }
         &::placeholder {
           color: var(--dark);
           opacity: .4;
@@ -57,7 +48,7 @@
         background-color: var(--purple);
         border-radius: 47px;
         width: 56px;
-        height: 46px;
+        height: 40px;
         border: none;
         padding: 0;
         top: 4px;
@@ -65,9 +56,19 @@
         outline: none;
         cursor: pointer;
 
+        &:hover {
+          transform: translateX(-10px);
+        }
+        &:active {
+          transform: translateX(-350px);
+        }
+        &:active + input {
+          opacity: 0;
+        }
+
         svg {
           position: absolute;
-          top: 16px;
+          top: 12px;
           left: 22px;
         }
       }

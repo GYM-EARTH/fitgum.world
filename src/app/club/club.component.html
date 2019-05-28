@@ -1,4 +1,5 @@
-<app-header-black></app-header-black>
+<!-- <app-header-black></app-header-black> -->
+<!-- <ngx-json-ld [json]="schema"></ngx-json-ld> -->
 <section *ngIf="image" class="zoom">
     <div (click)="close()" class="zoom__new">
       <img src="https://file.fitgum.ru/{{image}}" alt="{{club?.title}}">
@@ -47,7 +48,7 @@
         <a (click)="scroll(service)">Услуги</a>
         <!-- <a (click)="scroll(work)">Время</a> -->
         <a (click)="scroll(photo)">Фотогалерея</a>
-        <a (click)="scroll(more)">Больше</a>
+        <a (click)="scroll(more)">Ещё</a>
       </div>
     </nav>
     
@@ -70,8 +71,18 @@
       <p class="isnt" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
     </section>
 
+    <section class="club__photos" #photo>
+      <h1>Фотогалерея</h1>
+      <div>
+        <figure *ngFor="let photo of club?.club_photos">
+          <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
+        </figure>
+      </div>
+      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
+    </section>
+
     <section class="club__more" #more>
-      <h1>Больше</h1>
+      <h1>Ещё</h1>
       <div>
         <div>
           <article *ngFor="let service of club?.micro_services">
@@ -83,17 +94,7 @@
       </div>
       <p class="isnt" *ngIf="!club?.micro_services?.length">Больше не добавлено.</p>
     </section>
-
-    <section class="club__photos" #photo>
-      <h1>Фотогалерея</h1>
-      <div>
-        <figure *ngFor="let photo of club?.club_photos">
-          <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
-        </figure>
-      </div>
-      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
-    </section>
-
+    
     <section class="club__contacts">
       <h1>Контакты</h1>
       <address>
@@ -150,4 +151,5 @@
     </div>
   </section> -->
 </main>
+<app-join></app-join>
 <app-footer></app-footer>
