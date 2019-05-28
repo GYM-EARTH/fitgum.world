@@ -1,8 +1,9 @@
 :host > div {
     position: relative;
 }
+@media screen and (min-width:320px){
 .preview {
-    height: 700px;
+    height: calc(700px / 2);
     overflow: hidden;
     background: var(--purple) url("/assets/right-bg.png");
     position: relative;
@@ -13,10 +14,9 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(135deg, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%);
+        // background-image: linear-gradient(135deg, rgba(0,0,0,.7) 0%, rgba(255,255,255,0) 100%);
     }
     img {
-        opacity: 1;
         max-width: 100%;
         width: 100%;
         
@@ -24,34 +24,37 @@
 }
 .intro {
     position: absolute;
-    top: 100px;
-    left: 90px;
-    right: 90px;
+    top: 0;
+    left: 45px;
+    right: 45px;
     bottom: 0;
     display: grid;
     align-content: center;
     opacity: .9;
     h1 {
-        font-size: 74px;
-        line-height: 74px;
+        font-size: var(--xxxl);
+        text-align: center;
     }
     p {
-        font-size: 18px;
-        margin: 45px 0 45px;
+        font-size: var(--m);
+        margin: var(--i-m) 0 36px;
+        text-align: center;
     }
     a {
-        line-height: 78px;
-        padding: 0 50px;
+        line-height: 37px;
+        padding: 0 25px;
         display: inline-block;
         color: var(--purple);
         border-radius: 8px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: var(--s);
         justify-self: baseline;
         transition: all .3s;
+        margin: auto;
         
         &:hover {
             background: var(--purple);
         }
     }
+}
 }

@@ -1,6 +1,6 @@
 <section class="experienced">
-    <h1>Фитнес Опыт</h1>
-    <p>Сертифицированные персональные тренеры мирового класса, энергичные инструкторы и инновационные фитнес-программы.</p>
+    <h1>Фитнес опыт</h1>
+    <p>Сертифицированные персональные тренеры, энергичные инструкторы и фитнес-программы.</p>
     <!-- <button class="prev" (click)=left()></button>
     <button class="next" (click)=next()></button> -->
     <div>
@@ -11,7 +11,7 @@
         <figure><img src="{{trainer?.avatar}}" alt=""></figure>
         <header>
           <h1>{{trainer?.name}}</h1>
-          <p>{{trainer?.email}}</p>
+          <p>{{trainer?.user_role.name}}</p>
           <a class="see" href=""></a>
         </header>
       </article>

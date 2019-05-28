@@ -90,6 +90,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
 import { NewsletterComponent } from './modals/newsletter/newsletter.component';
 import { MapComponent } from './map/map.component';
+import { FaqComponent } from './modals/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -145,7 +146,8 @@ import { MapComponent } from './map/map.component';
     PrivacyPolicyComponent,
     HomeClubsComponent,
     NewsletterComponent,
-    MapComponent
+    MapComponent,
+    FaqComponent
     
   ],
   imports: [

@@ -66,17 +66,18 @@ article {
 }
 @media screen and (min-width:320px){
     .clubs {
-        background: url(/assets/right-bg.png);
+        
         > h1 {
             font-size: var(--xxxl);
             padding-left: var(--i-s);
         }
         > p {
-            font-size: var(--s);
-            margin: var(--i-m) var(--i-m) var(--i-m) var(--i-s);
+            font-size: var(--m);
+            margin: 0 var(--i-m) var(--i-m) var(--i-s);
+            line-height: var(--lh-s);
         }
         > div {
-            padding: 0 0 10px var(--i-s);
+            padding: var(--i-m) 0 var(--i-m) var(--i-s);
         }
 
         article {

@@ -1,62 +1,64 @@
-.header {
-    margin: 0 90px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    
-    > a:first-child {
-        font-size: 34px;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0 25px;;
+@media screen and (min-width:375px){
 
-        span:first-child { color: var(--pink); }
-        span:last-child { color: var(--purple); }
-    }
-    nav {
+    .header {
+        padding: 0 45px;
         display: flex;
-        a:not(.profile) {
-            font-size: 16px;
-            padding: 0 25px;
-            line-height: 45px;
-            display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        // border-bottom-width: 1px;
+        // border-bottom-style: solid;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        
+        > a:first-child {
+            font-size: 34px;
             text-decoration: none;
-            transition: all .3s;
+            font-weight: bold;
+    
+            span:first-child { color: var(--pink); }
+            span:last-child { color: var(--purple); }
         }
-        .signup {
-            margin-left: 25px;
-            border-radius: 8px;
-            border-width: 1px;
-            border-style: solid;
-            &:hover {
-                background: var(--purple);
-                border-color: var(--purple);
+        nav {
+            display: flex;
+            a:not(.profile) {
+                font-size: 16px;
+                padding: 0 25px;
+                line-height: 45px;
+                display: inline-block;
+                text-decoration: none;
+                transition: all .3s;
             }
-        }
-        .profile {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            margin-left: 25px;
-            overflow: hidden;
-            img {
-                max-width: 100%;
-                width: 100%;
+            .signup {
+                border: 1px solid var(--purple);
+                margin-left: 25px;
+                border-radius: 8px;
+                &:hover {
+                    background: var(--purple);
+                }
             }
-        }
-        .nav__a:hover {
-            color: var(--pink);
-        }
-        .active {
-            color: var(--purple);
+            .profile {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                margin-left: 25px;
+                overflow: hidden;
+                img {
+                    position: relative;
+                    z-index: 1;
+                    max-width: 100%;
+                }
+            }
+            .nav__a:hover {
+                color: var(--pink);
+            }
+            .active {
+                color: var(--purple);
+            }
         }
     }
-}
+    
+    }
+    

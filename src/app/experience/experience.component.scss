@@ -93,7 +93,7 @@
             line-height: var(--lh-s);
         }
         > div {
-            padding: 0 0 10px var(--i-s);
+            padding: var(--i-m) 0 var(--i-m) var(--i-s);
         }
         article {
             width: calc(370px / 2);

@@ -46,7 +46,7 @@
         <!-- <a (click)="scroll(team)">Персонал</a> -->
         <a (click)="scroll(service)">Услуги</a>
         <!-- <a (click)="scroll(work)">Время</a> -->
-        <a (click)="scroll(photo)">Фотографии</a>
+        <a (click)="scroll(photo)">Фотогалерея</a>
         <a (click)="scroll(more)">Больше</a>
       </div>
     </nav>
@@ -54,31 +54,6 @@
     <section class="club__about" #about>
       <h1>Данные</h1>
       <div class="content__club" [innerHTML]="club?.content"></div>
-    </section>
-    
-    <section class="club__contacts">
-      <h1>Контакты</h1>
-      <address>
-        <span>г.Москва</span>
-        <span>ул.{{club?.street}}</span>
-        <span>д.{{club?.house}}</span>
-        <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
-        <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
-        <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
-        <span
-            *ngFor="let metro of club?.metros"
-            class="{{metro.slug}}">{{metro.title}}</span>
-      </address>
-    </section>
-    
-    <section class="club__photos" #photo>
-      <h1>Фотографии</h1>
-      <div>
-        <figure *ngFor="let photo of club?.club_photos">
-          <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
-        </figure>
-      </div>
-      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
     </section>
     
     <section class="club__services" #service>
@@ -108,6 +83,32 @@
       </div>
       <p class="isnt" *ngIf="!club?.micro_services?.length">Больше не добавлено.</p>
     </section>
+
+    <section class="club__photos" #photo>
+      <h1>Фотогалерея</h1>
+      <div>
+        <figure *ngFor="let photo of club?.club_photos">
+          <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
+        </figure>
+      </div>
+      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
+    </section>
+
+    <section class="club__contacts">
+      <h1>Контакты</h1>
+      <address>
+        <span>г.Москва</span>
+        <span>ул.{{club?.street}}</span>
+        <span>д.{{club?.house}}</span>
+        <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
+        <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
+        <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
+        <span
+            *ngFor="let metro of club?.metros"
+            class="{{metro.slug}}">{{metro.title}}</span>
+      </address>
+    </section>
+
   </article>
   <!-- 
 
