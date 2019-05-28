@@ -36,4 +36,9 @@ export class PassportService {
       })
     });
   }
+
+  newsletterCreate(data) {
+    const body = { email: data.email };
+    return this.http.post(environment.newsletter.create, body, httpOptions);
+  }
 }
