@@ -1,7 +1,7 @@
 .clubs {
     
     > h1 {
-        margin-bottom: var(--i-m);
+        margin-bottom: var(--i-s);
     } 
     > div {
  
@@ -25,7 +25,7 @@
 }
 article {
     box-shadow: var(--shadow);
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     transition: all .3s;
     cursor: pointer;
@@ -68,12 +68,11 @@ article {
         
         > h1 {
             font-size: var(--xxxl);
-            padding-left: var(--i-s);
+            padding-left: var(--i-m);
         }
         > p {
-            font-size: var(--m);
-            margin: 0 var(--i-m) var(--i-m) var(--i-s);
-            line-height: var(--lh-s);
+            font-size: var(--s);
+            margin: 0 var(--i-m);
         }
         > div {
             padding: var(--i-m) 0 var(--i-m) var(--i-s);
@@ -88,8 +87,8 @@ article {
             }
             header {
                 margin-top: var(--i-s);;
-                h1 { font-size: var(--m); }
-                p { font-size: var(--s); }
+                h1 { font-size: var(--s); }
+                p { font-size: var(--xs); }
             }
             footer {
                 margin-bottom: var(--i-s);;

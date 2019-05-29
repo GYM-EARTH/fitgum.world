@@ -1,20 +1,23 @@
 <section class="news">
   <h1>Последние Новости</h1>
   <div>
-    <article *ngFor="let i of news" [routerLink]="['/news', i.slug]">
-      <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
-      <nav><a href="">{{i?.category.title}}</a>
-        <!-- <a href="">Gym</a> -->
-      </nav>
-      <header><h1>{{i?.title}}</h1></header>
-      <footer>
-        <time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time>
-        <!-- <span>By <a href="">FitGum</a></span> -->
-      </footer>
-      <p>{{i?.description}}</p>
-    </article>
+    <div [ngStyle]="{'grid-template-columns': 'repeat(' + news.length + ', auto)'}">
+      <!-- <article *ngFor="let i of news" [routerLink]="['/news', i.slug]"> -->
+        <article *ngFor="let i of news">
+        <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
+        <!-- <nav><a href="">{{i?.category.title}}</a>
+          <a href="">Gym</a>
+        </nav> -->
+        <header><h1>{{i?.title}}</h1></header>
+        <!-- <footer>
+          <time pubdate [attr.datetime]="i.created_at">{{i?.created_at | date:'mediumDate'}}</time>
+          <span>By <a href="">FitGum</a></span>
+        </footer> -->
+        <!-- <p>{{i?.description}}</p> -->
+      </article>
+    </div>
   </div>
-  <div>
+  <!-- <div>
     <a routerLink="/news" href="/news"  class="load">Узнать больше</a>
-  </div>
+  </div> -->
 </section>

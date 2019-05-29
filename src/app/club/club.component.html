@@ -67,8 +67,8 @@
             <!-- <p>{{service.description}}</p> -->
           </article>
         </div>
+        <p class="isnt" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
       </div>
-      <p class="isnt" *ngIf="!club?.club_services?.length">Услуги не добавлены.</p>
     </section>
 
     <section class="club__photos" #photo>
@@ -77,36 +77,36 @@
         <figure *ngFor="let photo of club?.club_photos">
           <img src="https://file.fitgum.ru/{{photo.image}}" (click)="preview(photo.image)">
         </figure>
+        <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
       </div>
-      <p class="isnt" *ngIf="!club?.club_photos.length">Фотографии не добавлены.</p>
     </section>
 
     <section class="club__more" #more>
       <h1>Ещё</h1>
       <div>
-        <div>
+        <div [ngStyle]="{'grid-template-columns': 'repeat(' + club?.micro_services.length + ', 1fr)'}">
           <article *ngFor="let service of club?.micro_services">
             <figure><img src="https://file.fitgum.ru/{{service.cover}}" alt="{{service.description}}" title="{{service.description}}"></figure>
             <header><h1>{{service.title}}</h1></header>
             <!-- <p class="services-block__desc">{{service.description}}</p> -->
           </article>
         </div>
+        <p class="isnt" *ngIf="!club?.micro_services?.length">Больше не добавлено.</p>
       </div>
-      <p class="isnt" *ngIf="!club?.micro_services?.length">Больше не добавлено.</p>
     </section>
 
     <section class="club__contacts">
       <h1>Контакты</h1>
       <address>
-        <span>г.Москва</span>
-        <span>ул.{{club?.street}}</span>
-        <span>д.{{club?.house}}</span>
-        <span *ngIf="club?.housing">корп.{{club?.housing}}</span>
-        <span *ngIf="club?.structure">стр.{{club?.structure}}</span>
-        <span *ngIf="club?.proficiency">влад.{{club?.proficiency}}</span>
+        <span>г.Москва </span>
+        <span>ул.{{club?.street}} </span><br>
+        <span>д.{{club?.house}} </span>
+        <span *ngIf="club?.housing">корп.{{club?.housing}} </span>
+        <span *ngIf="club?.structure">стр.{{club?.structure}} </span>
+        <span *ngIf="club?.proficiency">влад.{{club?.proficiency}} </span><br>
         <span
             *ngFor="let metro of club?.metros"
-            class="{{metro.slug}}">{{metro.title}}</span>
+            class="{{metro.slug}}">{{metro.title}} </span>
       </address>
     </section>
 
