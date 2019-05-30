@@ -1,5 +1,5 @@
 .news {
-
+    margin-top: var(--i-m);
     > h1 {
         font-size: var(--xxxl);
         // margin-bottom: var(--i-m);
@@ -116,7 +116,11 @@
                     }
                 }
             }
+            &:last-of-type {
+                margin-right: -13px;
+            }
         }
+        .add { width: 1px;display: block;}
     }
 }
 // div:last-of-type {

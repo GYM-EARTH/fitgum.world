@@ -93,6 +93,10 @@ article {
             footer {
                 margin-bottom: var(--i-s);;
             }
+            &:last-of-type {
+                margin-right: -13px;
+            }
         }
+        .add { width: 1px;display: block;}
     }
 }

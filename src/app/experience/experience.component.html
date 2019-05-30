@@ -6,7 +6,7 @@
     <div>
       <!-- <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]"> -->
         <p class="isnot" *ngIf="!trainers?.length">Тренеры не добавлены.</p>
-        <div [ngStyle]="{'transform': 'translateX(' + transform + 'px)'}">
+        <div [ngStyle]="{'grid-template-columns': 'repeat(' + trainers?.length + 1 + ', auto)'}">
         <article *ngFor="let trainer of trainers" >
         <figure><img src="{{trainer?.avatar}}" alt=""></figure>
         <header>
@@ -15,6 +15,7 @@
           <a class="see" href=""></a>
         </header>
       </article>
+      <span class="add"></span>
     </div>
     </div>
   </section>

@@ -1,7 +1,7 @@
 <section class="news">
   <h1>Последние Новости</h1>
   <div>
-    <div [ngStyle]="{'grid-template-columns': 'repeat(' + news.length + ', auto)'}">
+    <div [ngStyle]="{'grid-template-columns': 'repeat(' + news?.length + 1 + ', auto)'}">
       <!-- <article *ngFor="let i of news" [routerLink]="['/news', i.slug]"> -->
         <article *ngFor="let i of news">
         <figure><img src="https://file.fitgum.ru/{{i?.preview}}" alt=""></figure>
@@ -15,6 +15,7 @@
         </footer> -->
         <!-- <p>{{i?.description}}</p> -->
       </article>
+      <span class="add"></span>
     </div>
   </div>
   <!-- <div>

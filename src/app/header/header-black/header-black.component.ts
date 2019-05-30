@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { CookieService } from '../../cookie.service';
+import { CookieService } from '../../cookie.service';
 import { Router } from '@angular/router';
-// import { PassportService } from '../../passport.service';
+import { PassportService } from '../../passport.service';
 
 
 @Component({
@@ -11,28 +11,28 @@ import { Router } from '@angular/router';
 })
 export class HeaderBlackComponent implements OnInit {
 
-  // profile;
-  // private token;
+  profile;
+  private token;
 
-  // public auth: Boolean = false;
+  public auth: Boolean = false;
 
   constructor(
-    // private passportService: PassportService,
-    // private cookieService: CookieService,
+    private passportService: PassportService,
+    private cookieService: CookieService,
     private router: Router) {
-      // this.token = this.cookieService.getCookie('login');
+      this.token = this.cookieService.getCookie('login');
     }
 
   ngOnInit() {
-    // if (this.cookieService.getCookie('login')) {
-    //   this.auth = true;
-    // }
-    // this.passportService.getProfile(this.token).subscribe(profile => this.profile = profile);
+    if (this.cookieService.getCookie('login')) {
+      this.auth = true;
+    }
+    this.passportService.getProfile(this.token).subscribe(profile => this.profile = profile);
   }
 
-  // signOut() {
-  //   this.cookieService.deleteCookie('login');
-  //   this.router.navigate(['/signin']);
-  // }
+  signOut() {
+    this.cookieService.deleteCookie('login');
+    this.router.navigate(['/signin']);
+  }
 
 }
