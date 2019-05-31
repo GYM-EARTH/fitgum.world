@@ -1,0 +1,17 @@
+<app-header-black></app-header-black>
+<section class="clubs">
+  <h1>Рейтинг фитнес клубов России</h1>
+  <p>Компании, входящие в список лучших клубов, ранжированы по просмотрам за 2019 год.</p>
+  <div>
+    <article *ngFor="let club of clubs" [routerLink]="['/clubs', club.slug]">
+      <figure [ngStyle]="{'background-color': '#'+club.color}"><img src="https://file.fitgum.ru/{{club.logo}}" alt=""></figure>
+      <header><h1>{{club.title}}</h1></header>
+      <!-- <p>{{club.description}}</p> -->
+      <footer>
+        <span class="club__views">Просмотров {{club?.views}}</span>
+        <span>Москва</span>
+      </footer>
+    </article>
+  </div>  
+</section>
+<app-footer></app-footer>

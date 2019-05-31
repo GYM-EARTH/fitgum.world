@@ -91,6 +91,7 @@ import { HomeClubsComponent } from './home/home-clubs/home-clubs.component';
 import { NewsletterComponent } from './modals/newsletter/newsletter.component';
 import { MapComponent } from './map/map.component';
 import { FaqComponent } from './modals/faq/faq.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -147,7 +148,8 @@ import { FaqComponent } from './modals/faq/faq.component';
     HomeClubsComponent,
     NewsletterComponent,
     MapComponent,
-    FaqComponent
+    FaqComponent,
+    RatingComponent
     
   ],
   imports: [
