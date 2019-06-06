@@ -27,6 +27,7 @@ import { ShowJobsComponent } from './jobs/show-jobs/show-jobs.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { RatingComponent } from './rating/rating.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'HomePage'}},
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: 'terms-of-use', component: TermsOfUseComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'rating', component: RatingComponent },
+  { path: 'map', component: MapComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '**',  redirectTo: '404' }
 ];
