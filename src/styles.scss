@@ -93,15 +93,7 @@ body {
         line-height: 28px; 
     }
 }
-.content__news {
-    p {
-        padding: 0 25px;
-        font-size: 16px;
-        opacity: .9;
-        color: var(--dark-black);
-        line-height: 28px;
-    }
-}
+
 input,
 textarea {
     -webkit-appearance:none;
@@ -125,4 +117,115 @@ textarea {
     top: 0;
     right: 0;
     display: none;
+}
+
+
+app-a-single {
+    display: grid;
+    grid-row-gap: 5px;
+}
+app-a-single div {
+    // width: 790px;
+    margin: auto;
+}
+app-a-single h2 {
+    margin-top: 22px;
+    text-indent: 10px;
+    font-size: 16px;
+    margin-bottom: 22px;
+    color: var(--dark);
+}
+app-a-single h3 {
+    margin-bottom: 22px;
+    margin-top: 22px;
+    font-size: 16px;
+    text-indent: 10px;
+    color: var(--dark);
+}
+app-a-single p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark);
+    text-indent: 10px;
+}
+app-a-single p::first-letter {
+    color: var(--blue);
+}
+app-a-single ul,
+app-a-single ol {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--dark);
+}
+app-a-single ol {
+    list-style: none;
+    counter-reset: li;
+}
+app-a-single ul {
+    list-style: none;
+}
+app-a-single ul li::before {
+    content: "•";
+    color: var(--orange);
+    display: inline-block;
+    width: 15px;
+    margin-left: -15px;
+}
+app-a-single ol li::before {
+    content: counter(li);
+    color: var(--orange);
+    display: inline-block;
+    width: 15px;
+    margin-left: -15px;
+}
+app-a-single ol li {
+    counter-increment: li;
+}
+app-a-single li {
+    text-align: justify;
+}
+app-a-single li + li {
+    margin-top: 5px;
+}
+app-a-single img {
+    max-width: 100%;
+}
+app-a-single blockquote {
+    font-size: 16px;
+    padding: 22px;
+    background: var(--blue);
+    color: white;
+    line-height: 24px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+}
+
+.altufevo,
+.bibirevo,
+.petrovsko-razumosvkaya,
+.dmitrovskaya,
+.timiryazevskaya,
+.vladykino,
+.otradnoe {
+    color: #acadaf;
+}
+.medvedkovo,
+.rizhskaya {
+    color: #fbaa33;
+}
+.aeroport,
+.dinamo {
+    color: #029a55;
+}
+.seligerskaya,
+.okruzhnaya,
+.marina-roshcha {
+    color: #b1d332;
+}
+.begovaya {
+    color: #b61d8e;
+}
+.fili {
+    color: #019ee0;
 }

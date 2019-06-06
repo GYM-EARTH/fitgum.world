@@ -1,7 +1,9 @@
 :host {
-    margin: 125px 135px 25px 135px;
+    // margin: 125px 135px 25px 135px;
+    margin: 44px 12px;
     display: grid;
-    grid-template-columns: auto 370px;
+    // grid-template-columns: auto 370px;
+    grid-template-columns: auto;
 }
 
 .sharing {
@@ -87,11 +89,13 @@
 .blog {
 
     div:first-of-type {
-        margin-right: 30px;
+        // margin-right: 30px;
 
         article {
             overflow: hidden;
             padding-bottom: 25px;
+            max-width: 790px;
+            margin: auto;
 
             figure {
                 overflow: hidden;
@@ -101,7 +105,8 @@
             }
             h1 {
                 color: var(--dark);
-                font-size: 52px;
+                font-size: var(--xxxl);
+                margin-bottom: 22px;
             }
             p {
                 padding: 0 25px;
