@@ -9,16 +9,19 @@ import { VideosService } from '../videos.service';
 export class VideosComponent implements OnInit {
 
   public videos;
-  firstVideo;
+  firstVideo = null;
   
   constructor(private videosService: VideosService) { }
 
   ngOnInit() {
     this.videosService.getAll().subscribe(videos => {
       this.videos = videos.data;
-      this.firstVideo = videos.data[0];
     });
   
+  }
+
+  selectVideo(target) {
+    this.firstVideo = target;
   }
 
 }
