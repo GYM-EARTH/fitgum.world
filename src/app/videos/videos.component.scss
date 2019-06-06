@@ -17,7 +17,6 @@
 }
 .container {
   display: grid;
-  grid-template-columns: 370px 370px 370px;
   grid-gap: 30px;
   padding: var(--m) var(--i-s);
   background: var(--purple) url(/assets/right-bg.png);
@@ -107,6 +106,9 @@
 
 
 @media screen and (min-width:320px){
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .new {
     height: 320px;
     iframe  {
@@ -136,6 +138,9 @@
 }
 
 @media screen and (min-width:720px){
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
   .new {
     height: 480px;
     iframe  {
@@ -145,6 +150,9 @@
 }
 
 @media screen and (min-width:1080px){
+  .container {
+    grid-template-columns: repeat(7, 1fr);
+  }
   .new {
     height: 480px;
     iframe  {
@@ -154,6 +162,9 @@
 }
 
 @media screen and (min-width:1920px){
+  .container {
+    grid-template-columns: repeat(9, 1fr);
+  }
   .new {
     height: 720px;
     iframe  {

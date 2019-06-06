@@ -6,12 +6,11 @@
       <!-- &autoplay= -->
       <!-- &playlist=yCo9e8xzrus -->
       <div >
-        <iframe src="https://www.youtube-nocookie.com/embed/ZUOtuApSP3o?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=t2D0NOKVWXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        <iframe *ngIf="url" [src]="url" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
         </iframe>
       </div>
     </div>
     <div class="container">
-      <div >
         <article class="video" *ngFor="let video of videos">
             <a (click)="selectVideo(video.url)">
           <figure class="video__img-block">
@@ -27,7 +26,6 @@
           </ul> -->
         </a>
         </article>
-      </div>
     </div>
   </section>
 <!-- <app-pagination></app-pagination> -->
