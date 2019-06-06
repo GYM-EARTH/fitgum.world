@@ -1,11 +1,11 @@
 .join {
   padding: var(--i-m) 0;
-  background: var(--purple) url("/assets/right-bg.png");
-  color: #fff;
+  // background: var(--purple) url("/assets/right-bg.png");
 
   h1 {
     font-size: var(--xxxl);
     text-align: center;
+    color: var(--dark);
 
   }
 
@@ -13,24 +13,29 @@
     font-size: var(--m);
     margin: var(--i-m) var(--i-m);
     text-align: center;
+    color: var(--light);
   }
 
-
+  .active {
+    max-width: 70px;
+    opacity: 0;
+  }
   form {
     div {
       position: relative;
       max-width: 300px;
       margin: auto;
+      transition: all .3s;
 
       input[type="text"] {
         width: 100%;
         border: none;
         border-radius: 37px;
-        background-color: #fff;
+        background-color: var(--purple);
         padding: 0 60px 0 24px;
         height: 48px;
         font-size: 14px;
-        color: var(--dark);
+        color: var(--white);
         transition: all .3s;
         box-shadow: var(--shadow);
         &:focus,
@@ -38,14 +43,14 @@
           box-shadow: var(--shadow-h);
         }
         &::placeholder {
-          color: var(--dark);
+          color: var(--white);
           opacity: .4;
       }
       }
 
       input[type="submit"] {
         position: absolute;
-        background: var(--pink) url(/assets/icon/letter.svg) 50% 50% no-repeat;
+        background: var(--purple) url(/assets/icon/letter.svg) 50% 50% no-repeat;
         border-radius: 47px;
         width: 55px;
         height: 40px;
