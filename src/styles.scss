@@ -64,36 +64,7 @@ body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
-@media screen and (min-width:768px), (max-width:300px){
-    div {
-        opacity: 0;
-    }
-    html {
-        height: 100%;
-        min-height: 100%;
-    }
-    body {
-        overflow: hidden;
-        height: 100%;
-        background: var(--purple) !important;
 
-        &::after {
-            content: "Доступно с телефона";
-            font-size: var(--xxxl);
-            color: var(--white);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            text-align: center;
-            display: grid;
-            align-content: center;
-        }
-    }
-}
 .content_jobs {
     p {
         font-size: 16px;

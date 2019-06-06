@@ -1,28 +1,30 @@
 <app-header-black></app-header-black>
   <section class="videos">
-  <!-- <div class="new">
-      <div><iframe src="https://www.youtube-nocookie.com/embed/urRVZ4SW7WU?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=yCo9e8xzrus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-      <div><iframe src="https://www.youtube-nocookie.com/embed/yCo9e8xzrus?controls=1&autoplay=1&mute=1&showinfo=0&loop=1&playlist=urRVZ4SW7WU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-  </div> -->
-  <div class="container">
-    <div class="video">
-      <article *ngFor="let video of videos">
-          <a href="{{video.url}}">
-        <figure class="video__img-block">
-          <button class="video__youtube-btn"></button>
-          <img class="video__images" src="https://file.fitgum.ru/{{video?.preview}}" alt="">
-          
-          
-        </figure>
-        <h1>{{video?.title}}</h1>
-        <ul class="video__tags">
-          <li class="video__tag">{{video?.views}} Просмотры</li>
-          <li class="video__tag">12 Aug 2019</li>
-        </ul>
-      </a>
-      </article>
+  <h1>Потоковые упражнения на занятиях.</h1>
+  <p>До того, как появились хорошие возможности для потоковой передачи, люди, которые не могли найти этот час, чтобы попасть в спортзал, вероятно, просто не занимались спортом. Но теперь кто-то может транслировать уроки упражнений на телевизор в своей гостиной, прежде чем им нужно будет отвести детей в школу. Или в обеденное время. Или поздно ночью ... и так далее.</p>
+    <div class="new">
+      <!-- &autoplay= -->
+      <div><iframe src="https://www.youtube-nocookie.com/embed/urRVZ4SW7WU?controls=1&mute=1&showinfo=0&loop=1&playlist=yCo9e8xzrus" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
     </div>
-  </div>
-</section>
+    <div class="container">
+      <div >
+        <article class="video" *ngFor="let video of videos">
+            <a href="{{video.url}}">
+          <figure class="video__img-block">
+            <button class="video__youtube-btn"></button>
+            <img class="video__images" src="https://file.fitgum.ru/{{video?.preview}}" alt="">
+            
+            
+          </figure>
+          <h1>{{video?.title}}</h1>
+          <!-- <ul class="video__tags">
+            <li class="video__tag">{{video?.views}} Просмотры</li>
+            <li class="video__tag">12 Aug 2019</li>
+          </ul> -->
+        </a>
+        </article>
+      </div>
+    </div>
+  </section>
 <!-- <app-pagination></app-pagination> -->
 <app-footer></app-footer>

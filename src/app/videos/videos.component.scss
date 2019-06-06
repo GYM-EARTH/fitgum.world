@@ -1,16 +1,13 @@
 .videos {
-  padding: 60px 0;
   background-color: var(--background-light);
+        
 }
 .new {
-  max-width: 1170px;
   margin: auto;
   margin-bottom: 30px;
   height: 329px;
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 30px;
   
   div{
     background: #000;
@@ -30,9 +27,7 @@
 
 .video {
   cursor: pointer;
-  max-width: 370px;
   background-color: #fff;
-  border-radius: 14px;
   overflow: hidden;
   
   a {
@@ -106,5 +101,52 @@
       display: none;
     }
 
+  }
+}
+@media screen and (min-width:768px), (max-width:300px){
+  div {
+      opacity: 0;
+  }
+  html {
+      height: 100%;
+      min-height: 100%;
+  }
+  body {
+      overflow: hidden;
+      height: 100%;
+      background: var(--purple) !important;
+
+      &::after {
+          content: "Доступно с телефона";
+          font-size: var(--xxxl);
+          color: var(--white);
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          text-align: center;
+          display: grid;
+          align-content: center;
+      }
+  }
+}
+@media screen and (min-width:320px){
+  .videos {
+    > h1 {
+      font-size: var(--xxxl);
+      margin-bottom: var(--i-s);
+      padding-left: var(--i-m);
+  }
+  > p {
+      font-size: var(--s);
+      margin: 0 var(--i-m);
+  }
+  }
+  .video {
+    max-width: calc(370px / 2);
+    border-radius: calc(14px / 2);
   }
 }
