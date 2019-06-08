@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /profile
+Disallow: https://nova.fitgum.ru
 
 Allow: /
 sitemap: https://api.fitgum.ru/sitemap-articles
+sitemap: https://api.fitgum.ru/sitemap-clubs
 Host: https://fitgum.ru
