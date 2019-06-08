@@ -17,13 +17,13 @@ export class ExperienceComponent implements OnInit {
   }
   left() {
     if (this.transform != 0) {
-      this.transform = this.transform + 370;
+      this.transform = this.transform + 185;
     }
     
   }
   next() {
     if (this.transform > -1370) {
-      this.transform = this.transform - 370;
+      this.transform = this.transform - 185;
     }
   }
 }

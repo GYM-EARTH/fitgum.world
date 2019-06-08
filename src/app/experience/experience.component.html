@@ -1,12 +1,15 @@
 <section class="experienced">
     <h1>Фитнес Опыт</h1>
     <p>Сертифицированные персональные тренеры, энергичные инструкторы и фитнес-программы.</p>
-    <!-- <button class="prev" (click)=left()></button>
-    <button class="next" (click)=next()></button> -->
+    <button class="prev" (click)=left()></button>
+    <button class="next" (click)=next()></button>
     <div>
       <!-- <article *ngFor="let trainer of trainers" [routerLink]="['/trainers', trainer.slug]"> -->
         <p class="isnot" *ngIf="!trainers?.length">Тренеры не добавлены.</p>
-        <div [ngStyle]="{'grid-template-columns': 'repeat(' + trainers?.length + 1 + ', auto)'}">
+        <div [ngStyle]="{
+          'grid-template-columns': 'repeat(' + trainers?.length + 1 + ', auto)',
+          'transform': 'translateX(' + transform + 'px)'
+        }">
         <article *ngFor="let trainer of trainers" >
         <figure><img src="{{trainer?.avatar}}" alt=""></figure>
         <header>
