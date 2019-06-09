@@ -62,7 +62,7 @@
 
   h1 {
     padding: 0 var(--i-s);
-    color: var(--dark);
+    color: var(--black);
     margin: var(--i-s) 0;
   }
 
@@ -121,12 +121,12 @@
       font-size: var(--xxxl);
       margin-bottom: var(--i-s);
       padding-left: var(--i-m);
-      color: var(--dark);
+      color: var(--black);
   }
   > p {
       font-size: var(--s);
       margin: 0 var(--i-m) var(--i-m);
-      color: var(--light);
+      color: var(--black);
   }
   }
   .video {
