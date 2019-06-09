@@ -123,3 +123,14 @@
         transform: translateY(-24px);
     }
 }
+
+@media screen and (min-width:1080px){
+    .experienced {
+        article {
+            width: 370px;
+            figure {
+                height: 280px;
+            }
+        }
+    }
+}
