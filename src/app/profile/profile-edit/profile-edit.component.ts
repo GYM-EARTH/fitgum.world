@@ -49,7 +49,8 @@ export class ProfileEditComponent implements OnInit {
   }
 
   onFileSelected(event){
-    this.seletedFile = event.target.files[0]
+    this.seletedFile = event.target.files[0];
+    this.onUpload();
   }
 
   onUpload() {
