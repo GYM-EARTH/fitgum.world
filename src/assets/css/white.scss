@@ -105,12 +105,12 @@
     }
 
     app-welcome .intro {
-        h1 { color: var(--white) }
-        p { color: var(--white) }
+        h1 { color: var(--black) }
+        p { color: var(--black) }
         a {
-            background: var(--white);
+            background: var(--purple);
             
-            &:hover { color: var(--white) }
+            &:hover { color: var(--purple) }
         }
     }
     .newsletter input[type="text"] {

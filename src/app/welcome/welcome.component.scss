@@ -20,7 +20,7 @@
 }
 .intro {
     padding: 22px 0;
-    background: var(--purple) url("/assets/right-bg.png");
+    // background: var(--purple) url("/assets/right-bg.png");
     // position: absolute;
     // top: 0px;
     // left: 45px;
@@ -43,7 +43,7 @@
         line-height: 37px;
         padding: 0 25px;
         display: inline-block;
-        color: var(--purple);
+        color: var(--white);
         border-radius: 16px;
         text-decoration: none;
         font-size: var(--s);
@@ -52,7 +52,7 @@
         margin: auto;
         
         &:hover {
-            background: var(--purple);
+            background: var(--white);
         }
     }
 }
