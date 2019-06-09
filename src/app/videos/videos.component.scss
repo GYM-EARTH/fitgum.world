@@ -116,6 +116,7 @@
     }
   }
   .videos {
+    padding: var(--i-m) 0;
     > h1 {
       font-size: var(--xxxl);
       margin-bottom: var(--i-s);
@@ -124,7 +125,7 @@
   }
   > p {
       font-size: var(--s);
-      margin: var(--i-m) var(--i-m);
+      margin: 0 var(--i-m) var(--i-m);
       color: var(--light);
   }
   }
