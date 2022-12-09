@@ -32,7 +32,7 @@
     "@nguniversal/express-engine": "0.0.0",
     "@nguniversal/module-map-ngfactory-loader": "0.0.0",
     "core-js": "^2.5.4",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "laravel-echo": "^1.5.3",
     "rxjs": "~6.3.3",
     "snazzy-info-window": "^1.1.1",
